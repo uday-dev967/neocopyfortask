@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.Plan-01" transform="translate(-1321.000000, -31.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Next-back-buttons" transform="translate(1161.000000, 16.000000)">
+                    <g id="Group-3" transform="translate(124.000000, 11.000000)">
+                        <g id="Back-arrow@1x" transform="translate(42.553258, 10.258434) rotate(-180.000000) translate(-42.553258, -10.258434) translate(36.053258, 4.258434)">
+                            <path d="M12.4583379,6.54551657 L1.84936999,6.54551657 L6.34137423,11.0689197 C6.55316414,11.28219 6.55316414,11.6269134 6.34137423,11.8401836 C6.23575013,11.9465461 6.09708457,12 5.9584191,12 C5.81975354,12 5.68108806,11.9465461 5.57546396,11.8401836 L0.15884243,6.38570017 C-0.0529474766,6.17242985 -0.0529474766,5.82770649 0.15884243,5.61443617 L5.57546396,0.15995274 C5.78725386,-0.0533175799 6.12958433,-0.0533175799 6.34137423,0.15995274 C6.55316414,0.373223059 6.55316414,0.717946419 6.34137423,0.931216738 L1.84936999,5.45461985 L12.4583379,5.45461985 C12.757877,5.45461985 13,5.69898073 13,6.00006817 C13,6.30115569 12.757877,6.54551657 12.4583379,6.54551657 Z" id="next"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

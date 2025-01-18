@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project-details-01" transform="translate(-1307.000000, -735.000000)" fill="#EF4B6E" fill-rule="nonzero">
+            <g id="Group-12" transform="translate(774.000000, 311.000000)">
+                <g id="Add" transform="translate(533.000000, 424.000000)">
+                    <path d="M10,0 C4.48275862,0 0,4.48275862 0,10 C0,15.5172414 4.48275862,20 10,20 C15.5172414,20 20,15.5172414 20,10 C20,4.48275862 15.5172414,0 10,0 Z M10,18.6206897 C5.24137931,18.6206897 1.37931034,14.7586207 1.37931034,10 C1.37931034,5.24137931 5.24137931,1.37931034 10,1.37931034 C14.7586207,1.37931034 18.6206897,5.24137931 18.6206897,10 C18.6206897,14.7586207 14.7586207,18.6206897 10,18.6206897 Z" id="Shape"></path>
+                    <polygon id="Shape" points="10.7142857 5 9.28571429 5 9.28571429 9.28571429 5 9.28571429 5 10.7142857 9.28571429 10.7142857 9.28571429 15 10.7142857 15 10.7142857 10.7142857 15 10.7142857 15 9.28571429 10.7142857 9.28571429"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

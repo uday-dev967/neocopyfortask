@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 100%; //1 rem = 16px;
+
+
+
+//   @include respond(tab-port) { // width < 900?
+//       font-size: 75%; //1 rem = 12px, 12/16 = 0.75
+//   }
+  
+  @include respond(b-desktop) {
+      font-size: 100%; //1rem = 18, 18/16
+  }
+  @include respond(desktop){
+    font-size: 82%;
+  }
+  @include respond(s-desktop){
+    font-size: 82%;
+  } 
+  @include respond(ss-desktop){
+    font-size: 77.5%;
+  }
+  @include respond(tab-port){ // width < 900px?
+    font-size: 60%; //1 rem = 14px, 14/16 = 0.875
+  }
+  @include respond(phone){
+    font-size: 100%;
+  }
+  @include respond(s-phone){
+    font-size: 100%;
+  }
+
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#__layout, #__nuxt {
+  height: 100%;
+}

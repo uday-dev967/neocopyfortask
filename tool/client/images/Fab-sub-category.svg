@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Fab - category Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="55" cy="55" r="55"></circle>
+        <filter x="-2.3%" y="-2.3%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Category-Listing-03" transform="translate(-969.000000, -541.000000)">
+            <g id="Fab---category-Copy" transform="translate(970.000000, 542.000000)">
+                <g id="Oval-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#EF4B6E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-3" transform="translate(18.000000, 24.000000)" fill="#FFFFFF">
+                    <g id="plus" transform="translate(25.000000, 0.000000)" fill-rule="nonzero">
+                        <path d="M24,12 C24,12.4533333 23.6533333,12.8 23.2,12.8 L12.8,12.8 L12.8,23.2 C12.8,23.6533333 12.4533333,24 12,24 C11.5466667,24 11.2,23.6533333 11.2,23.2 L11.2,12.8 L0.8,12.8 C0.346666667,12.8 0,12.4533333 0,12 C0,11.5466667 0.346666667,11.2 0.8,11.2 L11.2,11.2 L11.2,0.8 C11.2,0.346666667 11.5466667,0 12,0 C12.4533333,0 12.8,0.346666667 12.8,0.8 L12.8,11.2 L23.2,11.2 C23.6533333,11.2 24,11.5466667 24,12 Z" id="Shape"></path>
+                    </g>
+                    <text id="Add-Subcategory" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" letter-spacing="0.408333302">
+                        <tspan x="24.8915" y="42">Add</tspan>
+                        <tspan x="0.182166842" y="58">Subcategory</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

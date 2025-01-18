@@ -1,0 +1,1549 @@
+{
+    "statusCode": 200,
+    "message": "success",
+    "data": {
+        "following": false,
+        "hashtag_name": "foyrcommunity",
+        "follow_count": 14,
+        "hashtag_feed": [
+            {
+                "type": "post",
+                "data": {
+                    "actor": "5e7158af4cc39f0dc8d1c930",
+                    "foreign_id": "",
+                    "id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2022-01-06T01:38:21.469709Z",
+                                "updated_at": "2022-01-06T01:38:21.469709Z",
+                                "id": "2188b491-a408-404c-aa23-dfe1000ec02e",
+                                "user_id": "5e7158af4cc39f0dc8d1c930",
+                                "kind": "comment",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>Thank you!! <span class=\"mention\" data-index=\"1\" data-denotation-char=\"@\" data-id=\"6166f79489ec7c20a4219c6d\" data-value=\"Rachel Acevedo\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Rachel Acevedo</span>﻿</span> So glad to be here!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-05T22:01:18.751498Z",
+                                "updated_at": "2022-01-05T22:01:18.751498Z",
+                                "id": "921a3ad4-b73f-4398-9ba2-d6be8db68f80",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>Welcome to the community Anissa! I love a muted palette with black accents! </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2022-01-10T07:37:14.039131Z",
+                                "updated_at": "2022-01-10T07:37:14.039131Z",
+                                "id": "8d71baf7-c78d-4365-aa8d-756d0af2b74e",
+                                "user_id": "5cde32192b2e1b03190eac05",
+                                "kind": "like",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-09T07:00:38.830430Z",
+                                "updated_at": "2022-01-09T07:00:38.830430Z",
+                                "id": "54dc87a4-d7d7-42a8-b35d-168a58011a50",
+                                "user_id": "61da866f2c2dab7f448caf75",
+                                "kind": "like",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-09T02:48:59.824215Z",
+                                "updated_at": "2022-01-09T02:48:59.824215Z",
+                                "id": "d38051e0-cec7-4dbe-8298-b456e5574180",
+                                "user_id": "61bfdf982c2dab7f448c9a86",
+                                "kind": "like",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-07T23:49:52.262498Z",
+                                "updated_at": "2022-01-07T23:49:52.262498Z",
+                                "id": "14b92d43-7c2f-45c8-890f-b3b857719cb6",
+                                "user_id": "61a7d0fbb269856fec41cba3",
+                                "kind": "like",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-07T11:08:27.576641Z",
+                                "updated_at": "2022-01-07T11:08:27.576641Z",
+                                "id": "68a24678-cbc3-4a05-9321-38fb988b825e",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "c6568be7-6e43-11ec-a1a4-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/c6568be7-6e43-11ec-a1a4-12e0c51dd22e/like/?id_lt=68a24678-cbc3-4a05-9321-38fb988b825e&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>#foyrdesigntrends2022 #foyrcommunity #foyrchallange </p>",
+                        "files": [],
+                        "images": [
+                            "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1641399790163.png",
+                            "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1641399790170"
+                        ],
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 10,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2022-01-05T16:23:11.106763",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "mcqueenanissa1@gmail.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1641399648843",
+                            "userName": "Anissa McQueen",
+                            "designation": "",
+                            "company": "Cozi Corner Designs",
+                            "website": "",
+                            "userId": "5e7158af4cc39f0dc8d1c930",
+                            "location": "Tulsa, OK"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "619169991410ff7dcd3e38c7",
+                    "foreign_id": "",
+                    "id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2022-01-03T20:28:53.064719Z",
+                                "updated_at": "2022-01-03T20:28:53.064719Z",
+                                "id": "720469bf-c049-4c84-b622-5f2503b287e3",
+                                "user_id": "619169991410ff7dcd3e38c7",
+                                "kind": "comment",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"1\" data-denotation-char=\"@\" data-id=\"6166f79489ec7c20a4219c6d\" data-value=\"Rachel Acevedo\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Rachel Acevedo</span>﻿</span> Thank you that's so kind :) I love to give serenity to a space, whether it's a hotel suite or a bar haha </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-03T19:56:43.288184Z",
+                                "updated_at": "2022-01-03T19:56:43.288184Z",
+                                "id": "83579445-ce6c-4f2c-be52-e1afdda7995c",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>beautiful space! I love the continuity across all of your work with whites, pinks and soft grays. so calming</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2022-01-09T02:49:49.220804Z",
+                                "updated_at": "2022-01-09T02:49:49.220804Z",
+                                "id": "7b9e0027-dd7d-4798-ba24-c6cc0b5338f3",
+                                "user_id": "61bfdf982c2dab7f448c9a86",
+                                "kind": "like",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-07T20:31:58.998201Z",
+                                "updated_at": "2022-01-07T20:31:58.998201Z",
+                                "id": "ac847532-7733-4540-bdd1-9f161387dc44",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-04T23:32:48.157303Z",
+                                "updated_at": "2022-01-04T23:32:48.157303Z",
+                                "id": "62bcaf77-e304-47bd-b001-cb45fa56d914",
+                                "user_id": "5cde32192b2e1b03190eac05",
+                                "kind": "like",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-04T01:14:17.810942Z",
+                                "updated_at": "2022-01-04T01:14:17.810942Z",
+                                "id": "fbd49a8a-2061-44fb-9f66-a96110156fcb",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2022-01-03T19:06:21.318635Z",
+                                "updated_at": "2022-01-03T19:06:21.318635Z",
+                                "id": "43903cc7-c967-4e33-8b37-d3940c96eba2",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "like",
+                                "activity_id": "95069f7b-6cb4-11ec-9157-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/95069f7b-6cb4-11ec-9157-0ac74274a1c1/like/?id_lt=43903cc7-c967-4e33-8b37-d3940c96eba2&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>To a splendid 2022! </p><p>And let it be a year that we continue building bridges together :)</p><p>#hotelsuite #hoteldesign #elementofdesign #interiordesigner #interiorarchitect #newproject #businessboom #edesign #foyrcommunity #interiordesignbusiness</p><p><br></p><p><br></p>",
+                        "files": [],
+                        "images": [
+                            "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1641228338323"
+                        ],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 5,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2022-01-03T16:45:39.179507",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "hello@a-brandstory.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1640099341505",
+                            "userName": "Ashna Mangnoesing",
+                            "designation": "",
+                            "company": "Element of Design",
+                            "website": " https://www.element-of-design.com/",
+                            "userId": "619169991410ff7dcd3e38c7",
+                            "location": "Amsterdam"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "5ec067f3edea03652efcc92b",
+                    "foreign_id": "",
+                    "id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-22T02:57:48.450768Z",
+                                "updated_at": "2021-11-22T02:57:48.450768Z",
+                                "id": "9ce365e7-7fc5-4b35-97e3-b22f26706c82",
+                                "user_id": "6196b14c766f3b57c547d671",
+                                "kind": "comment",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"5ec067f3edea03652efcc92b\" data-value=\"tommi\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>tommi</span>﻿</span> Thank you that would be wonderful to collaborate oneday, I also set up a demo for tomorrow</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T21:25:53.237169Z",
+                                "updated_at": "2021-11-19T21:25:53.237169Z",
+                                "id": "574e6271-7d55-4372-a55a-dc6a3a615b1c",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "comment",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"6196b14c766f3b57c547d671\" data-value=\"Jannell Hembry\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Jannell Hembry</span>﻿</span> Foyr is my personal favorite, it is user friendly and very advanced!! If you ever want to connect or collaborate just let me know!! </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T20:52:27.630029Z",
+                                "updated_at": "2021-11-19T20:52:27.630029Z",
+                                "id": "af0102b2-526c-4184-8685-4abdf62b401f",
+                                "user_id": "6196b14c766f3b57c547d671",
+                                "kind": "comment",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>Awesome designs, I am just starting out trying to learn how to work foyr</p><p><br></p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T19:42:55.738078Z",
+                                "updated_at": "2021-11-19T19:42:55.738078Z",
+                                "id": "42e2bf15-97f7-473c-baa6-41428e779a75",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "comment",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>Thankyou @jazlyn </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T14:31:24.743552Z",
+                                "updated_at": "2021-11-19T14:31:24.743552Z",
+                                "id": "2ba87580-26d5-41e0-b475-29da12eb6f44",
+                                "user_id": "602558ad350af42b0c7e7906",
+                                "kind": "comment",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>This looks amazing!!!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-12-17T17:27:20.419770Z",
+                                "updated_at": "2021-12-17T17:27:20.419770Z",
+                                "id": "ff42daa3-4139-4330-8e24-b3c056f55f22",
+                                "user_id": "5ff462227a259d0b8294577b",
+                                "kind": "like",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-22T15:53:30.115421Z",
+                                "updated_at": "2021-11-22T15:53:30.115421Z",
+                                "id": "8ad26967-0ce1-437c-a34a-26838a766c22",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T19:17:07.538824Z",
+                                "updated_at": "2021-11-19T19:17:07.538824Z",
+                                "id": "0e23479f-3d78-4d96-b6fe-abb1e2e61579",
+                                "user_id": "5f6e0a5340fe8c1e56947b68",
+                                "kind": "like",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T06:15:07.848422Z",
+                                "updated_at": "2021-11-19T06:15:07.848422Z",
+                                "id": "e6bc6cf7-21c5-4992-888d-dd5c79e84ec9",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T02:05:42.711697Z",
+                                "updated_at": "2021-11-19T02:05:42.711697Z",
+                                "id": "867f6f94-b319-4cb1-991f-2afe11ad783e",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "like",
+                                "activity_id": "3725cbc4-48b2-11ec-892e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/3725cbc4-48b2-11ec-892e-0ac74274a1c1/comment/?id_lt=2ba87580-26d5-41e0-b475-29da12eb6f44&limit=5&withOwnChildren=false"
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/3725cbc4-48b2-11ec-892e-0ac74274a1c1/like/?id_lt=867f6f94-b319-4cb1-991f-2afe11ad783e&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>My Niche: Virtual Design Assistant</p><p><br></p><p>Being a recent graduate with my Bachelors in Interior Design finding my niche has been difficult because I am new to the professional world. I felt as if i didn't have lots of experience doing real projects even though i have formal training and all the tools to be successful. Participating in #levelup2021 has allowed me to realize where i want my career and business to go.</p><p><br></p><p>Listening to Aida has allowed me to pin point my niche. My niche is being a virtual design assistant. I understand both the Design and Design Assistant process and how to make it work. I also know how overwhelming it can be for solo designers who have a little too much work for themselves but not enough to fully hire an assistant.</p><p><br></p><p>I am a very creative person and love working with others to bring visions to life and solving design problems. The services i offer is c<span style=\"color: rgb(59, 64, 63);\">reating mood boards, sourcing, floor plans, 3D renderings, modeling, tracking, and more. I am proficient in different programs from Foyr to CAD. My Niche is helping and collaborating with other designers who need extra help with their projects :). </span></p><p><br></p><p>I also have regular clients but being a virtual design assistant is my focus.</p><p><span style=\"color: rgb(59, 64, 63);\">#richesinniches #levelupcontest #foyrcommunity #interiordesigner #community #niche</span></p><p><br></p><p>The designs below are renders of a salon that i was playing around with!</p>",
+                        "files": [],
+                        "images": [
+                            "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1637269080171",
+                            "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1637269080173.png"
+                        ],
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 12,
+                        "comment": 9,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-18T20:58:00.824519",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "tommi.interiors@yahoo.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1634588702031",
+                            "userName": "tommi",
+                            "designation": "Virtual Interior Design Assistant ",
+                            "company": "Tommi+Interiors LLC",
+                            "website": "",
+                            "location": "Remote",
+                            "userId": "5ec067f3edea03652efcc92b"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "6196a69a766f3b57c547d666",
+                    "foreign_id": "",
+                    "id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                    "latest_reactions": {
+                        "like": [
+                            {
+                                "created_at": "2021-11-22T15:54:02.560962Z",
+                                "updated_at": "2021-11-22T15:54:02.560962Z",
+                                "id": "7dceef14-f787-442f-9437-71787fe07f47",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-22T06:28:55.507933Z",
+                                "updated_at": "2021-11-22T06:28:55.507933Z",
+                                "id": "134ed884-0d76-47d1-a01f-f1e21cd2443c",
+                                "user_id": "6195f4e81410ff7dcd3e3ca7",
+                                "kind": "like",
+                                "activity_id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T21:33:12.113206Z",
+                                "updated_at": "2021-11-19T21:33:12.113206Z",
+                                "id": "83535a15-87b0-489b-855b-9d74fad4530a",
+                                "user_id": "6196b14c766f3b57c547d671",
+                                "kind": "like",
+                                "activity_id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T06:40:31.363475Z",
+                                "updated_at": "2021-11-19T06:40:31.363475Z",
+                                "id": "21d01ec1-d3f3-441f-a6a3-e52a6b942145",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T21:04:39.358400Z",
+                                "updated_at": "2021-11-18T21:04:39.358400Z",
+                                "id": "44b83a13-12b8-4f0c-8a86-2c102fd19213",
+                                "user_id": "616ab8dc89ec7c20a4219f12",
+                                "kind": "like",
+                                "activity_id": "50d75c4a-48ad-11ec-8777-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/50d75c4a-48ad-11ec-8777-12e0c51dd22e/like/?id_lt=44b83a13-12b8-4f0c-8a86-2c102fd19213&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>Hello sweet community! Since in my country people are still hesitating reaching up to interior designers regarding their homes, my niche and my purpose is to help them feel totally involved in designing their space. I am always doing my job with love and energy that comes from my clients, and I think that the residential projects for young families are my thing. I hope that everybody is surrounded by great people and always receive good vibes! #richesinniches #foyrcommunity #levelupcontest</p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 6,
+                        "comment": 0,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-18T20:22:56.447598",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "lelia.tatu@yahoo.com",
+                            "userImage": "",
+                            "userName": "Lelia Bujorean",
+                            "designation": "",
+                            "company": "",
+                            "website": "",
+                            "userId": "6196a69a766f3b57c547d666"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "61106d55654f8f01787fb394",
+                    "foreign_id": "",
+                    "id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-29T16:02:14.386945Z",
+                                "updated_at": "2021-11-29T16:02:14.386945Z",
+                                "id": "46c35661-dd12-42b3-99a7-d28a9af300a2",
+                                "user_id": "61106d55654f8f01787fb394",
+                                "kind": "comment",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>My project management experience has helped me a TON!  I run my design projects just like how I ran front-end product development projects using the Human-Centered/Design Thinking approach. Plus I understand how to create timelines, gantt charts, task boards, &amp; budgets. There are a lot of similarities to building a product prototype and developing/implementing a room design.</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-22T19:39:16.465590Z",
+                                "updated_at": "2021-11-22T19:39:16.465590Z",
+                                "id": "60daac5f-50e5-4779-a1ec-8d09b7996bdc",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "comment",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>This is great Becky! We would love to hear more about how your project management background has helped you in your design process!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-22T19:38:30.655221Z",
+                                "updated_at": "2021-11-22T19:38:30.655221Z",
+                                "id": "02883c79-ccab-484a-b03c-98f55f8d5722",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-22T15:54:28.168524Z",
+                                "updated_at": "2021-11-22T15:54:28.168524Z",
+                                "id": "c5a14c2f-6d40-4deb-88f3-9a5fdc4c31c0",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T20:18:31.966205Z",
+                                "updated_at": "2021-11-18T20:18:31.966205Z",
+                                "id": "ea1473c3-6c20-4dd3-aede-c7964a43fd05",
+                                "user_id": "5cde32192b2e1b03190eac05",
+                                "kind": "like",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T20:05:45.925746Z",
+                                "updated_at": "2021-11-18T20:05:45.925746Z",
+                                "id": "1f14d0e2-c21f-4e82-89d7-44981fb94f3f",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "19ba48cb-48a4-11ec-8884-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": ""
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>I have recently started my business and have really dove in to two niches:</p><p>1) Each of my designs is linked to a non-profit mission the family is passionate about in order to create a deeper connection to the room and to spread the mission to others</p><p>2) As a homeschooling mom, I am really honing in on kid spaces: bedrooms, playrooms, and outdoor spaces</p><p><br></p><p>Through each of these niches I use my certified professional project management skills to lead clients through a human-centered design process</p><p><br></p><p>#richesinniches<span style=\"color: rgb(35, 33, 33);\">&nbsp;</span>#foyrcommunity<span style=\"color: rgb(35, 33, 33);\">&nbsp;</span>#levelupcontest</p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 4,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-18T19:16:58.511790",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "becky@lykkehavendesign.com",
+                            "userImage": "https://lh3.googleusercontent.com/a/AATXAJwjO2DLA7OM42q4RoHTPCiOczmTjD6bhgsfZKNl=s96-c",
+                            "userName": "Becky Bonnell",
+                            "designation": "",
+                            "company": "",
+                            "website": "",
+                            "userId": "61106d55654f8f01787fb394"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "5fed44567a259d0b829455bf",
+                    "foreign_id": "",
+                    "id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-18T19:16:04.366666Z",
+                                "updated_at": "2021-11-18T19:16:04.366666Z",
+                                "id": "b617bd48-fe6a-49d8-a0da-bd626c68524f",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "comment",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>Welcome Katarina and thank you for sharing you Niche!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T17:21:47.088372Z",
+                                "updated_at": "2021-11-18T17:21:47.088372Z",
+                                "id": "0c63052a-451e-4567-94cd-8bd36767ee55",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "comment",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>Love this niche <span class=\"mention\" data-index=\"4\" data-denotation-char=\"@\" data-id=\"5fed44567a259d0b829455bf\" data-value=\"Katarina\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Katarina</span>﻿</span> ! You should connect with <span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"60f6869373c6e10a8b6df22a\" data-value=\"neha khiyani\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>neha khiyani</span>﻿</span> who also focuses on green design! Also, check out these webinars on our Learn Page: Learn Sustainable and Holistic Interior Design and Wellness in Everyday Projects: Key Takeaways  from WELL Principles  </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-18T20:06:04.669421Z",
+                                "updated_at": "2021-11-18T20:06:04.669421Z",
+                                "id": "853dfa13-371a-4eb7-a5f2-af655d16a9c1",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T19:08:28.765598Z",
+                                "updated_at": "2021-11-18T19:08:28.765598Z",
+                                "id": "61818828-3c55-45fe-aac9-8de32636499e",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T18:48:05.767320Z",
+                                "updated_at": "2021-11-18T18:48:05.767320Z",
+                                "id": "29676fd1-c7ec-4cd0-8c59-0e7fbdfd37ad",
+                                "user_id": "616c55c489ec7c20a421a065",
+                                "kind": "like",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T17:15:32.572950Z",
+                                "updated_at": "2021-11-18T17:15:32.572950Z",
+                                "id": "1d797072-4d92-4c9c-bfc6-7ba7cc518b67",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T17:06:26.620149Z",
+                                "updated_at": "2021-11-18T17:06:26.620149Z",
+                                "id": "7f3a635d-84a1-46f4-bc3b-bebec477830e",
+                                "user_id": "61599c3adde3a001e926e140",
+                                "kind": "like",
+                                "activity_id": "f476375b-4886-11ec-8550-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/f476375b-4886-11ec-8550-12e0c51dd22e/like/?id_lt=7f3a635d-84a1-46f4-bc3b-bebec477830e&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>Here to share my Niche with you&nbsp;:)</p><p><br></p><p>I love working with clients who are openminded and ready for something new. Staying on the forefront of materials, design, and technology enables me to help clients achieve the full potential of their space. One of the primary goals of my design is to connect my client with nature. Educating them about sustainable materials and explaining why they are better for their home and health is what I enjoy the most. To me, designing a space is like the process of rebirth/renewal. What gives me the most satisfaction throughout the journey it so see how a home blossoms and transforms my client’s environment to a healthy place where they can thrive.&nbsp;</p><p><br></p><p>To me a space should look and feel good!</p><p>#richesinniches #foyrcommunity<span style=\"color: rgb(35, 33, 33);\">&nbsp;</span>#levelupcontest</p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 6,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-18T15:48:20.584841",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "kat.sabljic@gmail.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1636050063601",
+                            "userName": "Katarina",
+                            "designation": "",
+                            "company": "",
+                            "website": "",
+                            "userId": "5fed44567a259d0b829455bf"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "6195f4e81410ff7dcd3e3ca7",
+                    "foreign_id": "",
+                    "id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-18T15:15:04.915400Z",
+                                "updated_at": "2021-11-18T15:15:04.915400Z",
+                                "id": "5067fb93-f04f-45c3-ab10-bc268441463a",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "comment",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>What a heartwarming story and niche perfectly suited for you! We love how you've drawn on your own culture and experiences of homesickness to help others like yourself through design!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T15:02:21.039796Z",
+                                "updated_at": "2021-11-18T15:02:21.039796Z",
+                                "id": "f53ed5be-4acf-4dff-af20-96cfb9a2814f",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {
+                                    "text": "<p>I love this! What uniquely special niche and way to help your community! </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-18T21:06:40.057829Z",
+                                "updated_at": "2021-11-18T21:06:40.057829Z",
+                                "id": "e7078d01-4166-4ef1-82fb-a5b9e0f9941f",
+                                "user_id": "616ab8dc89ec7c20a4219f12",
+                                "kind": "like",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T20:06:10.380140Z",
+                                "updated_at": "2021-11-18T20:06:10.380140Z",
+                                "id": "08ed7dca-80b3-44c6-937e-a502241c2828",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T19:09:04.765247Z",
+                                "updated_at": "2021-11-18T19:09:04.765247Z",
+                                "id": "1fbcfa92-a854-488a-bed8-b84083e6e113",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T18:48:13.630667Z",
+                                "updated_at": "2021-11-18T18:48:13.630667Z",
+                                "id": "e29eb444-990c-4859-8cf8-a8c71ea14767",
+                                "user_id": "616c55c489ec7c20a421a065",
+                                "kind": "like",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T16:15:07.398386Z",
+                                "updated_at": "2021-11-18T16:15:07.398386Z",
+                                "id": "87f3e2fd-3454-44eb-8984-8748031107da",
+                                "user_id": "6107e23273c6e10a8b6dfc9d",
+                                "kind": "like",
+                                "activity_id": "94d5284e-483d-11ec-827d-12e0c51dd22e",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/94d5284e-483d-11ec-827d-12e0c51dd22e/like/?id_lt=87f3e2fd-3454-44eb-8984-8748031107da&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p><span style=\"color: rgb(35, 33, 33);\">MY NICHE : When I first moved to Canada, I felt homesick, living in my 1 BHK condo, felt like living in a hotel room with no room service. I thereafter decided my Design practice will be a service to help Indian Immigrants living in Canada feel at home away from their home with my transitional traditional style in their modern Canadian homes. This is my niche since the past 4 years and I have been living by it. !! MI CASA SU CASA #richesinniches #foyrcommunity #levelupcontest</span></p>",
+                        "files": [],
+                        "images": [],
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 14,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-18T07:03:06.884514",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "siddarth_c2309@yahoo.in",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1637218762110.png",
+                            "userName": "Sidharth Mathur",
+                            "designation": "Principal Designer",
+                            "company": "Homely",
+                            "website": "",
+                            "userId": "6195f4e81410ff7dcd3e3ca7",
+                            "location": "Mississauga, ON"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "5fceed7aa092a85c10f568fe",
+                    "foreign_id": "",
+                    "id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-22T18:27:09.694138Z",
+                                "updated_at": "2021-11-22T18:27:09.694138Z",
+                                "id": "5d0db4b2-faf3-48a4-af2e-cba11275caac",
+                                "user_id": "5fceed7aa092a85c10f568fe",
+                                "kind": "comment",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>Thank you ladies! We appreciate the sweet words. </p><p>😊 <span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"5ec067f3edea03652efcc92b\" data-value=\"tommi\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>tommi</span>﻿</span> <span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"5e77affe4cc39f0dc8e7e638\" data-value=\"Rachel Acevedo\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Rachel Acevedo</span>﻿</span> <span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"602558ad350af42b0c7e7906\" data-value=\"Jazlyn\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Jazlyn</span>﻿</span> </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-19T03:05:26.162828Z",
+                                "updated_at": "2021-11-19T03:05:26.162828Z",
+                                "id": "253296e1-2639-45d9-a855-6ab0d23b3763",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "comment",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>I love your name and the meaning behind it!! Growing up I lived down the street from a corner store called “three sisters” because it was owned and ran by three sisters!!! Love it, brings up so many good memories!!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T14:42:19.856413Z",
+                                "updated_at": "2021-11-18T14:42:19.856413Z",
+                                "id": "b1061c1d-bb55-46da-b979-77a0a834d5c6",
+                                "user_id": "602558ad350af42b0c7e7906",
+                                "kind": "comment",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>It's truly inspiring that you women can combine to form an impressive trio!!! So much talent together sounds refreshing!!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T21:46:07.303092Z",
+                                "updated_at": "2021-11-17T21:46:07.303092Z",
+                                "id": "65abdbc7-2af9-487f-8d48-b0776e0c9efe",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>Love this powerhouse trio and how you've managed to seamlessly combine so many strengths and design styles into a brand thats cohesive &amp; distinctly YOU! 👏</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-18T20:00:33.459517Z",
+                                "updated_at": "2021-11-18T20:00:33.459517Z",
+                                "id": "16dd077e-d841-449e-a5c3-5a7865f4b8db",
+                                "user_id": "616c55c489ec7c20a421a065",
+                                "kind": "like",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T19:09:14.565712Z",
+                                "updated_at": "2021-11-18T19:09:14.565712Z",
+                                "id": "ee02e453-a84a-43be-9ac6-8443d790e22d",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T16:15:10.576915Z",
+                                "updated_at": "2021-11-18T16:15:10.576915Z",
+                                "id": "81fcc8ac-39fa-4b54-9a94-b6f009c488fa",
+                                "user_id": "6107e23273c6e10a8b6dfc9d",
+                                "kind": "like",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T15:13:31.629712Z",
+                                "updated_at": "2021-11-18T15:13:31.629712Z",
+                                "id": "43ba9bdf-64dd-41a2-b73d-221aa74c0414",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T14:20:09.782172Z",
+                                "updated_at": "2021-11-18T14:20:09.782172Z",
+                                "id": "e4b07d30-396f-4a0a-899e-b0074760b9cb",
+                                "user_id": "602558ad350af42b0c7e7906",
+                                "kind": "like",
+                                "activity_id": "17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/17ac7ab0-47e7-11ec-b8b6-0ac74274a1c1/like/?id_lt=e4b07d30-396f-4a0a-899e-b0074760b9cb&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>Three Sisters Interiors consist of three women who love Interior Design. Since we are three individuals, we each have different styles. Our niche is very versatile for that reason. While Melissa LOVES farmhouse and Paola LOVES coastal, (I) Angelica LOVE eclectic, modern, etc. This is our superpower because we feel we can cater to many people because we know how to execute anything a client might want. We are each a puzzle piece that fits together and works seamlessly to <span style=\"color: rgb(0, 0, 0);\">make spaces that mirror our client's vision, lifestyle, and reflect the things they love. #levelupcontest #richesinniches #foyrcommunity </span></p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 9,
+                        "comment": 4,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-17T20:44:00.183979",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "angelicamdesign@gmail.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1635261054571.png",
+                            "userName": "Three Sisters Interiors",
+                            "designation": "",
+                            "company": "Three Sisters Interiors ",
+                            "website": "threesistersinteriorsllc.com ",
+                            "location": "Maryland, DC, Virginia",
+                            "userId": "5fceed7aa092a85c10f568fe"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "5f7f4e4898fbb816048e987c",
+                    "foreign_id": "",
+                    "id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-17T21:48:06.426588Z",
+                                "updated_at": "2021-11-17T21:48:06.426588Z",
+                                "id": "eca1c0fc-dc90-4efc-aab6-3bc8a861f471",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"5f7f4e4898fbb816048e987c\" data-value=\"Tashoya Aird\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Tashoya Aird</span>﻿</span> Would LOVE to learn some DIY tricks from you!! If you ever have time to do a post/video on some tips I would love to hear! I'm always trying to do DIY projects at home but they honestly fall a little flat because I have no idea what I'm doing lol!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T20:04:18.381708Z",
+                                "updated_at": "2021-11-17T20:04:18.381708Z",
+                                "id": "3aa8e7f5-722c-471f-b3cf-c4e0cc456c7d",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "comment",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>Providing DIY services to upcycle or create entirely new pieces is such a cool feature to add to your services! We love how you've found a unique way to be creative in your craft and set yourself apart from others with this extra talent!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-18T19:09:21.808973Z",
+                                "updated_at": "2021-11-18T19:09:21.808973Z",
+                                "id": "f8581412-a48d-4e47-8803-b4798ddc4b77",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T16:15:16.405417Z",
+                                "updated_at": "2021-11-18T16:15:16.405417Z",
+                                "id": "393c2252-0adf-4104-ada9-aa6b5bc9fa16",
+                                "user_id": "6107e23273c6e10a8b6dfc9d",
+                                "kind": "like",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T14:57:49.067231Z",
+                                "updated_at": "2021-11-18T14:57:49.067231Z",
+                                "id": "231efa49-6914-447a-825b-e21c74654993",
+                                "user_id": "5cde32192b2e1b03190eac05",
+                                "kind": "like",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T22:25:14.567134Z",
+                                "updated_at": "2021-11-17T22:25:14.567134Z",
+                                "id": "bd2ac87f-29a1-490c-b693-c4009a5a5005",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T21:46:36.013111Z",
+                                "updated_at": "2021-11-17T21:46:36.013111Z",
+                                "id": "999bc799-861d-4fd0-aa2f-c542308a0fb3",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "like",
+                                "activity_id": "61dd0162-47d7-11ec-b80e-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": ""
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/61dd0162-47d7-11ec-b80e-0ac74274a1c1/like/?id_lt=999bc799-861d-4fd0-aa2f-c542308a0fb3&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p><span style=\"color: rgb(35, 33, 33);\">My passion for design is indescribable. I always aim to bring the vision of an individual or family to life. My niche is defined by my clients and most would say that no matter what they throw in my direction, whether it may make sense to them or not, I find a way to incorporate it and create something special. Another niche of mine would be my DIY skills and my ability to create or redesign pieces that families or individuals will love! My niche is showing that design should have no limitations and there is creativity behind every single thought.  I am excited to continue on my interior journey with Foyr and glad to be apart of the Foyr community.&nbsp;</span>#levelupcontest<span style=\"color: rgb(35, 33, 33);\">&nbsp;</span>#richesinniches #foyrcommunity</p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 7,
+                        "comment": 2,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-17T18:51:32.705726",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "myhousemyhome101@gmail.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1630428729446",
+                            "userName": "Tashoya Aird",
+                            "designation": "",
+                            "company": "MH Interior Design",
+                            "website": "www.mh-interiors.co.uk",
+                            "location": "Essex, UK",
+                            "userId": "5f7f4e4898fbb816048e987c"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            },
+            {
+                "type": "post",
+                "data": {
+                    "actor": "602558ad350af42b0c7e7906",
+                    "foreign_id": "",
+                    "id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                    "latest_reactions": {
+                        "comment": [
+                            {
+                                "created_at": "2021-11-17T20:59:12.611696Z",
+                                "updated_at": "2021-11-17T20:59:12.611696Z",
+                                "id": "ffc2dc2e-d760-4923-947d-59a64eacc52c",
+                                "user_id": "5fceed7aa092a85c10f568fe",
+                                "kind": "comment",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>I could feel your passion when reading this! This is very relatable as a designer. We are all creatives in different ways. We all have that one thing that sparks our creativity and passion. </p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T16:46:28.136376Z",
+                                "updated_at": "2021-11-17T16:46:28.136376Z",
+                                "id": "9b8ee263-2b38-4d20-94c4-61ffb99f0d28",
+                                "user_id": "602558ad350af42b0c7e7906",
+                                "kind": "comment",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"611f572a87631a3b88182ba2\" data-value=\"Community\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Community</span>﻿</span> A lot of people say, \"Well I'm not an artist so I'm not creative\" or \"You're the expert I'm not creative\". I ensure others that you don't have to be an artist or an expert in order to be creative. Creativity can even come in the form of organizing a closet or office space or even coming up with solutions to problems. That is creativity and I want clients to know that we all have it in us. I feel like it impacts the design process by actively making them feel included and that thy are major keys when it comes to design. It needs to be personal, not just one size fits all. Getting to know your client allows them to open up their creativity so that together you can help execute the best vision or design possible.</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T15:58:32.814264Z",
+                                "updated_at": "2021-11-17T15:58:32.814264Z",
+                                "id": "3418840d-3220-4a7b-a88c-2a72011392ef",
+                                "user_id": "602558ad350af42b0c7e7906",
+                                "kind": "comment",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p><span class=\"mention\" data-index=\"0\" data-denotation-char=\"@\" data-id=\"5e77affe4cc39f0dc8e7e638\" data-value=\"Rachel Acevedo\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Rachel Acevedo</span>﻿</span> Thank you!! Design is a mentality !!! I love that you were able to capture that</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T15:56:35.069750Z",
+                                "updated_at": "2021-11-17T15:56:35.069750Z",
+                                "id": "fbd2389e-d684-4520-9850-f52469ff101b",
+                                "user_id": "5e77affe4cc39f0dc8e7e638",
+                                "kind": "comment",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>YES!! 👏 When your business is focused on how it can serve others and help them realize their own potential and skills THATS when I believe you really become indispensable! I love that you're not just serving up designs, you're serving up a mentality as well! Bravo!</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T15:25:32.830214Z",
+                                "updated_at": "2021-11-17T15:25:32.830214Z",
+                                "id": "cb0e1cc0-6b20-4997-bed0-652c831de2af",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "comment",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {
+                                    "text": "<p>LOVE your passion and commitment to your craft <span class=\"mention\" data-index=\"2\" data-denotation-char=\"@\" data-id=\"602558ad350af42b0c7e7906\" data-value=\"Jazlyn\">﻿<span contenteditable=\"false\"><span class=\"ql-mention-denotation-char\">@</span>Jazlyn</span>﻿</span> ! We would love to hear about how you communicate this idea that all people are creative to your clients and how does this impact their input on the design process?</p>"
+                                },
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ],
+                        "like": [
+                            {
+                                "created_at": "2021-11-19T03:06:23.362342Z",
+                                "updated_at": "2021-11-19T03:06:23.362342Z",
+                                "id": "e43fb119-aead-453a-8f7c-190f453ec2af",
+                                "user_id": "5ec067f3edea03652efcc92b",
+                                "kind": "like",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T19:09:28.983347Z",
+                                "updated_at": "2021-11-18T19:09:28.983347Z",
+                                "id": "8b779418-6c93-4c22-b4fd-eec3eef5b3eb",
+                                "user_id": "5e8f578ec333f37d1755084e",
+                                "kind": "like",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-18T04:15:51.585736Z",
+                                "updated_at": "2021-11-18T04:15:51.585736Z",
+                                "id": "49176b58-97f9-4fc1-9793-3ddb02f27360",
+                                "user_id": "5cde32192b2e1b03190eac05",
+                                "kind": "like",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T20:50:29.163320Z",
+                                "updated_at": "2021-11-17T20:50:29.163320Z",
+                                "id": "ccc958c9-f839-4b70-b09b-9aa6143996ef",
+                                "user_id": "5fceed7aa092a85c10f568fe",
+                                "kind": "like",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            },
+                            {
+                                "created_at": "2021-11-17T15:18:24.708741Z",
+                                "updated_at": "2021-11-17T15:18:24.708741Z",
+                                "id": "ec7fb1b7-9ea1-48e0-9794-59938e5dbf44",
+                                "user_id": "611f572a87631a3b88182ba2",
+                                "kind": "like",
+                                "activity_id": "ab64382d-47b7-11ec-b674-0ac74274a1c1",
+                                "data": {},
+                                "parent": "",
+                                "latest_children": {},
+                                "children_counts": {}
+                            }
+                        ]
+                    },
+                    "latest_reactions_extra": {
+                        "comment": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/ab64382d-47b7-11ec-b674-0ac74274a1c1/comment/?id_lt=cb0e1cc0-6b20-4997-bed0-652c831de2af&limit=5&withOwnChildren=false"
+                        },
+                        "like": {
+                            "next": "https://stream-io-api.com/api/v1.0/reaction/activity_id/ab64382d-47b7-11ec-b674-0ac74274a1c1/like/?id_lt=ec7fb1b7-9ea1-48e0-9794-59938e5dbf44&limit=5&withOwnChildren=false"
+                        }
+                    },
+                    "object": "timeline",
+                    "origin": null,
+                    "payload": {
+                        "description": "<p>I can't limit it to one so here is all. My niche is helping others understand that we are all creative. What I live for is bringing visions to life. If we can dream it or think it, it can happen!! My niche is my passion for interior design, no matter what obstacles or limitations I impose on myself, I always find a way to make design my first love. My niche is to take risks and to keep moving forward. My niche is choosing my passion everyday and sharing it with the world no matter the size of the audience. As long as I'm doing what I am intended to do, which is sharing my gift, my creativeness, and my talent, hoping to inspire others.  I am excited for the progression of the design world as one, and so enthused to be apart of the Foyr community. #levelupcontest #richesinniches #foyrcommunity</p>",
+                        "files": [],
+                        "images": [],
+                        "urlPreview": null,
+                        "userMentions": [],
+                        "video": null
+                    },
+                    "reaction_counts": {
+                        "like": 5,
+                        "comment": 5,
+                        "view": 0
+                    },
+                    "target": "",
+                    "time": "2021-11-17T15:04:32.170194",
+                    "verb": "post",
+                    "user": {
+                        "bio": {
+                            "counts": {
+                                "followers": 0,
+                                "following": 0,
+                                "appreciations": 0
+                            },
+                            "userEmail": "jazlynf@ktmarchitect.com",
+                            "userImage": "https://foyr-community.s3.ap-south-1.amazonaws.com/production/assets/1632429425379",
+                            "userName": "Jazlyn",
+                            "designation": "",
+                            "company": "",
+                            "website": "",
+                            "userId": "602558ad350af42b0c7e7906"
+                        }
+                    },
+                    "liked": false,
+                    "following": false
+                }
+            }
+        ]
+    }
+}

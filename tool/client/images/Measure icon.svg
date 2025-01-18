@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Measure icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.-edited-UI" transform="translate(-293.000000, -76.000000)">
+            <g id="Measure-icon" transform="translate(291.750000, 75.000000)">
+                <rect id="Rectangle-14" x="0" y="0" width="32" height="32"></rect>
+                <g id="measure" opacity="0.54" transform="translate(1.333333, 1.333333)" fill="#000000" fill-rule="nonzero">
+                    <g id="Group">
+                        <path d="M7.36910569,0.214634146 L0.214634146,7.36910569 L21.9642276,29.1186992 L29.1186992,21.9642276 L7.36910569,0.214634146 Z M1.25203252,7.36910569 L7.36910569,1.21626016 L10.1593496,4.00650407 L7.83414634,6.33170732 L8.33495935,6.83252033 L10.6601626,4.50731707 L13.9512195,7.79837398 L11.6260163,10.1235772 L12.1268293,10.6243902 L14.4520325,8.29918699 L17.7430894,11.5902439 L15.3821138,13.9512195 L15.8829268,14.4520325 L18.2439024,12.0910569 L21.5349593,15.3821138 L19.2097561,17.7073171 L19.7105691,18.2439024 L22.0357724,15.9186992 L28.1170732,22 L21.9642276,28.1170732 L1.25203252,7.36910569 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" transform="translate(22.182140, 22.178862) rotate(-45.000000) translate(-22.182140, -22.178862) " x="20.3935217" y="21.8211382" width="3.57723577" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

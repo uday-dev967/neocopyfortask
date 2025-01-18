@@ -1,0 +1,13 @@
+.cta-banner-wrapper {
+    box-sizing: border-box;
+    // height: 18rem;
+    background: linear-gradient(90deg, $banner-primary 75%, $banner-secondary 25%);
+
+    .image-container {
+        img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+    }
+}

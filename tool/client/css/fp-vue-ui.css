@@ -1,0 +1,32 @@
+#vue.vue>.right-sidebar {
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  height: calc(100vh - 6rem);
+  width: 30vw;
+}
+
+.right-sidebar .title-bar {
+  height: 4rem;
+  background: #F5F5F5;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-bar>.icons {
+  display: grid;
+  justify-items: end;
+}
+
+.title-bar>.icons>* {
+  cursor: pointer;
+}
+
+.title-bar>.icons>.close-svg {
+  grid-column: -1;
+}

@@ -1,0 +1,44 @@
+{
+  "inner-actions": [
+      {
+          "mode":"curve",
+          "icon":"fa fa-pencil"
+      },
+      {
+          "mode":"triangle",
+          "icon":"fa fa-circle"
+      },
+      {
+          "mode":"text",
+          "icon":"fa fa-square"
+      },
+      {
+          "mode":"curve",
+          "icon":"fa fa-check-circle"
+      },
+      {
+          "mode":"triangle",
+          "icon":"fa fa-square-o"
+      },
+      {
+          "mode":"text",
+          "icon":"fa fa-text-width"
+      },
+      {
+          "mode":"curve",
+          "icon":"fa fa-circle"
+      },
+      {
+          "mode":"triangle",
+          "icon":"fa fa-line-chart"
+      },
+      {
+          "mode":"text",
+          "icon":"fa fa-text-width"
+      },
+      {
+          "mode":"curve",
+          "icon":"fa fa-ils"
+      }
+  ]
+}

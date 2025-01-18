@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>help-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.54">
+        <g id="06.Mobile--More-options" transform="translate(-901.000000, -575.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="pop" transform="translate(865.000000, 0.000000)">
+                <g id="04" transform="translate(0.000000, 543.000000)">
+                    <g id="help-01" transform="translate(36.000000, 32.000000)">
+                        <g id="Group">
+                            <path d="M18,36 C27.9,36 36,27.9 36,18 C36,8.1 27.9,0 18,0 C8.1,0 0,8.1 0,18 C0,27.9 8.1,36 18,36 Z M18,1.125 C27.28125,1.125 34.875,8.71875 34.875,18 C34.875,27.28125 27.28125,34.875 18,34.875 C8.71875,34.875 1.125,27.28125 1.125,18 C1.125,8.71875 8.71875,1.125 18,1.125 Z" id="Shape"></path>
+                            <path d="M18.28125,9 C21.54375,9 24.1875,11.64375 24.1875,14.90625 C24.1875,18.1125 21.375,20.8125 18,20.8125 L17.4375,20.8125 L17.4375,26.4375 L18.5625,26.4375 L18.5625,21.9375 C22.275,21.65625 25.3125,18.5625 25.3125,14.90625 C25.3125,11.025 22.1625,7.875 18.28125,7.875 C14.4,7.875 11.25,11.025 11.25,14.90625 L12.375,14.90625 C12.375,11.64375 15.01875,9 18.28125,9 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" x="17.4375" y="27.5625" width="1.125" height="1.6875"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

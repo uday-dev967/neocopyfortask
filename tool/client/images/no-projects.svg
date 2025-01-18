@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="503px" height="503px" viewBox="0 0 503 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Infographic no projects</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="86.0483871" height="103.60329" rx="2"></rect>
+        <rect id="path-2" x="0" y="0" width="86.0483871" height="103.60329" rx="2"></rect>
+        <rect id="path-3" x="0" y="0" width="101.693548" height="122.440252" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="No-template-listing" transform="translate(-469.000000, -174.000000)">
+            <g id="Infographic-no-projects" transform="translate(469.000000, 174.000000)">
+                <circle id="Oval-9" fill="#F7F7F7" cx="251.5" cy="251.5" r="251.5"></circle>
+                <text id="No-projects-to-displ" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="24" font-weight="normal" letter-spacing="0.524999976" fill="#29323F">
+                    <tspan x="137" y="252">No projects to display</tspan>
+                </text>
+                <g id="Template-icon" transform="translate(140.000000, 24.000000)">
+                    <g id="Cards" transform="translate(12.000000, 38.000000)">
+                        <g id="Card-icon-Copy" transform="translate(140.655622, 63.286884) rotate(14.000000) translate(-140.655622, -63.286884) translate(97.155622, 11.286884)">
+                            <g id="Rectangle-34">
+                                <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="85.0483871" height="102.60329" rx="2"></rect>
+                            </g>
+                            <rect id="Rectangle-5" fill="#D8D8D8" x="5.95719603" y="79.1872279" width="58.9100496" height="2.63957426"></rect>
+                            <rect id="Rectangle-5-Copy" fill="#D8D8D8" x="16.5477667" y="91.7252056" width="41.0384615" height="1.31978713"></rect>
+                            <ellipse id="Oval-2" stroke="#979797" fill="#D8D8D8" cx="9.59770471" cy="92.0551524" rx="3.64050868" ry="3.62941461"></ellipse>
+                            <path d="M0.5,72.0882922 L85.5483871,72.0882922 L85.5483871,4 C85.5483871,2.06700338 83.9813837,0.5 82.0483871,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,72.0882922 Z" id="Rectangle-34-Copy" stroke="#979797"></path>
+                            <g id="Image-icon" transform="translate(7.281017, 10.558297)" stroke="#000000" stroke-opacity="0.25" stroke-width="2">
+                                <rect id="Rectangle-6" x="1" y="1" width="67.5006203" height="50.1315917" rx="11"></rect>
+                                <ellipse id="Oval-3" cx="40.2955724" cy="16.5205748" rx="5.91494641" ry="5.87398216"></ellipse>
+                                <polyline id="Path-5" points="0.184842075 38.364446 22.5507332 22.9452428 39.7410462 35.9781407 52.6799915 27.5342914 69.3157783 40.0165035"></polyline>
+                            </g>
+                        </g>
+                        <g id="Card-icon-Copy-2" transform="translate(55.344378, 63.286884) scale(-1, 1) rotate(14.000000) translate(-55.344378, -63.286884) translate(11.844378, 11.286884)">
+                            <g id="Rectangle-34">
+                                <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="85.0483871" height="102.60329" rx="2"></rect>
+                            </g>
+                            <rect id="Rectangle-5" fill="#D8D8D8" x="5.95719603" y="79.1872279" width="58.9100496" height="2.63957426"></rect>
+                            <rect id="Rectangle-5-Copy" fill="#D8D8D8" x="16.5477667" y="91.7252056" width="41.0384615" height="1.31978713"></rect>
+                            <ellipse id="Oval-2" stroke="#979797" fill="#D8D8D8" cx="9.59770471" cy="92.0551524" rx="3.64050868" ry="3.62941461"></ellipse>
+                            <path d="M0.5,72.0882922 L85.5483871,72.0882922 L85.5483871,4 C85.5483871,2.06700338 83.9813837,0.5 82.0483871,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,72.0882922 Z" id="Rectangle-34-Copy" stroke="#979797"></path>
+                            <g id="Image-icon" transform="translate(7.281017, 10.558297)" stroke="#000000" stroke-opacity="0.25" stroke-width="2">
+                                <rect id="Rectangle-6" x="1" y="1" width="67.5006203" height="50.1315917" rx="11"></rect>
+                                <ellipse id="Oval-3" cx="40.2955724" cy="16.5205748" rx="5.91494641" ry="5.87398216"></ellipse>
+                                <polyline id="Path-5" points="0.184842075 38.364446 22.5507332 22.9452428 39.7410462 35.9781407 52.6799915 27.5342914 69.3157783 40.0165035"></polyline>
+                            </g>
+                        </g>
+                        <g id="Card-icon" transform="translate(48.377099, 0.000000)">
+                            <g id="Rectangle-34">
+                                <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="100.693548" height="121.440252" rx="2"></rect>
+                            </g>
+                            <rect id="Rectangle-5" fill="#D8D8D8" x="7.04032258" y="93.5849057" width="69.6209677" height="3.11949686"></rect>
+                            <rect id="Rectangle-5-Copy" fill="#D8D8D8" x="19.5564516" y="108.402516" width="48.5" height="1.55974843"></rect>
+                            <ellipse id="Oval-2" stroke="#979797" fill="#D8D8D8" cx="11.3427419" cy="108.792453" rx="4.30241935" ry="4.28930818"></ellipse>
+                            <path d="M0.5,85.2861635 L101.193548,85.2861635 L101.193548,4 C101.193548,2.06700338 99.626545,0.5 97.6935484,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,85.2861635 Z" id="Rectangle-34-Copy" stroke="#979797"></path>
+                            <g id="Image-icon" transform="translate(8.604839, 12.477987)" stroke="#000000" stroke-opacity="0.25" stroke-width="2">
+                                <rect id="Rectangle-6" x="1" y="1" width="80.1370968" height="59.6100629" rx="11"></rect>
+                                <ellipse id="Oval-3" cx="47.6220402" cy="19.5243157" rx="6.99039121" ry="6.94197892"></ellipse>
+                                <polyline id="Path-5" points="0.218449725 45.3397998 26.6508665 27.1171051 46.966691 42.5196209 62.2581718 32.5405262 81.918647 47.2922314"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Break-line" transform="translate(12.000000, 176.000000)" fill="#DDDDDD">
+                        <rect id="Rectangle-7" x="26.626506" y="0" width="137.048193" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-7-Copy" x="8.61445783" y="0" width="15.6626506" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-7-Copy-3" x="167.590361" y="0" width="27.4096386" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-7-Copy-2" x="0" y="0" width="7.8313253" height="3" rx="1.5"></rect>
+                    </g>
+                    <g id="Confettin" fill="#F0F0F0">
+                        <rect id="Rectangle-35" transform="translate(215.957895, 74.520958) rotate(20.000000) translate(-215.957895, -74.520958) " x="210.480702" y="69.0299401" width="10.954386" height="10.9820359"></rect>
+                        <rect id="Rectangle-35-Copy-2" transform="translate(176.813171, 37.630722) rotate(69.000000) translate(-176.813171, -37.630722) " x="172.118434" y="32.9241354" width="9.38947368" height="9.41317365"></rect>
+                        <rect id="Rectangle-35-Copy-3" transform="translate(6.065358, 94.721386) rotate(81.000000) translate(-6.065358, -94.721386) " x="1.3706208" y="90.0147989" width="9.38947368" height="9.41317365"></rect>
+                        <rect id="Rectangle-35-Copy-8" transform="translate(20.149568, 125.314200) rotate(216.000000) translate(-20.149568, -125.314200) " x="16.2372875" y="121.392044" width="7.8245614" height="7.84431138"></rect>
+                        <rect id="Rectangle-35-Copy-4" transform="translate(36.189919, 38.634559) rotate(34.000000) translate(-36.189919, -38.634559) " x="32.6688664" y="35.1046193" width="7.04210526" height="7.05988024"></rect>
+                        <rect id="Rectangle-35-Copy-5" transform="translate(83.919744, 12.748332) rotate(70.000000) translate(-83.919744, -12.748332) " x="79.6162348" y="8.43396062" width="8.60701754" height="8.62874251"></rect>
+                        <rect id="Rectangle-35-Copy-6" transform="translate(123.825007, 29.221386) rotate(125.000000) translate(-123.825007, -29.221386) " x="118.739042" y="24.1225834" width="10.1719298" height="10.1976048"></rect>
+                        <rect id="Rectangle-35-Copy-7" transform="translate(146.125007, 3.727374) rotate(178.000000) translate(-146.125007, -3.727374) " x="142.995182" y="0.589649243" width="6.25964912" height="6.2754491"></rect>
+                        <rect id="Rectangle-35-Copy" transform="translate(206.568421, 112.173653) rotate(-14.000000) translate(-206.568421, -112.173653) " x="202.65614" y="108.251497" width="7.8245614" height="7.84431138"></rect>
+                    </g>
+                </g>
+                <text id="Projects-created-are" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="18" font-weight="normal" letter-spacing="0.525" fill="#000000" fill-opacity="0.25">
+                    <tspan x="119" y="289">Projects created are listed here…</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

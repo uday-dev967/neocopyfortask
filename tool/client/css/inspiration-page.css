@@ -1,0 +1,858 @@
+.inspirations-page {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #fbf3f1;
+}
+
+.inspirations-page .popup-container,
+.products-ui-page .popup-container {
+  padding: 0px;
+  max-width: 70vw;
+}
+.inspirations-page .inspiration-info-details {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: #807f7f;
+}
+.inspirations-page .inspiration-description {
+  font-size: 0.875rem;
+  color: #000000;
+}
+.inspirations-page .popup-container .main-content,
+.products-ui-page .popup-container .main-content {
+  display: flex;
+}
+.inspirations-page .popup-container .image-container,
+.products-ui-page .popup-container .image-container {
+  position: relative;
+  min-height: 400px;
+  width: 35vw;
+  max-height: 65vh;
+}
+.inspirations-page .popup-container .image-container .image-list,
+.products-ui-page .popup-container .image-container .image-list {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 40px;
+  width: max-content;
+  display: flex;
+}
+.inspirations-page .popup-container .image-container .image-list,
+.products-ui-page .popup-container .image-container .image-list div img {
+  width: auto;
+}
+.inspirations-page .popup-container .image-container .image-list div,
+.products-ui-page .popup-container .image-container .image-list div {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.inspirations-page .popup-container .image-container .image-list .selected-image,
+.products-ui-page .popup-container .image-container .image-list .selected-image {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000;
+}
+.inspirations-page .popup-container .image-container img,
+.products-ui-page .popup-container .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.inspirations-page .popup-container .details-container,
+.products-ui-page .popup-container .details-container {
+  padding: 28px 18px;
+  position: relative;
+  width: 50%;
+}
+.inspirations-page .popup-container .details-container h2,
+.products-ui-page .popup-container .details-container h2 {
+  color: #d48e8e;
+  font-size: 31px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.inspirations-page .popup-container .details-container span,
+.products-ui-page .popup-container .details-container span {
+  font-size: 14px;
+  color: #868686;
+  font-weight: 500;
+}
+.inspirations-page .popup-container .details-container .description,
+.products-ui-page .popup-container .details-container .description {
+  font-size: 14px;
+  text-align: justify;
+  color: #fff;
+}
+.inspirations-page .popup-container .details-container .description,
+.products-ui-page .popup-container .details-container .description b {
+  font-size: 14px;
+  color: #868686;
+}
+.inspirations-page .popup-container .details-container .by,
+.products-ui-page .popup-container .details-container .by {
+  margin-bottom: 25px;
+}
+.products-ui-page .popup-container .details-container .on-hover {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 0 22px 15px 0;
+  width: 97%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.products-ui-page .popup-container .details-container .on-hover button {
+  background: none;
+  border: 1px solid #e9beb3;
+  color: #f7e3df;
+  padding: 5px 20px;
+  text-transform: capitalize;
+}
+.products-ui-page .popup-container .details-container .on-hover button:hover {
+  background: #e9beb3;
+  color: black;
+}
+.inspirations-page .popup-container .otherProductsContainer,
+.products-ui-page .popup-container .otherProductsContainer {
+  background: #c4c4c4;
+  margin: 0px 60px;
+  overflow: hidden;
+}
+.inspirations-page .popup-container .otherProductsContainer .left,
+.inspirations-page .popup-container .otherProductsContainer .right,
+.products-ui-page .popup-container .otherProductsContainer .left,
+.products-ui-page .popup-container .otherProductsContainer .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inspirations-page .popup-container .otherProductsContainer .left,
+.products-ui-page .popup-container .otherProductsContainer .left {
+  left: 20px;
+  cursor: pointer;
+}
+.inspirations-page .popup-container .otherProductsContainer .right,
+.products-ui-page .popup-container .otherProductsContainer .right {
+  right: 20px;
+  cursor: pointer;
+}
+.inspirations-page .popup-container .otherProducts,
+.products-ui-page .popup-container .otherProducts {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.inspirations-page .popup-container .otherProducts img,
+.products-ui-page .popup-container .otherProducts img {
+  display: inline-block;
+  height: 60px;
+}
+.inspirations-page .popup-container .otherProducts div,
+.products-ui-page .popup-container .otherProducts div {
+  padding: 16px;
+}
+.inspirations-page .popup-container .otherProducts img,
+.products-ui-page .popup-container .otherProducts img {
+  height: 60px;
+}
+.inspirations-page .popup-container .user-projects {
+  border: 1px solid #414141;
+  width: 30vw;
+  padding: 0px 48px;
+}
+.inspirations-page .popup-container .user-projects .projects-check {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  margin: 24px 0px;
+}
+.inspirations-page .popup-container .user-projects .projects-check p {
+  margin-bottom: 0px;
+}
+.inspirations-page .selected-inspiration {
+  padding: 30px 35px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.inspirations-page .selected-inspiration .title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.inspirations-page .selected-inspiration .title-container p:first-child {
+  display: inline-block;
+  font-size: 18px;
+  color: #4d4c4d;
+}
+.inspirations-page .selected-inspiration .title-container p:last-child {
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #e9beb3;
+  padding: 10px 15px;
+  margin-bottom: -5px;
+}
+.inspirations-page .selected-inspiration .title-container p:last-child:hover {
+  background: #f7e3df;
+}
+.inspirations-page .selected-inspiration .title-container img {
+  cursor: pointer;
+}
+.inspirations-page .selected-inspiration .inspiration-description {
+  font-size: 12px;
+  color: #000;
+  text-transform: lowercase;
+}
+.inspirations-page .selected-inspiration .inspiration-description:first-letter {
+  text-transform: capitalize;
+}
+.inspirations-page .selected-inspiration .pills-container {
+  display: flex;
+  display: -webkit-flex;
+  margin-bottom: 14px;
+  overflow: auto;
+}
+.inspirations-page .selected-inspiration .pills-container .pills {
+  border: 1px solid #e9beb3;
+  border-radius: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.inspirations-page .selected-inspiration .pills-container .pills p {
+  margin-bottom: 0px;
+  font-size: 11px;
+  width: max-content;
+  padding: 4px 12px;
+  color: #4d4c4d;
+}
+.inspirations-page .selected-inspiration .image-container .display-image-container {
+  position: relative;
+}
+.inspirations-page .selected-inspiration .image-container .display-image-container .display-image img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  max-height: 60vh;
+}
+.inspirations-page .selected-inspiration .image-container .display-image-container .image-left,
+.inspirations-page .selected-inspiration .image-container .display-image-container .image-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inspirations-page .selected-inspiration .image-container .display-image-container .image-left {
+  left: 40px;
+}
+.inspirations-page .selected-inspiration .image-container .display-image-container .image-right {
+  right: 40px;
+}
+.inspirations-page .selected-inspiration .thumnail-container {
+  position: relative;
+  padding: 0px 30px;
+  margin: 20px 0px;
+}
+.inspirations-page .selected-inspiration .thumnail-container .thumnail-left,
+.inspirations-page .selected-inspiration .thumnail-container .thumnail-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inspirations-page .selected-inspiration .thumnail-container .thumnail-left {
+  left: 0px;
+}
+.inspirations-page .selected-inspiration .thumnail-container .thumnail-right {
+  right: 0px;
+}
+.inspirations-page .selected-inspiration .inspiration-options {
+  padding: 3.125rem 1.5625rem;
+}
+.inspirations-page .selected-inspiration .inspiration-options .all-assets {
+  margin-bottom: 30px;
+  display: none;
+}
+.inspirations-page .selected-inspiration .inspiration-options .new-project {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.187rem;
+  margin-bottom: 1.375rem;
+}
+.inspirations-page .selected-inspiration .inspiration-options .new-project p {
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #e9beb3;
+  padding: 12px 15px;
+  grid-gap: 20px;
+}
+.inspirations-page .selected-inspiration .inspiration-options .new-project p:hover {
+  background: #f7e3df;
+}
+.inspirations-page .selected-inspiration .inspiration-options .new-project .products-selected {
+  background: #f7e3df;
+}
+.inspirations-page .selected-inspiration .inspiration-options .new-project img {
+  cursor: pointer;
+}
+.inspirations-page .selected-inspiration .inspiration-options p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #222222;
+}
+.inspirations-page .popup-details .options-head-text p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: white;
+  margin-left: 13px;
+  margin-bottom: 5px;
+}
+.inspirations-page .selected-inspiration .inspiration-options .view-all {
+  font-size: 13px;
+  color: #d48e8e;
+  cursor: pointer;
+}
+.inspirations-page .selected-inspiration .inspiration-options .option-main-container {
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.inspirations-page .selected-inspiration .inspiration-options .option-main-container .options-head-text {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: 1.5625rem;
+}
+.inspirations-page .selected-inspiration .inspiration-options .option-main-container .options-head-text .left-text {
+  display: flex;
+  align-items: center;
+}
+.inspirations-page .popup-details .options-head-text {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  display: flex;
+}
+.inspirations-page .popup-details .options-head-text .left-text,
+.inspirations-page .popup-head .left-text {
+  display: flex;
+  align-items: center;
+}
+.inspirations-page .selected-inspiration .inspiration-options .texture-container {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.inspirations-page .selected-inspiration .inspiration-options .texture-container img {
+  padding-right: 5px;
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+.inspirations-page .selected-inspiration .inspiration-options .texture-container img:last-child {
+  padding-right: 0px;
+}
+.inspirations-page .selected-inspiration .inspiration-options .products-container {
+  margin-left: 1.5625rem;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 0.875rem;
+  max-height: calc(100vh - 320px);
+  overflow: auto;
+}
+.inspirations-page .selected-inspiration .inspiration-options .products-container div {
+  position: relative;
+}
+.inspirations-page .selected-inspiration .inspiration-options .products-container img {
+  width: 100%;
+  height: 6.25rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.inspirations-page .selected-inspiration .check-container,
+.inspirations-page .popup-details .options-head-text .check-container,
+.inspirations-page .popup-head .check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.inspirations-page .selected-inspiration .check-container input,
+.inspirations-page .popup-details .check-container input,
+.inspirations-page .popup-head .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.inspirations-page .selected-inspiration .check-container .checkmark,
+.inspirations-page .popup-details .check-container .checkmark,
+.inspirations-page .popup-head .check-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #e9beb3;
+  background: #fff;
+}
+.inspirations-page .selected-inspiration .check-container:hover input ~ .checkmark,
+.inspirations-page .popup-details .check-container:hover input ~ .checkmark,
+.inspirations-page .popup-head .check-container:hover ~ .checkmark {
+  border: 1px solid #e9beb3;
+}
+.inspirations-page .selected-inspiration .check-container input:checked ~ .checkmark,
+.inspirations-page .popup-details .check-container input:checked ~ .checkmark,
+.inspirations-page .popup-head .check-container input:checked ~ .checkmark {
+  background: #d48e8e;
+  border: 1px solid #e9beb3;
+}
+.inspirations-page .selected-inspiration .check-container .checkmark:after,
+.inspirations-page .popup-details .check-container .checkmark:after,
+.inspirations-page .popup-head .check-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.inspirations-page .selected-inspiration .check-container input:checked ~ .checkmark:after,
+.inspirations-page .popup-details .check-container input:checked ~ .checkmark:after,
+.inspirations-page .popup-head .check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.inspirations-page .selected-inspiration .check-container .checkmark:after,
+.inspirations-page .popup-details .check-container .checkmark:after,
+.inspirations-page .popup-head .check-container .checkmark:after {
+  height: 10px;
+  width: 5px;
+  left: 5px;
+  top: 0px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.inspirations-page .check-container-white {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.inspirations-page .check-container-white input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.inspirations-page .check-container-white .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #e9beb3;
+  background: #fff;
+}
+.inspirations-page .check-container-white:hover input ~ .checkmark {
+  border: 1px solid #e9beb3;
+}
+.inspirations-page .check-container-white input:checked ~ .checkmark {
+  background: #fff;
+  border: 1px solid #e9beb3;
+}
+.inspirations-page .check-container-white .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.inspirations-page .check-container-white input:checked ~ .checkmark:after {
+  display: block;
+}
+.inspirations-page .check-container-white .checkmark:after {
+  height: 7px;
+  width: 4px;
+  left: 3px;
+  top: 1px;
+  border: solid #d48e8e;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.inspirations-page .popup-details .products-container {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.inspirations-page .popup-details .products-container div {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.inspirations-page .popup-details .products-container img {
+  height: 60px;
+  width: 75px;
+  object-fit: cover;
+}
+.inspirations-page .check-container-back {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.inspirations-page .check-container-back input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.inspirations-page .check-container-back .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #414141;
+  background: #414141;
+}
+.inspirations-page .check-container-back:hover input ~ .checkmark {
+  border: 1px solid #414141;
+}
+.inspirations-page .check-container-back input:checked ~ .checkmark {
+  background: #414141;
+  border: 1px solid #414141;
+}
+.inspirations-page .check-container-back .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.inspirations-page .check-container-back input:checked ~ .checkmark:after {
+  display: block;
+}
+.inspirations-page .check-container-back .checkmark:after {
+  height: 7px;
+  width: 4px;
+  left: 3px;
+  top: 1px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.inspirations-page .popup-div,
+.products-ui-page .popup-div {
+  position: fixed;
+  background: rgba(105, 104, 105, 0.9);
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.inspirations-page .showPopUp,
+.products-ui-page .showPopUp {
+  transform: scale(1);
+  visibility: visible;
+  z-index: 200;
+  opacity: 1;
+}
+.inspirations-page .popup-div .popup-container,
+.products-ui-page .popup-div .popup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max-content;
+  transform: translate(-50%, -50%);
+  background: #292929;
+}
+.inspirations-page .popup-div .popup-head {
+  text-align: center;
+}
+.inspirations-page .popup-div .popup-head h2 {
+  font-size: 31px;
+  color: #d48e8e;
+  font-weight: normal;
+}
+.inspirations-page .popup-div .popup-head p {
+  font-size: 12px;
+  color: #868686;
+}
+.inspirations-page .popup-div .popup-details {
+  max-height: 38vh;
+  overflow: auto;
+}
+.inspirations-page .popup-div .popup-details .table-child:hover {
+  background: #2d2d2d;
+}
+.inspirations-page .popup-div .popup-details p,
+.inspirations-page .popup-div .popup-details td,
+.inspirations-page .popup-div .popup-details th {
+  font-size: 12px;
+}
+.inspirations-page .popup-div .popup-details th {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.54);
+  padding: 15px 30px 15px 0px;
+  text-align: left;
+}
+.inspirations-page .popup-div .popup-details td {
+  color: #fff;
+  padding: 15px 30px 15px 0px;
+  text-align: left;
+  border-bottom: 1px solid #414141;
+}
+.inspirations-page .popup-div .popup-details span {
+  display: block;
+  color: #c4c4c4;
+  font-size: 12px;
+}
+.inspirations-page .popup-div .popup-details select {
+  width: 150px;
+}
+.inspirations-page .popup-div .popup-details .select-box {
+  width: max-content;
+}
+.inspirations-page .popup-div .popup-details .address-input-container {
+  display: grid;
+  grid-column-gap: 4%;
+  grid-template-columns: 48% 48%;
+  grid-row-gap: 25px;
+}
+.inspirations-page .popup-div .popup-details .address-input-container input,
+.inspirations-page .popup-div .popup-details .address-input-container select {
+  width: 100%;
+}
+.inspirations-page .popup-div .popup-details .address-input-container span {
+  color: #c4c4c4;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+.inspirations-page .popup-div .popup-details .address-input-container .address-left-container div,
+.inspirations-page .popup-div .popup-details .address-input-container .address-right-container div {
+  margin-bottom: 25px;
+}
+.inspirations-page .popup-div .popup-details .address-input-container .address-left-container .select-box,
+.inspirations-page .popup-div .popup-details .address-input-container .address-right-container .select-box {
+  width: 100%;
+}
+.inspirations-page .popup-div .popup-details .local-address {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.inspirations-page .popup-div .popup-details .local-address span {
+  color: #c4c4c4;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+.inspirations-page .popup-div .popup-details .invite-input {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.inspirations-page .popup-div .popup-details .invite-input input {
+  width: 300px;
+}
+.inspirations-page .popup-div .popup-details .invite-input span {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.inspirations-page .popup-div .popup-details .invite-input .add-field p {
+  color: #d48e8e;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.inspirations-page .popup-div .address-button-container,
+.inspirations-page .popup-div .invite-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.inspirations-page .popup-div .address-button-container .cancel-button,
+.inspirations-page .popup-div .invite-button-container .cancel-button {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 40px;
+  color: #807f7f;
+  padding-left: 0px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.inspirations-page .popup-div .address-button-container .cancel-button:focus,
+.inspirations-page .popup-div .invite-button-container .cancel-button:focus {
+  outline: none;
+}
+.inspirations-page .popup-div .address-button-container .update-address,
+.inspirations-page .popup-div .invite-button-container .update-address {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 40px;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 0px;
+  padding-right: 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.inspirations-page .popup-div .address-button-container .update-address,
+.inspirations-page .popup-div .invite-button-container button {
+  background-color: #292929;
+}
+.inspirations-page .popup-div .address-button-container .update-address:focus,
+.inspirations-page .popup-div .invite-button-container .update-address:focus {
+  outline: none;
+}
+.inspirations-page .popup-div .invite-team-container {
+  margin: 45px auto;
+  text-align: center;
+  width: max-content;
+  position: relative;
+  display: flex;
+}
+.inspirations-page .popup-div .invite-team-container span {
+  position: absolute;
+  left: 15px;
+  bottom: -20px;
+}
+.inspirations-page .popup-div .invite-team-container input:focus + button {
+  background: #e9beb3;
+  border: 1px solid #e9beb3;
+  color: #292929;
+}
+.inspirations-page .popup-div .invite-team-container button {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #e9beb3;
+  padding: 10px 20px;
+  margin-right: 40px;
+  color: #e9beb3;
+  padding: 10px 40px;
+}
+.inspirations-page .popup-div .invite-team-container button:focus {
+  outline: none;
+}
+.inspirations-page .popup-div .team-member-table {
+  table-layout: auto;
+  border-collapse: collapse;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.inspirations-page .popup-div .team-member-table th,
+.inspirations-page .popup-div .team-member-table td {
+  padding-right: 70px;
+}
+.inspirations-page .popup-div .close-popup,
+.products-ui-page .popup-div .close-popup {
+  cursor: pointer;
+  position: absolute;
+  right: -25px;
+  top: 0px;
+}
+.inspirations-page .popup-div .close-popup svg,
+.products-ui-page .popup-div .close-popup svg {
+  padding: 5px;
+  background: #292929;
+}
+.inspirations-page .addToselected {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: white;
+  padding: 1rem;
+  border-left: 1px solid #292929;
+}
+.inspirations-page .addToselected .custom {
+  display: flex;
+  cursor: pointer;
+  justify-items: center;
+  justify-content: center;
+}
+.inspirations-page .addToselected .custom p {
+  margin: 0px;
+  padding-right: 0.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #807f7f;
+}
+.inspirations-page .addToselected input {
+  display: none;
+}
+.inspirations-page .addToselected input[type="checkbox"]:checked ~ #checkbox {
+  display: flex;
+}
+.inspirations-page .addToselected input[type="checkbox"]:checked ~ #unchecked {
+  display: none;
+}
+.inspirations-page .addToselected #checkbox,
+.inspirations-page .addToselected #unchecked {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+}
+.inspirations-page .addToselected #unchecked {
+  opacity: 1;
+  display: flex;
+}

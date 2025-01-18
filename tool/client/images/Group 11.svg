@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="12px" viewBox="0 0 95 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94" height="10"></rect>
+    </defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Copy-6" transform="translate(-132.000000, -426.000000)">
+            <g id="Group-11" transform="translate(132.000000, 427.000000)">
+                <g id="Rectangle-7">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#000000" stroke-width="2" x="1" y="1" width="92" height="8"></rect>
+                </g>
+                <path d="M1.5,5 L93.4238816,5" id="Line-8" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M47,9.5 L47,0.444614862" id="Line-9" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>dropup-filter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.54">
+        <g id="Template-Listing-03" transform="translate(-268.000000, -485.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Filter-02-Copy" transform="translate(0.000000, 465.000000)">
+                <g id="dropup-filter" transform="translate(275.727273, 24.772727) rotate(90.000000) translate(-275.727273, -24.772727) translate(271.227273, 16.772727)">
+                    <polygon id="Shape" transform="translate(4.436364, 7.818182) rotate(180.000000) translate(-4.436364, -7.818182) " points="1.05454545 0 0 1.01818182 6.8 7.81818182 0 14.6181818 1.05454545 15.6363636 8.87272727 7.81818182"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

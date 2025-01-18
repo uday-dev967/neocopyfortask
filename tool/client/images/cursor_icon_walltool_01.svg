@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="42px" viewBox="0 0 35 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>wall tool-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets-artboard" transform="translate(-351.000000, -104.000000)">
+            <g id="wall-tool-01" transform="translate(335.000000, 97.000000)">
+                <rect id="Rectangle-39" x="0" y="0" width="64" height="64"></rect>
+                <g id="add-rectangle" transform="translate(16.000000, 16.000000)" fill="#000000" fill-opacity="0.87" fill-rule="nonzero">
+                    <g id="Group" transform="translate(0.000000, 0.658395)">
+                        <path d="M15.9999973,5.33333243e-06 C15.7054374,5.33333243e-06 15.4666641,0.238789294 15.4666641,0.533338578 L15.4666641,15.4667228 L0.533333244,15.4667228 C0.238773294,15.4667228 0,15.705496 0,16.000056 C0,16.294616 0.238773294,16.5333892 0.533333244,16.5333892 L15.4666641,16.5333892 L15.4666641,31.4666668 C15.4666641,31.7612267 15.7054374,32 15.9999973,32 C16.2945573,32 16.5333306,31.7612267 16.5333306,31.4666668 L16.5333306,16.5333892 L31.4666614,16.5333892 C31.7612214,16.5333892 31.9999947,16.294616 31.9999947,16.000056 C31.9999947,15.705496 31.7612214,15.4667228 31.4666614,15.4667228 L16.5333306,15.4667228 L16.5333306,0.533333244 C16.5333306,0.23878396 16.2945573,0 15.9999973,0 L15.9999973,5.33333243e-06 Z" id="Shape"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-40" stroke-opacity="0.87" stroke="#000000" x="41.5" y="7.5" width="9" height="9"></rect>
+                <rect id="Rectangle-40-Copy-3" stroke-opacity="0.87" stroke="#000000" x="41.5" y="10.5" width="9" height="1"></rect>
+                <rect id="Rectangle-40-Copy-4" stroke-opacity="0.87" stroke="#000000" x="41.5" y="13.5" width="9" height="1"></rect>
+                <rect id="Rectangle-40-Copy" stroke-opacity="0.87" stroke="#000000" x="44.5" y="7.5" width="1" height="9"></rect>
+                <rect id="Rectangle-40-Copy-2" stroke-opacity="0.87" stroke="#000000" x="47.5" y="7.5" width="1" height="9"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

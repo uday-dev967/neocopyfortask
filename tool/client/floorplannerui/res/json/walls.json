@@ -1,0 +1,202 @@
+{
+    "style": [
+        {
+            "type":"Wall Texture",
+            "id":"w-four-circle",
+            "features": [
+              {
+                  "tabName": "material",
+                  "name":"menu-material",
+                  "color":[
+                              {
+                                "code" : "#64c112",
+                                "id" : "green",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#3cc",
+                                "id" : "blue",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ec4c6f",
+                                "id" : "pink",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0000",
+                                "id" : "red",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0",
+                                "id" : "yellow",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#555",
+                                "id" : "d-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ddd",
+                                "id" : "l-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#222",
+                                "id" : "black",
+                                "icon" : "circle"
+                              }
+                          ],
+                  "design":[
+                              {
+                                  "shape":"rectangle",
+                                  "image":"home.svg"
+                              },
+                              {
+                                  "shape":"oval",
+                                  "image":"Group 8.svg"
+                              },
+                              {
+                                  "shape":"round",
+                                  "image":"home.svg"
+                              },
+                              {
+                                  "shape":"rectangle-rounded",
+                                  "image":"Group 13.svg"
+                              }
+                          ]
+              },
+              {
+                  "tabName": "textures",
+                  "name":"menu-textures",
+                  "color":[
+                              {
+                                "code" : "#64c112",
+                                "id" : "green",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#3cc",
+                                "id" : "l-green",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ddd",
+                                "id" : "l-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0000",
+                                "id" : "red",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#555",
+                                "id" : "d-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#222",
+                                "id" : "black",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ec4c6f",
+                                "id" : "pink",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0",
+                                "id" : "yellow",
+                                "icon" : "circle"
+                              }
+                          ],
+                  "design":[
+                            {
+                                "shape":"rectangle",
+                                "image":"home.svg"
+                            },
+                            {
+                                "shape":"oval",
+                                "image":"Group 8.svg"
+                            },
+                            {
+                                "shape":"round",
+                                "image":"home.svg"
+                            },
+                            {
+                                "shape":"rectangle-rounded",
+                                "image":"Group 13.svg"
+                            }
+                          ]
+              },
+              {
+                  "tabName": "accessories",
+                  "name":"menu-accessories",
+                  "color":[
+                              {
+                                "code" : "#64c112",
+                                "id" : "green",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#3cc",
+                                "id" : "l-green",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ddd",
+                                "id" : "l-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0000",
+                                "id" : "red",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#555",
+                                "id" : "d-grey",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#222",
+                                "id" : "black",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ec4c6f",
+                                "id" : "pink",
+                                "icon" : "circle"
+                              },
+                              {
+                                "code" : "#ff0",
+                                "id" : "yellow",
+                                "icon" : "circle"
+                              }
+                          ],
+                  "design":[
+                              {
+                                  "shape":"rectangle",
+                                  "image":"home.svg"
+                              },
+                              {
+                                  "shape":"oval",
+                                  "image":"Group 8.svg"
+                              },
+                              {
+                                  "shape":"round",
+                                  "image":"home.svg"
+                              },
+                              {
+                                  "shape":"rectangle-rounded",
+                                  "image":"Group 13.svg"
+                              }
+                          ]
+              }
+            ]
+        }
+    ]
+}

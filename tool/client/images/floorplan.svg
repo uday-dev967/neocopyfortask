@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>24 x 24</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24-x-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.54">
+        <g id="FloorPlan-icon" stroke="#000000" stroke-width="0.5">
+            <rect id="Rectangle-6" x="0.25" y="0.25" width="23.5" height="11.02"></rect>
+            <rect id="Rectangle-6-Copy-3" x="0.25" y="11.25" width="16.2563636" height="12.5"></rect>
+            <path d="M11.5,0.5 L11.5,11.5" id="Path-5"></path>
+            <path d="M11.5,6 L23.5,6" id="Path-6"></path>
+        </g>
+    </g>
+</svg>

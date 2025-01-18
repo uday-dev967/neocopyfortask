@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.54">
+        <g id="Landing" transform="translate(-71.000000, -153.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="search" transform="translate(71.000000, 153.000000)">
+                <path d="M23.4,21.84 L18.68,17.16 C22.2,13.08 22,6.92 18.12,3.04 C16.12,1 13.44,0 10.8,0 C8.16,0 5.48,1 3.44,3.04 C-0.64,7.12 -0.64,13.68 3.44,17.76 C5.44,19.76 8.12,20.8 10.8,20.8 C13.2,20.8 15.64,19.96 17.56,18.28 L22.28,23 C22.4,23.12 22.6,23.2 22.8,23.2 C23,23.2 23.2,23.12 23.36,22.96 C23.68,22.68 23.68,22.16 23.4,21.84 Z M4.56,16.6 C2.88,14.96 2,12.72 2,10.4 C2,8.08 2.92,5.84 4.56,4.16 C6.24,2.48 8.44,1.6 10.8,1.6 C13.16,1.6 15.36,2.52 17.04,4.16 C18.68,5.84 19.6,8.04 19.6,10.4 C19.6,12.76 18.68,14.96 17.04,16.64 C15.36,18.28 13.12,19.2 10.8,19.2 C8.48,19.2 6.24,18.28 4.56,16.6 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

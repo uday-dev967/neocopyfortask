@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="148px" viewBox="0 0 58 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Door (Entraince)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plan-Copy-6" transform="translate(-1203.000000, -521.000000)" stroke="#000000" stroke-width="6">
+            <g id="Door-(Entraince)" transform="translate(1207.000000, 524.000000)">
+                <path d="M54,0 L0,0 C4.80599846,29.766323 20.9555068,53.4329897 48.4485251,71" id="Path-3"></path>
+                <path d="M54,71 L0,71 C4.80599846,100.766323 20.9555068,124.43299 48.4485251,142" id="Path-3" transform="translate(27.000000, 106.500000) scale(-1, 1) rotate(-180.000000) translate(-27.000000, -106.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

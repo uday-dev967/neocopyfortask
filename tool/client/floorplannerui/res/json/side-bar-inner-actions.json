@@ -1,0 +1,242 @@
+{
+    "plan" : [
+        {
+            "mode":"text",
+            "icon":"fa fa-text-width",
+            "inner-actions": [
+                {
+                    "mode":"center",
+                    "icon":"fa fa-align-center"
+                },
+                {
+                    "mode":"justify",
+                    "icon":"fa fa-align-justify"
+                },
+                {
+                    "mode":"left",
+                    "icon":"fa fa-align-left"
+                },
+                {
+                    "mode":"right",
+                    "icon":"fa fa-align-right"
+                },
+                {
+                    "mode":"bold",
+                    "icon":"fa fa-bold"
+                },
+                {
+                    "mode":"italic",
+                    "icon":"fa fa-italic"
+                },
+                {
+                    "mode":"underline",
+                    "icon":"fa fa-underline"
+                },
+                {
+                    "mode":"strike",
+                    "icon":"fa fa-strikethrough"
+                },
+                {
+                    "mode":"height",
+                    "icon":"fa fa-text-height"
+                },
+                {
+                    "mode":"width",
+                    "icon":"fa fa-text-width"
+                },
+                {
+                    "mode":"list",
+                    "icon":"fa fa-list"
+                },
+                {
+                    "mode":"listalt",
+                    "icon":"fa fa-list-alt"
+                },
+                {
+                    "mode":"listol",
+                    "icon":"fa fa-list-ol"
+                },
+                {
+                    "mode":"listul",
+                    "icon":"fa fa-list-ul"
+                },
+                {
+                    "mode":"center",
+                    "icon":"fa fa-align-center"
+                },
+                {
+                    "mode":"justify",
+                    "icon":"fa fa-align-justify"
+                },
+                {
+                    "mode":"left",
+                    "icon":"fa fa-align-left"
+                },
+                {
+                    "mode":"right",
+                    "icon":"fa fa-align-right"
+                },
+                {
+                    "mode":"bold",
+                    "icon":"fa fa-bold"
+                },
+                {
+                    "mode":"italic",
+                    "icon":"fa fa-italic"
+                },
+                {
+                    "mode":"underline",
+                    "icon":"fa fa-underline"
+                },
+                {
+                    "mode":"strike",
+                    "icon":"fa fa-strikethrough"
+                },
+                {
+                    "mode":"height",
+                    "icon":"fa fa-text-height"
+                },
+                {
+                    "mode":"width",
+                    "icon":"fa fa-text-width"
+                },
+                {
+                    "mode":"list",
+                    "icon":"fa fa-list"
+                },
+                {
+                    "mode":"listalt",
+                    "icon":"fa fa-list-alt"
+                },
+                {
+                    "mode":"listol",
+                    "icon":"fa fa-list-ol"
+                },
+                {
+                    "mode":"listul",
+                    "icon":"fa fa-list-ul"
+                }
+            ]
+        },
+        {
+            "mode":"shape",
+            "icon":"fa fa-ils",
+            "inner-actions": [
+                {
+                    "mode":"circle",
+                    "icon":"fa fa-circle"
+                },
+                {
+                    "mode":"square",
+                    "icon":"fa fa-square"
+                },
+                {
+                    "mode":"star",
+                    "icon":"fa fa-star"
+                }
+            ]
+        },
+        {
+          "mode":"file",
+          "icon":"fa fa-file",
+          "inner-actions": [
+            {
+                "mode":"edit",
+                "icon":"fa fa-file"
+            },
+            {
+                "mode":"copy",
+                "icon":"fa fa-copy"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            },
+            {
+                "mode":"curve",
+                "icon":"fa fa-ils"
+            },
+            {
+                "mode":"triangle",
+                "icon":"fa fa-line-chart"
+            },
+            {
+                "mode":"text",
+                "icon":"fa fa-text-width"
+            }
+          ]
+        }
+    ]
+ }

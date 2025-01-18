@@ -1,0 +1,213 @@
+.anno-right-sidebar {
+  position: fixed;
+  top: 60px;
+  left: 62px;
+  width: 383px;
+  z-index: 100;
+  height: calc(100% - 60px);
+  background: #222021;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.anno-right-sidebar>.sec-title {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #3A393A;
+  margin-bottom: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 0 5px;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-items: end;
+  padding: 0 5px;
+}
+
+.anno-right-sidebar>.sec-title:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.anno-right-sidebar>.sec-title>.title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellip-wrap {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+}
+.text-ellip-wrap span {
+  color: white;
+  opacity: 0.54;
+}
+.text-ellip-wrap-shortlist {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+}
+.text-ellip-wrap-shortlist span{
+  color: black;
+  opacity: 0.54;
+}
+
+.anno-right-sidebar>.sec-prod-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.prod-card {
+  height: 138px;
+  /* width: 15rem; */
+  background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: auto 2.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.prod-card.floating {
+  /* color: white; */
+  position: fixed;
+  width: 20rem;
+}
+
+.prod-card.selected>.prod-card-display {
+  margin: .1rem;
+}
+
+.prod-card:hover .prod-card-display img,
+.prod-card:hover .prod-card-display .el-carousel__item img {
+  transform: scale(1.1);
+  /* padding: .1rem; */
+}
+
+.prod-card:hover .prod-card-display .icon-wrapper {
+  /* top: 3%; */
+  opacity: 1;
+}
+
+.prod-card:hover .actions {
+  height: 100%;
+  opacity: 1;
+}
+
+.prod-card-display {
+  position: relative;
+  overflow: hidden;
+}
+
+.prod-card-display .icon-wrapper {
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  /* border-radius: 100%; */
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.prod-card-display .icon-wrapper.item-col {
+  top: 0;
+  left: 0;
+}
+
+.prod-card-display .icon-wrapper.item-trash {
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.prod-card:hover .icon-wrapper.item-trash {
+  top: 3%;
+  right: 3%;
+}
+
+.prod-card:hover .icon-wrapper.item-col {
+  top: 3%;
+  left: 3%;
+  cursor: unset;
+}
+
+.prod-card-display .el-carousel {
+  height: 100%;
+  z-index: 0;
+}
+
+.prod-card-display .el-carousel .el-carousel__indicators .el-carousel__indicator .el-carousel__button {
+  width: 0.8rem !important;
+}
+
+.prod-card-display img,
+.prod-card-display .el-carousel__item img {
+  height: 100%;
+  width: 100%;
+  object-position: 50% 50%;
+  transition: all 0.3s ease;
+}
+
+.prod-card.selected .prod-card-info,
+.prod-card.selected .prod-card-info .actions {
+  background-color: inherit;
+}
+
+.prod-card-info {
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  background-color: white;
+}
+
+.prod-card-info .actions {
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  background-color: white;
+  color: #000;
+  transition: all 0.2s ease;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+}
+
+.prod-card-info .actions span:hover {
+  color: #D48E8E;
+}
+
+.prod-card-info .actions.disabled {
+  background-color: #f5f5f5;
+}

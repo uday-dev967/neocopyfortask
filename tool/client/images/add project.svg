@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>add project</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Screen" transform="translate(-406.000000, -243.000000)" fill="#EF4B6E" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(314.000000, 169.000000)">
+                <g id="Group-3" transform="translate(77.000000, 74.000000)">
+                    <path d="M60.5,22.75 C60.5,10.2015789 50.2984211,0 37.75,0 C25.2015789,0 15,10.2015789 15,22.75 C15,35.2984211 25.2015789,45.5 37.75,45.5 C50.2984211,45.5 60.5,35.2984211 60.5,22.75 Z M39.4742105,34.8194737 L36.0257895,34.8194737 L36.0257895,24.4742105 L25.6805263,24.4742105 L25.6805263,21.0257895 L36.0257895,21.0257895 L36.0257895,10.6805263 L39.4742105,10.6805263 L39.4742105,21.0257895 L49.8194737,21.0257895 L49.8194737,24.4742105 L39.4742105,24.4742105 L39.4742105,34.8194737 Z" id="add-project"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoning-Flow-Copy" transform="translate(-1211.000000, -82.000000)" fill="#000000">
+            <g id="Actions-bar" transform="translate(0.000000, 71.000000)">
+                <g id="Project-details" transform="translate(1211.000000, 11.000000)">
+                    <g id="Group-16">
+                        <path d="M14,28 C6.2680135,28 0,21.7319865 0,14 C0,6.2680135 6.2680135,0 14,0 C21.7319865,0 28,6.2680135 28,14 C28,21.7319865 21.7319865,28 14,28 Z M14,25 C20.0751322,25 25,20.0751322 25,14 C25,7.92486775 20.0751322,3 14,3 C7.92486775,3 3,7.92486775 3,14 C3,20.0751322 7.92486775,25 14,25 Z" id="Combined-Shape"></path>
+                        <polygon id="Shape" stroke="#000000" fill-rule="nonzero" points="19.7123288 10.8630137 19.1369863 10.2876712 18.8493151 10 18.5616438 10.2876712 12.5616438 16.2876712 9.43835616 13.1643836 9.15068493 12.8767123 8.8630137 13.1643836 8.28767123 13.739726 8 14.0273973 8.28767123 14.3150685 12.2739726 18.3013699 12.5616438 18.5890411 12.8493151 18.3013699 19.7123288 11.4383562 20 11.1506849"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

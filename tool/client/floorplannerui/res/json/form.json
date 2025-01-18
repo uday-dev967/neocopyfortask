@@ -1,0 +1,583 @@
+{
+    "metrics" : [{"units":"Feet"}, {"units":"Yards"}, {"units":"Others"}],
+    "style": [
+        {
+            "type":"Work Station",
+            "icon":"#000",
+            "image":"home.svg",
+            "id":"work-station",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"w-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"w-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"w-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"w-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"Meeting Room",
+            "icon":"#333",
+            "id":"meeting-room",
+            "image":"Group 8.svg",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"m-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"m-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"m-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"m-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"Conference",
+            "icon":"#555",
+            "id":"conference",
+            "image":"Group 8.svg",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"c-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"c-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"c-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"c-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"Reception",
+            "icon":"#999",
+            "id":"reception",
+            "image":"home.svg",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"r-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"r-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"r-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"r-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"Play Area",
+            "icon":"#ddd",
+            "id":"play-area",
+            "image":"Oval 8.svg",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"p-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"p-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"p-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"p-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"Toilets",
+            "icon":"#f2f2f2",
+            "id":"toilets",
+            "image":"toilets.svg",
+            "features": [
+                {
+                    "number": 4,
+                    "name":"t-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "name":"t-eight",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "name":"t-ten",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                },
+                {
+                    "number": 12,
+                    "name":"t-twelve",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"fa fa-square-o"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"fa fa-square-o"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "space": [{"type":"Work Station"}, {"type":"Conference"}, {"type":"Reception"},{"type":"Cafeteria"}, {"type":"Play Area"}, {"type":"MD Room"}],
+    "occupancy": [{"seater":"4 seaters"}, {"seater":"6 seaters"}, {"seater":"12 seaters"},{"seater":"60 seaters"}]
+}

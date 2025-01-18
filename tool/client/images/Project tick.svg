@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Project tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Screen" transform="translate(-913.000000, -410.000000)">
+            <g id="Group-5" transform="translate(314.000000, 169.000000)">
+                <g id="Group-4" transform="translate(584.000000, 0.000000)">
+                    <g id="Project-tick" transform="translate(16.000000, 242.000000)">
+                        <circle id="Oval" stroke="#EF4B6E" fill="#EF4B6E" cx="11" cy="11" r="11"></circle>
+                        <polygon id="Shape" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero" points="16.7123288 7.8630137 16.1369863 7.28767123 15.8493151 7 15.5616438 7.28767123 9.56164384 13.2876712 6.43835616 10.1643836 6.15068493 9.87671233 5.8630137 10.1643836 5.28767123 10.739726 5 11.0273973 5.28767123 11.3150685 9.2739726 15.3013699 9.56164384 15.5890411 9.84931507 15.3013699 16.7123288 8.43835616 17 8.15068493"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

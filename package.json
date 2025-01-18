@@ -1,0 +1,52 @@
+{
+  "name": "neo",
+  "version": "1.0.0",
+  "description": "neo ",
+  "author": "AAYUSH SINGH",
+  "private": true,
+  "scripts": {
+    "start": "cross-env BASE_URL=https://neo.foyr.com nuxt build",
+    "startStaging": "cross-env BASE_URL=https://neostaging.foyr.com nuxt build",
+    "buildlocal": "cross-env nuxt build",
+    "dev": "cross-env BACKEND=http://neodev.foyr.com nuxt",
+    "staging": "cross-env BACKEND=http://neostaging.foyr.com nuxt",
+    "production": "cross-env BACKEND=https://neo.foyr.com nuxt"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@typeform/embed": "^1.17.6",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.13.0",
+    "js-cookie": "^2.2.0",
+    "moment-timezone": "^0.5.34",
+    "nuxt": "^2.17.2",
+    "qr-scanner": "^1.4.2",
+    "query-string": "^7.1.3",
+    "socket.io-client": "^2.2.0",
+    "three": "^0.151.3",
+    "tui-image-editor": "^3.10.0",
+    "vue-analytics": "^5.17.2",
+    "vue-carousel": "^0.18.0",
+    "vue-color": "^2.7.1",
+    "vue-owl-carousel2": "^2.0.7",
+    "vue-slick-carousel": "^1.0.0",
+    "vue-social-sharing": "^2.4.7",
+    "vue2-touch-events": "^2.0.1",
+    "woothee": "^1.11.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-component": "^1.1.1",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^10.1.1"
+  }
+}

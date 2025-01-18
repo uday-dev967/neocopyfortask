@@ -1,0 +1,97 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	overflow: hidden;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+button {
+	position: relative;
+}
+
+.Panel {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+	/* No support for these yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.text-label {
+	color: #000;
+	font-family: "Fira Mono", Monaco, "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	/*margin: -5px 0 0 15px;*/
+	pointer-events:none;
+	/*transform: translate(-50%, -50%);*/
+	background-color: yellow;
+	text-align: center;
+}
+
+#notes {
+	color: #000;
+	font-family: "Fira Mono", Monaco, "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.line {
+	border-top: 1px solid #30353b;
+	/*padding-top:5px;
+	padding-bottom: 5px;
+	margin: 40px auto 0;
+	width: 80%; */
+	position: absolute;
+	pointer-events:none;
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.line:before, .line:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #30353b;
+	border-radius: 5px;
+	position: absolute;
+	top: -6px;
+}
+
+.line:after {
+	right: 0;
+}
+
+.dimension-label {
+	color: black;
+	cursor: pointer;
+	z-index: 0 !important;
+	text-shadow: -1px -1px 0 #f9faf7, 1px -1px 0 #f9faf7, -1px 1px 0 #f9faf7, 1px 1px 0 #f9faf7;
+	/* -webkit-text-stroke: 0.2px white; */
+}
+.dimension-label-hover {
+	color: #0091EA;
+	cursor: pointer;
+	z-index: 0 !important;
+	text-shadow: -1px -1px 0 #f9faf7, 1px -1px 0 #f9faf7, -1px 1px 0 #f9faf7, 1px 1px 0 #f9faf7;
+	/* -webkit-text-stroke: 0.2px white; */
+}
+
+.inner-dimension-label {
+	color: black;
+	 /* #3a393a; */
+	cursor: pointer;
+	z-index: 0 !important;
+	font-size: 11px;
+	font-weight: 400;
+	/* text-shadow: 5px 5px 15px #f9faf7 !important; */
+	text-shadow: -1px -1px 0 #f9faf7, 1px -1px 0 #f9faf7, -1px 1px 0 #f9faf7, 1px 1px 0 #f9faf7;
+	/* -webkit-text-stroke: 0.1px white; */
+	/* -webkit-text-stroke-width: 0.2px; 
+            -webkit-text-stroke-color: #f9faf7;   */
+}

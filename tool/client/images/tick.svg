@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Foyr-Floor-Planner.-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project-details-03" transform="translate(-532.000000, -517.000000)" fill="#EF4B6E" fill-rule="nonzero">
+            <g id="Group-13" transform="translate(288.000000, 311.000000)">
+                <path d="M253.766957,206 C248.374783,206 244,210.374783 244,215.766957 C244,221.15913 248.374783,225.5 253.766957,225.5 C259.15913,225.5 263.533913,221.125217 263.533913,215.733043 C263.533913,210.34087 259.15913,206 253.766957,206 Z M252.376522,220.277391 L248.476522,216.377391 L249.765217,215.088696 L252.376522,217.7 L258.684348,211.392174 L259.973043,212.68087 L252.376522,220.277391 Z" id="tick"></path>
+            </g>
+        </g>
+    </g>
+</svg>

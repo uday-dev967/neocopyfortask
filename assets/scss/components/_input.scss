@@ -1,0 +1,38 @@
+#{$all-text-inputs} {
+    border: 0px;
+    color: $color-main;
+    padding: 0.625rem 1rem;
+    background: $background-2;
+}
+#{$all-text-inputs-focus} {
+    outline: none;
+    color: #201f20;
+    border: 1px solid $border-1;
+    background: $background-white;
+
+}
+select{
+    padding: 0.625rem 1rem;
+    background: $background-2;
+    border: 0px;
+    color: $color-main;
+    -webkit-appearance: none;
+}
+select:focus{
+    outline: none;
+}
+.select-box{
+    position: relative;
+}
+.select-box::after{
+    background: url('~assets/images/Vector.svg') no-repeat;
+    content: "";
+    background-position: center;
+    display: inline-block;
+    height: 1.875rem;
+    width: 1.875rem;
+    position: absolute;
+    right: 0.3125rem;
+    top: 0.3125rem;
+
+}

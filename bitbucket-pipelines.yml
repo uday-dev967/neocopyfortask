@@ -1,0 +1,39 @@
+pipelines:
+   branches:
+       staging:
+           - step:
+                 name: Deploy to AWS
+                 deployment: staging
+                 image: atlassian/pipelines-awscli
+                 script:
+                     - echo -e "gaKey=\"$gaKey\"\nBACKEND=\"$BACKEND\"" > .env
+                     - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_BUCKET/$BITBUCKET_REPO_SLUG/staging/$BITBUCKET_BUILD_NUMBER.zip
+                     - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_BUCKET,key=$BITBUCKET_REPO_SLUG/staging/$BITBUCKET_BUILD_NUMBER.zip,bundleType=zip --deployment-group-name $STAGING_DEPLOYMENT_GROUP_NAME
+       development:
+           - step:
+                 name: Deploy to AWS
+                 deployment: test
+                 image: atlassian/pipelines-awscli
+                 script:
+                     - echo -e "gaKey=\"$gaKey\"\nBACKEND=\"$BACKEND\"" > .env
+                     - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_BUCKET/$BITBUCKET_REPO_SLUG/development/$BITBUCKET_BUILD_NUMBER.zip
+                     - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_BUCKET,key=$BITBUCKET_REPO_SLUG/development/$BITBUCKET_BUILD_NUMBER.zip,bundleType=zip --deployment-group-name $DEVELOPMENT_DEPLOYMENT_GROUP_NAME
+       master:
+           - step:
+                 name: Deploy to AWS
+                 deployment: production
+                 image: atlassian/pipelines-awscli
+                 script:
+                     - echo -e "gaKey=\"$gaKey\"\nBACKEND=\"$BACKEND\"" > .env
+                     - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_BUCKET/$BITBUCKET_REPO_SLUG/production/$BITBUCKET_BUILD_NUMBER.zip
+                     - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_BUCKET,key=$BITBUCKET_REPO_SLUG/production/$BITBUCKET_BUILD_NUMBER.zip,bundleType=zip --deployment-group-name $PRODUCTION_DEPLOYMENT_GROUP_NAME
+
+       preprod:
+           - step:
+                 name: Deploy to AWS
+                 deployment: preprod
+                 image: atlassian/pipelines-awscli
+                 script:
+                     - echo -e "gaKey=\"$gaKey\"\nBACKEND=\"$BACKEND\"" > .env
+                     - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_BUCKET/$BITBUCKET_REPO_SLUG/preprod/$BITBUCKET_BUILD_NUMBER.zip
+                     - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_BUCKET,key=$BITBUCKET_REPO_SLUG/preprod/$BITBUCKET_BUILD_NUMBER.zip,bundleType=zip --deployment-group-name $PREPROD_DEPLOYMENT_GROUP_NAME

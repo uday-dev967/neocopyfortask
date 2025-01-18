@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>delete icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.54">
+        <g id="Category-Listing-details" transform="translate(-1296.000000, -83.000000)" stroke="#000000">
+            <g id="delete-icon" transform="translate(1297.000000, 84.000000)">
+                <g id="Group">
+                    <g id="Shape">
+                        <path d="M19.74,4.13793103 L18.9698139,22.3492288 C18.9312567,23.2609246 18.1455016,24 17.2199893,24 L3.78001071,24 C2.85216641,24 2.06860408,23.2576334 2.03018613,22.3492288 L1.26,4.13793103" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10.5,6.62068966 L10.5,20.6896552" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5.88,6.62068966 L6.38,20.6896552" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M15.2,6.62068966 L14.7,20.6896552" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M0,2.06896552 L21,2.06896552" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.3,2.06896552 L6.74950962,0.961798966 C6.96517151,0.430612055 7.61253734,0 8.19,0 L12.81,0 C13.389899,0 14.0340485,0.428690979 14.2504904,0.961798966 L14.7,2.06896552"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editor | Interior Plan</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./client/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./client/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./client/css/index.css">
+    <link rel="stylesheet" href="./client/css/foyr-base.css">
+    <link href="./editor/css/editor-foyr-base.css" type="text/css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.google.com/specimen/Nunito+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="./client/externalJs/vue.js"></script>
+    <script src="https://foyrproductmaster.s3.amazonaws.com/neolibs/vuex.min.js"></script>
+    <script src="./client/externalJs/index.js"></script>
+    <script src="./client/externalJs/en.js"></script>
+    <script src="./client/externalJs/jquery.min.js"></script>
+    <script src="./client/externalJs/bootstrap.min.js"></script>
+    <script src="./client/externalJs/imagesloaded.pkgd.min.js"></script>
+    <script src="./client/externalJs/index.min.js"></script>
+    <script src="./client/externalJs/algoliasearchLite.min.js"></script>
+    <script src="./client/externalJs/instantsearch.js"></script>
+    <script src="./client/externalJs/algoliasearch.helper.min.js"></script>
+	<!-- script src="./client/externalJs/stripe.min_v3.js"></script -->
+	<script src="https://js.stripe.com/v3/"></script>   <!-- Stripe.js -->
+
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131451105-12"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+
+        // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        // ga('create',window.location.host.indexOf('neo.foyr.com') !== -1 ? 'UA-131451105-11':  'UA-131451105-12', 'auto');
+
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+
+        // gtag('config', 'UA-131451105-12', {
+        //     'custom_map': {'dimension3': 'userIdNew'},
+        //     'cookieDomain': window.location.host.indexOf('neo') !== -1? window.location.host : 'none',
+        //     'cookieExpires': 28 // 28 days, in seconds
+        // });
+
+        // fresh chat script
+        function initFreshChat() {
+            window.fcWidget.init({
+                token: "101785df-864c-42e3-b646-fbf06afc5ebd",
+                host: "https://wchat.freshchat.com"
+            });
+        }
+        function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+
+        // var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"0125917920b9cc1264de3942d1e5e78d4b608b25d1b15f487d128c50669efaae", values:{},ready:function(){}};var d=document;s=d.createElement('script');s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.async=true; s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+    </script>
+    <!-- {Production }<script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('27218d28c96aa859e3f06bfad523d10c3','2393090215bb516047e194c9c6b4ca86e','2a36cff6bcd43856eb9a6f91233c2a38985718bbc9c911bdc','237baf7c378ed1713153d8b9ef45f11e2',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('27218d28c96aa859e3f06bfad523d10c3','2393090215bb516047e194c9c6b4ca86e','2a36cff6bcd43856eb9a6f91233c2a38985718bbc9c911bdc','237baf7c378ed1713153d8b9ef45f11e2',0.0);}catch(e){}};};s.src =p+'//marketinghub.zoho.com/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script> -->
+    <!-- <script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('27218d28c96aa859e3f06bfad523d10c3','2393090215bb516047e194c9c6b4ca86e','2a36cff6bcd43856eb9a6f91233c2a389ae6364a62834cb22','2d4a6dec5bb54f381ce1526bb01317688e5d52eb2be66bf17',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('27218d28c96aa859e3f06bfad523d10c3','2393090215bb516047e194c9c6b4ca86e','2a36cff6bcd43856eb9a6f91233c2a389ae6364a62834cb22','2d4a6dec5bb54f381ce1526bb01317688e5d52eb2be66bf17',0.0);}catch(e){}};};s.src =p+'//marketinghub.zoho.com/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script> -->
+
+    <!-- <script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+        0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+        MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+        mixpanel.init("7bc5f16461e2ce800db6fd432532d1d7");
+    </script> -->
+
+    <!-- segment event tracker -->
+    <script> // production and staging keys configured
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load(window.location.host.indexOf('neo.foyr.com') !== -1 ? "iX3UfArMQV16srg5mOVAEqm7HjUTUc29": "BCDJzK669Rm5DWVl7cosU0X39xRpMSRP");
+        analytics.page();
+        }}();
+    </script>
+
+    <!-- smart karret event tracker -->
+    <script src="https://docs.smartkarrot.com/frameworks/web/v4/UsageAnalytics.js"></script>
+
+	<link rel="stylesheet" href="./lib/ruler/ruler.min.css">
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+            /* font-family: 'Nunito Sans', sans-serif; */
+            text-transform: capitalize;
+        }
+
+        #selection {
+            position: absolute;
+            background: rgba(127, 127, 127, 0.5);
+            border: 1px solid #000000;
+            opacity: 0.5;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            pointer-events: none;
+            visibility: hidden;
+        }
+        .joystick{
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            background: rgb(103, 200, 255);
+            left: 85px;
+            bottom: 76px;
+            z-index: 1;
+            border-radius: 50%;
+            display: none;
+        }
+        .inner-stick{
+            width: 50px;
+            height: 50px;
+            background: rgb(255, 215, 18);
+            border-radius: 50%;
+            position: absolute;
+            top: calc( 50% - 25px);
+            left: calc( 50% - 25px);
+        }
+    </style>
+</head>
+
+<body id="HTML-Body">
+    <div id="vueApp"></div>
+    <div>
+        <div id="FoyrPaperCanvas"></div>
+        <div id="FoyrFPCanvas"></div>
+        <div id="FoyrFPPanoramaCanvas"></div>
+        <div id="FoyrFPMinimapCanvas"></div>
+        <div id="FoyrFPLabelDiv"></div>
+        <div id="FoyrFPUI" style="visibility: hidden"></div>
+        <div id="selection"></div>
+        <!-- <div>
+            <img id="recenter_btn" class="img img-responsive zoom-img" src="./client/images/Reset.svg" />
+        </div> -->
+        <div id="editor"></div>
+        <div id="productsection"></div>
+    </div>
+    <div id="FoyrFPLoaing" style="width: 100%; height: 100%; display: table; position: absolute; top: 0px; background-color: black;
+                    opacity: 0.4; z-index: 9999; visibility: hidden">
+        <div style="display: table-cell; vertical-align: middle; text-align: center;">
+            <img width="100" src="./client/images/loader.gif" />
+        </div>
+    </div>
+    <div>
+        <div class="joystick" id="joystick">
+            <div class="inner-stick" id="inner-stick">
+
+            </div>
+        </div>
+    </div>
+    <div class="new_plane_container" id="new_plane">
+        <div id="new_plane_left">
+
+        </div>
+        <div id="new_plane_bottom">
+
+        </div>
+    </div>
+    <div id="custom-cursor" style="display:none; pointer-events: none;">
+        <div id="custom-cursor-color">
+            <img id="custom-cursor-img" src="./editor/res/default.jpg" alt="">
+        </div>
+    </div>
+    <!-- script src="./client/js/FoyrFP.js"></script -->
+    <link href="./client/css/jquery.growl.css" rel="stylesheet" type="text/css" />
+
+    <!-- <script>
+        !function(t,n,o){var a="chmln",e="adminPreview",c="setup identify alias track clear set show on off custom help _data".split(" ");if(n[a]||(n[a]={}),n[a][e]&&(n[a][e]=!1),!n[a].root){n[a].accountToken=o,n[a].location=n.location.href.toString(),n[a].now=new Date;for(var s=0;s<c.length;s++)!function(){var t=n[a][c[s]+"_a"]=[];n[a][c[s]]=function(){t.push(arguments)}}();var i=t.createElement("script");i.src="https://fast.trychameleon.com/messo/"+o+"/messo.min.js",i.async=!0,t.head.appendChild(i)}}(document,window,"SAwFuG6YExivwTS7n1h0G9lYS7KP4Fk8ijF3zvgvEICxTh-1H4lNK-BfjfGLnaR1svo6rm");
+    </script> -->
+
+    <script type="text/javascript" src="./lib/paper-core.js"></script>
+    <script type="text/javascript" src="./lib/paperjs-offset.min.js"></script>
+	<script type="text/javascript" src="./lib/customerLab.js"></script>
+
+    <script src="./client/app/bundle/all.min.js"></script>
+    <script type="text/javascript" src="./lib/loaders/DRACOLoader.js"></script>
+
+    <script type="text/javascript" src="./lib/loaders/draco/MeshBVHLib.js"></script>
+    <script type="text/javascript" src="./lib/loaders/BVHDRACOLoader.js"></script>
+
+    <script type="text/javascript" src="./lib/loaders/obj2/worker/main/WorkerExecutionSupport.js"></script>
+    <script type="text/javascript" src="./lib/loaders/obj2/utils/CodeSerializer.js"></script>
+    <script type="text/javascript" src="./lib/loaders/obj2/shared/MeshReceiver.js"></script>
+    <script type="text/javascript" src="./lib/loaders/obj2/shared/MaterialHandler.js"></script>
+    <script type="text/javascript" src="./lib/loaders/obj2/worker/parallel/WorkerRunner.js"></script>
+    <script type="text/javascript" src="./lib/loaders/obj2/worker/parallel/OBJLoader2Parser.js"></script>
+    <script type="text/javascript" src="./lib/loaders/OBJLoader2.js"></script>
+    <script type="text/javascript" src="./lib/loaders/OBJLoader2Parallel.js"></script>
+
+    <!-- script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script -->
+    <!-- script>
+        if(window.location.host === "neo.foyr.com"){
+            window.TrackJS && TrackJS.install({
+                token: "8837d42146c14dbaa913d9849596520f",
+                application: "production"
+            });
+        }else{
+            window.TrackJS && TrackJS.install({
+                token: "8837d42146c14dbaa913d9849596520f",
+                application: "staging"
+            });
+        }
+    </script -->
+    <script>
+        /*
+        var editorNewUI = new FoyrFP.EditorNewUI();
+        editorNewUI.init(); */
+        productService = new FoyrFPService.ProductService();
+
+        function getQueryParams(query) {
+            var params = (new URL(document.location)).searchParams;
+            var value = params.get(query);
+            return value;
+        }
+
+        //stop browser default drop behaviour for firefox
+        document.getElementById("FoyrFPCanvas").addEventListener('drop',function(e){
+            e.preventDefault();
+        })
+
+        var papercanvas = document.getElementById('paperCanvas');
+        // Create an empty project and a view for the canvas:
+        paper.setup(papercanvas);
+
+        sourceProjectId = getQueryParams('project');
+        sourceProjectName = "";
+        sourceProjectMode = PROJECT_MODE_NORMAL;
+        sourceUserId = "user_id";
+        ENABLE_LIGHT_MODE = true; //(getQueryParams('light') === 'true');
+        ENABLE_DEBUG_MODE = location.href.indexOf('debug') !== -1 ? true : false;
+        ENABLE_DEBUG_COLLISION = location.href.indexOf('debug_collision') !== -1 ? true : false;
+        EDGES_GEOMETRY_THRESHOLD = (getQueryParams('edge'));
+        if(!EDGES_GEOMETRY_THRESHOLD) {
+            EDGES_GEOMETRY_THRESHOLD = 20;
+        } else if(EDGES_GEOMETRY_THRESHOLD < 0) {
+            EDGES_GEOMETRY_THRESHOLD = undefined;
+        }
+        ENABLE_OPTIM_DRC_5 = location.href.indexOf('drc5pc') !== -1 ? true: false;
+        ENABLE_OPTIM_DRC_20 = location.href.indexOf('drc20pc') !== -1 ? true: false;
+        ENABLE_OPTIM_DRC_50 = location.href.indexOf('drc50pc') !== -1 ? true: false;
+        ENABLE_NO_TEXTURE_MODE = location.href.indexOf('notex') !== -1 ? true: false;
+        ENABLE_ALPHA_MODE = location.href.indexOf('alpha') !== -1 ? true: false;
+        ENABLE_MAGIK_TOUR = location.href.indexOf('mt') !== -1 ? true: false;
+
+        console.log("sourceProjectId = " + sourceProjectId);
+
+        window.onbeforeunload = function () {
+            return "Data will be lost if you leave the page, are you sure?";
+        };
+    </script>
+
+</body>
+
+</html>

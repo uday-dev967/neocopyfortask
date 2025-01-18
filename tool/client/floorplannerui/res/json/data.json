@@ -1,0 +1,71 @@
+{
+   "response" : "Success",
+   "projects" : [
+        {
+	        "id":1,
+			"uniqueId":"P-1",
+			"lable":"image",
+			"imageUrl":"p2.jpg",
+			"title":"Interiors and Design",
+			"description":"Create your own interiors",
+			"cardType":"LIST",
+			"imageName":"P-1 image",
+			"status": "In-progress"
+	    },
+	    {
+	        "id":2,
+			"uniqueId":"P-2",
+			"lable":"3d",
+			"imageUrl":"p3.jpg",
+			"title":"Office",
+			"description":"Create your own office",
+			"cardType":"LIST",
+			"imageName":"P-2 image",
+			"status": "Done"
+	    },
+	    {
+			"id":3,
+			"uniqueId":"P-3",
+			"lable":"image",
+			"imageUrl":"bg.jpg",
+			"title":"Project 3",
+			"description":"Create your own project 3",
+			"cardType":"LIST",
+			"imageName":"P-3 image",
+			"status": "In-progress"
+		},
+		{
+			"id":4,
+			"uniqueId":"P-4",
+			"lable":"image",
+			"imageUrl":"p1.jpg",
+			"title":"Project 4",
+			"description":"Create your own project 4",
+			"cardType":"LIST",
+			"imageName":"P-4 image",
+			"status": "In-progress"
+		},
+		{
+			"id":5,
+			"uniqueId":"P-5",
+			"lable":"3d",
+			"imageUrl":"p2.jpg",
+			"title":"Project 5",
+			"description":"Create your own project 5",
+			"cardType":"LIST",
+			"imageName":"P-5 image",
+			"status": "Done"
+		},
+		{
+			"id":6,
+			"uniqueId":"P-6",
+			"lable":"image",
+			"imageUrl":"p3.jpg",
+			"title":"Project 6",
+			"description":"Create your own project 6",
+			"cardType":"LIST",
+			"imageName":"P-6 image",
+			"status": "Done"
+		}
+   ]
+}

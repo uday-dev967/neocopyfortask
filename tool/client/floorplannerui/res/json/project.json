@@ -1,0 +1,34 @@
+{
+  "type": [
+      {
+          "name":"Work Station",
+          "id":"work-type",
+          "status":"completed",
+          "icon":"fa fa-ils"
+      },
+      {
+          "name":"Meeting Rooms",
+          "id":"meeting-type",
+          "status":"completed",
+          "icon":"fa fa-ils"
+      },
+      {
+          "name":"Conference",
+          "id":"conference-type",
+          "status":"in-progress",
+          "icon":"fa fa-ils"
+      },
+      {
+          "name":"Reception",
+          "id":"reception-type",
+          "status":"in-progress",
+          "icon":"fa fa-ils"
+      },
+      {
+          "name":"Toilets",
+          "id":"toilets-type",
+          "status":"in-progress",
+          "icon":"fa fa-ils"
+      }
+  ]
+}

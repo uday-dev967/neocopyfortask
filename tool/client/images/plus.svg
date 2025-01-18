@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Category-Listing-Add-subcategory-Copy" transform="translate(-505.000000, -382.000000)" fill="#EF4B6E" fill-rule="nonzero">
+            <g id="New-category-pop" transform="translate(473.000000, 267.000000)">
+                <g id="plus" transform="translate(32.000000, 115.000000)">
+                    <path d="M16,8 C16,8.30222222 15.7688889,8.53333333 15.4666667,8.53333333 L8.53333333,8.53333333 L8.53333333,15.4666667 C8.53333333,15.7688889 8.30222222,16 8,16 C7.69777778,16 7.46666667,15.7688889 7.46666667,15.4666667 L7.46666667,8.53333333 L0.533333333,8.53333333 C0.231111111,8.53333333 0,8.30222222 0,8 C0,7.69777778 0.231111111,7.46666667 0.533333333,7.46666667 L7.46666667,7.46666667 L7.46666667,0.533333333 C7.46666667,0.231111111 7.69777778,0 8,0 C8.30222222,0 8.53333333,0.231111111 8.53333333,0.533333333 L8.53333333,7.46666667 L15.4666667,7.46666667 C15.7688889,7.46666667 16,7.69777778 16,8 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

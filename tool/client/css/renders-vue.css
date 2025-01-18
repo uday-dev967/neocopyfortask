@@ -1,0 +1,183 @@
+.lighting-menu {
+    padding: 15px 10px 10px;
+    overflow: auto
+}
+.lighting-menu .sun-input {
+    display: flex;
+    padding-bottom: 10px;
+}
+.lighting-menu .sun-input span {
+    padding-left: 10px;
+    padding-right: 25px;
+    color: #E9BEB3;
+    font-size: 15px;
+}
+.lighting-menu .sun-input button {
+    background: none;
+}
+.lighting-menu .sun-input .active {
+    background: #0E0E0E;
+    color: #E9BEB3;
+    margin: 0 10px;
+}
+.lighting-menu .sun-mode {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.lighting-menu .sun-mode button {
+    background: #282627;
+    color: #A6A5A6;
+    font-size: 10px;
+    margin: 0px 1px;
+    text-transform: capitalize;
+    font-family:'Montserrat', sans-serif;
+    padding: 5px 18px;
+}
+.lighting-menu .sun-mode .active {
+    background: #222021;
+    border: 1px solid #E9BEB3;
+}
+.lighting-menu .lighting-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.lighting-menu .lighting-list img {
+    width: 114px;
+    height: 100px;
+    cursor: pointer;
+}
+.lighting-menu .lighting-list>div {
+    position: relative;
+}
+.lighting-menu .lighting-list .tick-mark {
+    position: absolute;
+    width: 20px;
+    right: 5px;
+    bottom: 53px;
+}
+.lighting-menu .lighting-list-footer {
+    text-align: center;
+}
+.lighting-menu .lighting-list-footer span {
+    color: #E9BEB3;
+    font-size: 11px;
+    display: block;
+}
+.lighting-menu .lighting-list-footer span:last-child {
+    margin-top: 3px;
+}
+.lighting-menu label {
+    
+    color: #E9BEB3;
+    font-size: 15px;
+    font-weight: normal;
+}
+/* .vue-slide-bar-process {
+   width: 150px !important; 
+}
+.vue-slide-bar {
+    width: 150px !important;
+}
+.vue-slide-bar-component {
+    padding-top: 5px !important;
+    transform: translateX(-50%);
+} */
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 150px;
+    background :transparent;
+  }
+ input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    /* box-shadow: 0px 0px 0px #000000; */
+    background: #656565;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    /* box-shadow: 0px 0px 0px #000000; */
+    border: 1px solid #E9BEB3;
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    background: #E9BEB3;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #656565;
+  }
+   input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    /* box-shadow: 0px 0px 0px #000000; */
+    background: #656565;
+    border-radius: 1px;
+    /* border: 0px solid #000000; */
+  }
+  input[type=range]::-moz-range-thumb {
+    /* box-shadow: 0px 0px 0px #000000; */
+    border: 1px solid #E9BEB3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #E9BEB3;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+ input[type=range]::-ms-fill-lower {
+    background: #656565;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    /* box-shadow: 0px 0px 0px #000000; */
+  }
+ input[type=range]::-ms-fill-upper {
+    background: #656565;
+    border: 0px solid transparent;
+    border-radius: 2px;
+    /* box-shadow: 0px 0px 0px #000000; */
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    /* box-shadow: 0px 0px 0px #000000; */
+    border: 1px solid #E9BEB3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #E9BEB3;
+    cursor: pointer;
+  }
+   input[type=range]:focus::-ms-fill-lower {
+    background: #656565;
+  }
+ input[type=range]:focus::-ms-fill-upper {
+    background: #656565;
+  }
+  .lighting-menu .extra-options-menu {
+      padding: 0 10px;
+      margin-top: 10px;
+  }
+  .lighting-menu .extra-options-menu label {
+      font-size: 12px;
+      margin: 10px;
+  }

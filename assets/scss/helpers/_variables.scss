@@ -1,0 +1,188 @@
+
+
+$nameSpace:neo;
+$fastDuration: .1s !default;
+$mediumDuration: .3s !default;
+$slowDuration: .5s !default;
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+$includeClasses: true !default;
+//text colors
+
+$color-main:#807F7F;
+$color-head: #D48E8E;
+$color-head-1: #F1C6BB;
+$color-second:#E9BEB3;
+$color-second-1: #765B4E;
+$color-second-2: #ef5d68;
+$color-second-3: #777;
+$color-cost:#A7DDE3;
+$color-light:#C4C4C4;
+$color-white:#ffffff;
+$color-black:#000000;
+$color-black-1:#292929;
+$color-black-2:#201F20;
+$color-light-gray: #656565;
+$color-light-gray-2: #3a393a;
+$color-light-gray-3: #adadad;
+$color-light-gray-4: #a5a6a5;
+$color-light-gray-5: #E8E8E8;
+$color-light-gray-6: #b5b5b5;
+$color-light-gray-7: #8a8a8a;
+$color-light-gray-8: #949393;
+$color-light-gray-9: #8B8484;
+$color-light-gray-10: #D1D5DB;
+$color-light-gray-11: #303030;
+$color-light-gray-12: #707070;
+$color-light-gray-13: #787878;
+$color-dark-gray: #0E0E0E;
+$color-dark-gray-2:#232121;
+$color-pink: #EE4B6E;
+$color-dark-gray-3:#222021;
+$color-dark-gray-4:#4C4746;
+$color-dark-gray-5:#6f6e6e;
+$color-dark-gray-6:#111827;
+$color-dark-gray-7:#070707;
+$color-dark-gray-8:#9b9b9b;
+$color-dark-gray-9:#222;
+$color-dark-rose-gold-1: #C86854;
+$color-dark-rose-gold-2: #CD7A7A;
+$color-dark-rose-gold-3: #F6E5E1;
+$color-dark-rose-gold-4: #D68686;
+//font-size
+
+$heading1:30px;
+$heading2:24px;
+$primary-text-size:16px;
+$secondary-text-size:12px;
+$plan-title:#292929;
+$plan-subtitle:#8B8484;
+
+//background color
+$background-1:#292929;
+$background-2:#323232;
+$background-3:#201F20;
+$background-4:#232121;
+$background-5: #E8505B;
+$background-6: #F4F2F1;
+$background-7: #F8F0ED;
+$background-8: #E5E5E5;
+$background-9: #3a393a;
+$background-10:#E9BEB3;
+$background-11:#7d7d7d;
+$background-12:#f7e3df;
+$background-13:#FFD328;
+$background-14:#EE4B6E;
+$background-black:#000;
+$background-black-1:#0E0E0E;
+$background-15:#FDEFE8;
+$background-16:#F08E58;
+$background-17:#EF5D68;
+$background-18:#ED1C24;
+$background-19:#9f9f9f;
+$background-20:#adadad;
+$background-21:#D9D9D9;
+$background-22:#E8E8E8;
+$background-23:#fbf2f0;
+$background-24:#d1e3fe;
+$background-25:#06c270;
+$background-26:#cdf3e2;
+$background-27:#1b74f9;
+$background-28:#f2f2f5;
+$background-29:#f6e5e1;
+$background-30:#3a393abf;
+$background-31:#FFAB40;
+$background-32:#FFE0B9;
+$background-33:#A6A5A6;
+$background-34:#5BCCF1;
+$background-35:#516DFB;
+$background-36:#9D42AA;
+$background-37:#E95629;
+$background-38:#F99046;
+$background-39:#FF5C00;
+$background-40:#FF985E;
+$background-41:#e5e7eb;
+$background-42:#282828;
+$background-43:#ffd7d7;
+$background-44:#FFEDED;
+$background-45:#F2D1C8;
+$background-46:#EFEBEB;
+$background-47:#ebbeb5;
+$background-48:#BF8576;
+$background-49:#8E6358;
+$background-50:#575557;
+$background-51:#363535;
+$background-52:#fbfcfd;
+$background-53:#D7D7D7;
+$background-54:#9B9B9B;
+$background-55:#3F9872;
+$background-56:#FFF0EC;
+
+$background-white:#ffffff;
+$background-white-2:#fff4f1;
+$background-white-3:#F6F5F7;
+$background-white-4: #FFF2F2;
+$background-white-5: #FFC3C3;
+$background-white-6: #FBF3F1;
+$background-white-7: #f4e9ff;
+$background-white-8: #FFF5F5;
+$background-white-9: #fafafc;
+$background-white-10: #FEFEFE;
+$background-white-11: #FFF4F4;
+$background-white-12: #FAFAFA;
+$background-white-13: #F9F1EE;
+
+// border color
+$border-1:#E9BEB3;
+$border-2:#FBF3F1;
+$border-4:#D48E8E;
+$border-5:#DCDCDC;
+$border-6:#808080;
+$border-7:#C4C4C4;
+$border-8:#cacaca;
+$border-9:#a5a6a56f;
+$border-10:#E5EAF4;
+$border-11: #CCC;
+$border-12:#292929;
+$border-13:#FFAB40;
+$border-14:#000;
+$border-15:#EE4B6E;
+$border-16:#e0e0e0;
+$border-17:#d7d7d7;
+$border-18:#c9c9c9;
+$border-19:#8B8484;
+$border-20:#3a393a;
+$border-21:#f2d8d1;
+$border-22:#f2f2f5;
+$border-23:#E8E8E8;
+$border-24:#232121;
+$border-25:#E5E5EA;
+$border-26:#EF5D68;
+$border-27:#131313;
+$border-28:#9b9b9b;
+$border-29:#e5e7eb;
+$border-30:#0E0E0E;
+$border-31:#EBBEB5;
+
+//fonts
+
+$main-font:'Montserrat', sans-serif;
+$secondary-font: 'Inter';
+
+
+// cta banners 
+$banner-primary: #F7E3DF;
+$banner-secondary: #E9BEB3;
+$banner-heading-color: #0E0E0E;
+$banner-sub-heading-color: #3A393A;
+
+// Toggle Colors
+$toggle-green: #26B679;
+$default-toggle-label-color: #EBBEB5;
+
+//referral section variables
+$referral-primary-blue:#3792A6;
+$referral-header-height:4.5rem;
+$pay-as-you-go-header-height: 5rem;

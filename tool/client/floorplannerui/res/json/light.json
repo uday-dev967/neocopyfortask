@@ -1,0 +1,6 @@
+{
+  "name" : "Lighting Intensity",
+  "range":"30",
+  "angle":"90",
+  "color":"#ffffff"
+ }

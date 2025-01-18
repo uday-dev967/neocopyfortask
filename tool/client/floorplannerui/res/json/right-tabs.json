@@ -1,0 +1,98 @@
+{
+    "style": [
+        {
+            "type":"Table Styles",
+            "id":"w-four-rectangle",
+            "features": [
+                {
+                    "tabName": 4,
+                    "name":"table-four",
+                    "design":[
+                        {
+                            "shape":"rectangle",
+                            "image":"Group 13.svg"
+                        },
+                        {
+                            "shape":"oval",
+                            "image":"Group 8.svg"
+                        },
+                        {
+                            "shape":"round",
+                            "image":"Group 13.svg"
+                        },
+                        {
+                            "shape":"rectangle-rounded",
+                            "image":"Group 8.svg"
+                        }
+                    ]
+                },
+                {
+                    "tabName": 8,
+                    "name":"table-eight",
+                    "design":[
+                      {
+                          "shape":"rectangle",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"oval",
+                          "image":"Group 8.svg"
+                      },
+                      {
+                          "shape":"round",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"rectangle-rounded",
+                          "image":"Group 8.svg"
+                      }
+                    ]
+                },
+                {
+                    "tabName": 10,
+                    "name":"table-ten",
+                    "design":[
+                      {
+                          "shape":"rectangle",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"oval",
+                          "image":"Group 8.svg"
+                      },
+                      {
+                          "shape":"round",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"rectangle-rounded",
+                          "image":"Group 8.svg"
+                      }
+                    ]
+                },
+                {
+                    "tabName": 12,
+                    "name":"table-twelve",
+                    "design":[
+                      {
+                          "shape":"rectangle",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"oval",
+                          "image":"Group 8.svg"
+                      },
+                      {
+                          "shape":"round",
+                          "image":"Group 13.svg"
+                      },
+                      {
+                          "shape":"rectangle-rounded",
+                          "image":"Group 8.svg"
+                      }
+                    ]
+                }
+            ]
+        }
+    ]
+}
