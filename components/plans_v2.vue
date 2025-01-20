@@ -81,34 +81,57 @@
 					<h2 class="plan-name">
 						{{ currentBilling.displayContext.groupingName }}
 					</h2>
-					<div>
-						<span
-							class="plan-sub-title"
-							v-if="
-								isPackageNeoStandard(
-									currentBilling.displayContext.groupingName
-								)
+					<div
+						v-if="
+							currentBilling.type == 'recurring' ||
+							currentBilling.type == 'onetime'
+						"
+					>
+						<p class="future-plan" v-if="future.length > 0">
+							{{ $t("plansNew.planChangeStartText[0]") }}
+							<span style="font-weight: 600">{{ $t("plansNew.planChangeStartText[1]") }}</span> {{ $t("plansNew.planChangeStartText[2]") }}
+							<span>{{
+								future[0].package.displayContext.groupingName
+							}}</span>
+							{{ $t("plansNew.planChangeStartText[3]") }}
+							<span style="font-weight: 600">{{
+								dateFormat(future[0].subscriptionActivateDate)
+							}}</span>
+						</p>
+						<p
+							class="future-plan"
+							v-else-if="
+								!currentBilling.subscriptionStatus &&
+								currentBilling.curretCycle <
+									currentBilling.usageCycle &&
+								currentBilling.nextBilling &&
+								currentBilling.nextBilling != ''
 							"
-							>{{ $t("plansNew.standardPlanSubtitle") }}</span
 						>
-						<span
-							class="plan-sub-title"
-							v-if="
-								isPackageNeoBasic(
-									currentBilling.displayContext.groupingName
+							{{ $t("plansNew.planRenewText[0]") }}
+							<span style="font-weight: 600">{{ $t("plansNew.planRenewText[1]") }}</span> {{ $t("plansNew.planRenewText[2]") }}
+							<span class="next-cbiling" style="font-weight: 600">{{
+								dateFormat(currentBilling.nextBilling)
+							}}</span>
+						</p>
+						<p class="future-plan" v-else>
+							{{ $t("plansNew.planExpireText[0]") }}
+							{{
+								new Date().getTime() -
+									new Date(
+										currentBilling.subscriptionExpiryDate
+									).getTime() >
+								0
+									? $t('plansNew.planExpireText[1]')
+									: $t('plansNew.planExpireText[2]')
+							}}
+							{{ $t("plansNew.planExpireText[3]") }}
+							<span style="font-weight: 600">{{
+								dateFormat(
+									currentBilling.subscriptionExpiryDate
 								)
-							"
-							>{{ $t("plansNew.basicPlanSubtitle") }}</span
-						>
-						<span
-							class="plan-sub-title"
-							v-if="
-								isPackageNeoPremium(
-									currentBilling.displayContext.groupingName
-								)
-							"
-							>{{ $t("plansNew.premiumPlanSubTitle") }}</span
-						>
+							}}</span>
+						</p>
 					</div>
 				</div>
 				<div class="section-cta-and-plan-expiry-info">
@@ -131,7 +154,7 @@
 							</button>
 						</span>
 						<span v-else>
-							<nuxt-link :to="localePath('/settings/plans_new')">
+							<nuxt-link v-if="!isUserUS || isTrial" :to="localePath('/settings/plans_new')">
 								<button v-if="!isTrial">
 									{{ $t("buttonText.changePlan") }}
 								</button>
@@ -139,89 +162,10 @@
 									{{ $t("buttonText.upgradePlan") }}
 								</button>
 							</nuxt-link>
+							<button v-else @click="openManageSubscriptionPopup">
+			                    {{ $t("buttonText.manageSubscription") }}
+		                    </button>
 						</span>
-					</div>
-					<div
-						v-if="
-							currentBilling.type == 'recurring' ||
-							currentBilling.type == 'onetime'
-						"
-					>
-						<p class="future-plan" v-if="future.length > 0">
-							{{ $t("plansNew.planChangeStartText[0]") }}
-							<span style="font-weight: 600">{{
-								$t("plansNew.planChangeStartText[1]")
-							}}</span>
-							{{ $t("plansNew.planChangeStartText[2]") }}
-							<span>{{
-								future[0].package.displayContext.groupingName
-							}}</span>
-							{{ $t("plansNew.planChangeStartText[3]") }}
-							<span style="font-weight: 600">{{
-								dateFormat(future[0].subscriptionActivateDate)
-							}}</span>
-						</p>
-						<p
-							class="future-plan"
-							v-else-if="
-								!currentBilling.subscriptionStatus &&
-								currentBilling.curretCycle <
-									currentBilling.usageCycle &&
-								currentBilling.nextBilling &&
-								currentBilling.nextBilling != ''
-							"
-						>
-							{{ $t("plansNew.planRenewText[0]") }}
-							<span style="font-weight: 600">{{
-								$t("plansNew.planRenewText[1]")
-							}}</span>
-							{{ $t("plansNew.planRenewText[2]") }}
-							<span
-								class="next-cbiling"
-								style="font-weight: 600"
-								>{{
-									dateFormat(currentBilling.nextBilling)
-								}}</span
-							>
-						</p>
-						<p class="future-plan" v-else>
-							{{ $t("plansNew.planExpireText[0]") }}
-							{{
-								new Date().getTime() -
-									new Date(
-										currentBilling.subscriptionExpiryDate
-									).getTime() >
-								0
-									? $t("plansNew.planExpireText[1]")
-									: $t("plansNew.planExpireText[2]")
-							}}
-							{{ $t("plansNew.planExpireText[3]") }}
-							<span style="font-weight: 600">{{
-								dateFormat(
-									currentBilling.subscriptionExpiryDate
-								)
-							}}</span>
-						</p>
-					</div>
-					<div v-else>
-						<p class="future-plan" v-if="future.length == 0">
-							{{ $t("plansNew.planExpireText[0]") }}
-							{{
-								new Date().getTime() -
-									new Date(
-										currentBilling.subscriptionExpiryDate
-									).getTime() >
-								0
-									? $t("plansNew.planExpireText[1]")
-									: $t("plansNew.planExpireText[2]")
-							}}
-							{{ $t("plansNew.planExpireText[3]") }}
-							<span style="font-weight: 600">{{
-								dateFormat(
-									currentBilling.subscriptionExpiryDate
-								)
-							}}</span>
-						</p>
 					</div>
 				</div>
 			</div>
@@ -232,7 +176,8 @@
 					user.accountType == 'root' &&
 					user.accountInfo.accountCategory == 'REGULAR' &&
 					isCancelFlowShow &&
-					!isNeoPaidPlanCancelled
+					!isNeoPaidPlanCancelled &&
+					!isUserUS
 				"
 				class="cancel-sub-container"
 				:class="{
@@ -1649,7 +1594,7 @@
 			class="popup-div"
 		/>
 
-		<div class="popup-div showPopUp">
+		<div v-if="manageSubscriptionPopup" class="popup-div showPopUp">
 			<div
 				class="popup-container"
 				style="background-color: white"
@@ -1885,6 +1830,7 @@ export default {
 			hqRender: "foyr_service_2",
 			testRender: "foyr_service_3",
 			customDownload: "foyr_service_4",
+			manageSubscriptionPopup:false,
 			message: {
 				value: "",
 				error: false,
@@ -2075,7 +2021,7 @@ export default {
 			"doesUserHaveAnActiveFloorplanAndElevationReward",
 			"payAsYouGoAddonPlan",
 		]),
-		...mapGetters("User", ["isUserJapanese", "isUserSpanish"]),
+		...mapGetters("User", ["isUserJapanese", "isUserSpanish","isUserUS"]),
 		...mapGetters("PayAsYouGo", [
 			"payAsYouGoTransactions",
 			"payAsYouGoTransactionsPageTracker",
@@ -2284,6 +2230,9 @@ export default {
 		outsideClick() {
 			if (this.getFreeDemoShow_Desk) this.getFreeDemoShow_Desk = false;
 		},
+		openManageSubscriptionPopup(){
+             this.manageSubscriptionPopup=true
+		},
 		closePopup() {
 			this.show = false;
 			this.credits = false;
@@ -2294,6 +2243,7 @@ export default {
 			this.cancelfeedBack = "";
 			this.isCantBuy = false;
 			this.changeBtnClicked(false);
+			this.manageSubscriptionPopup=false
 		},
 		cancelContainer(container) {
 			if (container == "show") {
