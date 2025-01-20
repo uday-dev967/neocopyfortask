@@ -52,18 +52,26 @@
 				!isCancelSubUpdating
 			"
 		>
-
-			<div v-if="isUserOnPayAsYouGoPlan" class="plan-head-container pay-as-you-go-wrapper">
+			<div
+				v-if="isUserOnPayAsYouGoPlan"
+				class="plan-head-container pay-as-you-go-wrapper"
+			>
 				<div class="pay-as-you-go-title">
 					<div class="label">{{ $t("payAsYouGo.currentPlan") }}</div>
-					<div class="plan-name">{{$t("plansNew.payAsYouGo")}}</div>
+					<div class="plan-name">{{ $t("plansNew.payAsYouGo") }}</div>
 				</div>
 				<div class="plan-and-billing-details-wrapper">
-					<button class="change-plan-button"@click="handlePayAsYouGoChangePlans">
+					<button
+						class="change-plan-button"
+						@click="handlePayAsYouGoChangePlans"
+					>
 						{{ $t("buttonText.changePlan") }}
 					</button>
-					<div v-if="currentBilling.isCancled" class="plan-expiry-details">
-							{{ $t("plansNew.yourPlanHasCancelled") }}
+					<div
+						v-if="currentBilling.isCancled"
+						class="plan-expiry-details"
+					>
+						{{ $t("plansNew.yourPlanHasCancelled") }}
 					</div>
 				</div>
 			</div>
@@ -124,8 +132,12 @@
 						</span>
 						<span v-else>
 							<nuxt-link :to="localePath('/settings/plans_new')">
-                                <button v-if="!isTrial">{{ $t("buttonText.changePlan") }}</button>
-                                <button v-else>{{ $t("buttonText.upgradePlan") }}</button>
+								<button v-if="!isTrial">
+									{{ $t("buttonText.changePlan") }}
+								</button>
+								<button v-else>
+									{{ $t("buttonText.upgradePlan") }}
+								</button>
 							</nuxt-link>
 						</span>
 					</div>
@@ -137,7 +149,10 @@
 					>
 						<p class="future-plan" v-if="future.length > 0">
 							{{ $t("plansNew.planChangeStartText[0]") }}
-							<span style="font-weight: 600">{{ $t("plansNew.planChangeStartText[1]") }}</span> {{ $t("plansNew.planChangeStartText[2]") }}
+							<span style="font-weight: 600">{{
+								$t("plansNew.planChangeStartText[1]")
+							}}</span>
+							{{ $t("plansNew.planChangeStartText[2]") }}
 							<span>{{
 								future[0].package.displayContext.groupingName
 							}}</span>
@@ -157,10 +172,17 @@
 							"
 						>
 							{{ $t("plansNew.planRenewText[0]") }}
-							<span style="font-weight: 600">{{ $t("plansNew.planRenewText[1]") }}</span> {{ $t("plansNew.planRenewText[2]") }}
-							<span class="next-cbiling" style="font-weight: 600">{{
-								dateFormat(currentBilling.nextBilling)
+							<span style="font-weight: 600">{{
+								$t("plansNew.planRenewText[1]")
 							}}</span>
+							{{ $t("plansNew.planRenewText[2]") }}
+							<span
+								class="next-cbiling"
+								style="font-weight: 600"
+								>{{
+									dateFormat(currentBilling.nextBilling)
+								}}</span
+							>
 						</p>
 						<p class="future-plan" v-else>
 							{{ $t("plansNew.planExpireText[0]") }}
@@ -170,8 +192,8 @@
 										currentBilling.subscriptionExpiryDate
 									).getTime() >
 								0
-									? $t('plansNew.planExpireText[1]')
-									: $t('plansNew.planExpireText[2]')
+									? $t("plansNew.planExpireText[1]")
+									: $t("plansNew.planExpireText[2]")
 							}}
 							{{ $t("plansNew.planExpireText[3]") }}
 							<span style="font-weight: 600">{{
@@ -190,8 +212,8 @@
 										currentBilling.subscriptionExpiryDate
 									).getTime() >
 								0
-									? $t('plansNew.planExpireText[1]')
-									: $t('plansNew.planExpireText[2]')
+									? $t("plansNew.planExpireText[1]")
+									: $t("plansNew.planExpireText[2]")
 							}}
 							{{ $t("plansNew.planExpireText[3]") }}
 							<span style="font-weight: 600">{{
@@ -217,18 +239,37 @@
 					'disbale-pointer-events': this.disablePointerEvents,
 				}"
 			>
-				<p @click="onClickCancel()">{{ $t("buttonText.cancelSubscription") }}</p>
+				<p @click="onClickCancel()">
+					{{ $t("buttonText.cancelSubscription") }}
+				</p>
 			</div>
 
-			<div v-if="isUserOnPayAsYouGoPlan" class="pay-as-you-go-used-credits-wrapper">
+			<div
+				v-if="isUserOnPayAsYouGoPlan"
+				class="pay-as-you-go-used-credits-wrapper"
+			>
 				<div class="credits-details-and-buy-more">
 					<div class="credit-details-wrapper">
-						<div class="header">{{ $t("payAsYouGo.availableCredits") }}</div>
-						<div class="available-credits">{{ totalCreditsAvailable }}</div>
-						<div class="used-credits" v-html="$t('payAsYouGo.numberOfCreditsUsed', {number: totalPayAsYouGoCreditsUsed})"></div>
+						<div class="header">
+							{{ $t("payAsYouGo.availableCredits") }}
+						</div>
+						<div class="available-credits">
+							{{ totalCreditsAvailable }}
+						</div>
+						<div
+							class="used-credits"
+							v-html="
+								$t('payAsYouGo.numberOfCreditsUsed', {
+									number: totalPayAsYouGoCreditsUsed,
+								})
+							"
+						></div>
 					</div>
-					<div class="buy-more-button" @click="handlePayAsYouGoAddonBuy">
-						{{ $t('buttonText.buyCredits') }}
+					<div
+						class="buy-more-button"
+						@click="handlePayAsYouGoAddonBuy"
+					>
+						{{ $t("buttonText.buyCredits") }}
 					</div>
 				</div>
 				<div
@@ -237,7 +278,10 @@
 					:class="payAsYouGoAddons ? 'showPopUp' : ''"
 				>
 					<div class="popup-container" @click.stop>
-						<div class="close-popup" @click="closePayAsYouGoAddonBuyPopup">
+						<div
+							class="close-popup"
+							@click="closePayAsYouGoAddonBuyPopup"
+						>
 							<svg
 								width="24"
 								height="24"
@@ -251,58 +295,141 @@
 								/>
 							</svg>
 						</div>
-						<addonComponent :addon="payAsYouGoAddonPlan" :user="user" :hide-tabs="true" />
+						<addonComponent
+							:addon="payAsYouGoAddonPlan"
+							:user="user"
+							:hide-tabs="true"
+						/>
 					</div>
 				</div>
 			</div>
 
-			<div v-if="isUserOnPayAsYouGoPlan" class="plan-details-link" @click="handleSeePlanDetails">
-				{{ $t('payAsYouGo.seeHowCreditsAreUsed') }}
+			<div
+				v-if="isUserOnPayAsYouGoPlan"
+				class="plan-details-link"
+				@click="handleSeePlanDetails"
+			>
+				{{ $t("payAsYouGo.seeHowCreditsAreUsed") }}
 			</div>
 
-			<div v-if="isUserOnPayAsYouGoPlan && payAsYouGoTransactions.length > 0" class="pay-as-you-go-credit-transactions-wrapper">
+			<div
+				v-if="
+					isUserOnPayAsYouGoPlan && payAsYouGoTransactions.length > 0
+				"
+				class="pay-as-you-go-credit-transactions-wrapper"
+			>
 				<div class="section-header">
-					<div class="text">{{ $t('payAsYouGo.creditTransactionHistory') }}</div>
-					<div
-						class="billing-history-button"
-						@click="getAllInvoice"
-					>
+					<div class="text">
+						{{ $t("payAsYouGo.creditTransactionHistory") }}
+					</div>
+					<div class="billing-history-button" @click="getAllInvoice">
 						{{ $t("buttonText.billingHistory") }}
 					</div>
 				</div>
 				<div class="transactions-wrapper">
-					<template v-for="(transaction, index) of payAsYouGoTransactions">
-						<div v-if="transaction.type === 'debit'" :key="transaction._id + index" class="transaction">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-								<path d="M13.2001 20.4002C18.502 20.4002 22.8001 16.1021 22.8001 10.8002C22.8001 5.49826 18.502 1.2002 13.2001 1.2002C7.89817 1.2002 3.6001 5.49826 3.6001 10.8002C3.6001 16.1021 7.89817 20.4002 13.2001 20.4002Z" stroke="#08090B" stroke-miterlimit="10"/>
-								<path d="M12.732 16.2919V5.38281H13.4309V16.2919H12.732ZM14.9181 8.76634C14.8726 8.36293 14.6851 8.05043 14.3556 7.82884C14.0261 7.6044 13.6113 7.49219 13.1113 7.49219C12.7533 7.49219 12.4437 7.54901 12.1823 7.66264C11.9209 7.77344 11.7178 7.92685 11.5729 8.12287C11.4309 8.31605 11.3599 8.53622 11.3599 8.78338C11.3599 8.99077 11.4082 9.16974 11.5047 9.32031C11.6042 9.47088 11.7334 9.5973 11.8925 9.69957C12.0545 9.79901 12.2278 9.88281 12.4124 9.95099C12.5971 10.0163 12.7746 10.0703 12.9451 10.1129L13.7974 10.3345C14.0758 10.4027 14.3613 10.495 14.6539 10.6115C14.9465 10.728 15.2178 10.8814 15.4678 11.0717C15.7178 11.2621 15.9195 11.4979 16.0729 11.7791C16.2292 12.0604 16.3073 12.397 16.3073 12.7891C16.3073 13.2834 16.1795 13.7223 15.9238 14.1058C15.6709 14.4893 15.303 14.7919 14.8201 15.0135C14.34 15.2351 13.759 15.3459 13.0772 15.3459C12.4238 15.3459 11.8584 15.2422 11.3812 15.0348C10.9039 14.8274 10.5303 14.5334 10.2604 14.1527C9.99055 13.7692 9.8414 13.3146 9.81299 12.7891H11.134C11.1596 13.1044 11.2619 13.3672 11.4408 13.5774C11.6226 13.7848 11.8542 13.9396 12.1354 14.0419C12.4195 14.1413 12.7306 14.1911 13.0687 14.1911C13.4408 14.1911 13.7718 14.1328 14.0616 14.0163C14.3542 13.897 14.5843 13.7322 14.7519 13.522C14.9195 13.3089 15.0033 13.0604 15.0033 12.7763C15.0033 12.5178 14.9295 12.3061 14.7817 12.1413C14.6369 11.9766 14.4394 11.8402 14.1894 11.7322C13.9422 11.6243 13.6624 11.5291 13.3499 11.4467L12.3187 11.1655C11.6198 10.9751 11.0658 10.6953 10.6567 10.326C10.2505 9.95668 10.0474 9.46804 10.0474 8.86009C10.0474 8.35724 10.1837 7.91832 10.4565 7.54332C10.7292 7.16832 11.0985 6.87713 11.5644 6.66974C12.0303 6.45952 12.5559 6.3544 13.1411 6.3544C13.732 6.3544 14.2533 6.4581 14.705 6.66548C15.1596 6.87287 15.5175 7.15838 15.7789 7.52202C16.0403 7.88281 16.1766 8.29759 16.188 8.76634H14.9181Z" fill="#232121"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.85199 5.3877C1.56339 7.2393 0.100098 10.0707 0.100098 13.2438C0.100098 18.8219 4.62202 23.3438 10.2001 23.3438C12.6327 23.3438 14.8645 22.4838 16.608 21.0512C15.7343 21.3415 14.8111 21.5232 13.8543 21.5804C12.7359 22.0713 11.4998 22.3438 10.2001 22.3438C5.17431 22.3438 1.1001 18.2696 1.1001 13.2438C1.1001 11.2866 1.718 9.47364 2.76938 7.98947C3.01714 7.06767 3.38383 6.19459 3.85199 5.3877Z" fill="#08090B"/>
+					<template
+						v-for="(transaction, index) of payAsYouGoTransactions"
+					>
+						<div
+							v-if="transaction.type === 'debit'"
+							:key="transaction._id + index"
+							class="transaction"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M13.2001 20.4002C18.502 20.4002 22.8001 16.1021 22.8001 10.8002C22.8001 5.49826 18.502 1.2002 13.2001 1.2002C7.89817 1.2002 3.6001 5.49826 3.6001 10.8002C3.6001 16.1021 7.89817 20.4002 13.2001 20.4002Z"
+									stroke="#08090B"
+									stroke-miterlimit="10"
+								/>
+								<path
+									d="M12.732 16.2919V5.38281H13.4309V16.2919H12.732ZM14.9181 8.76634C14.8726 8.36293 14.6851 8.05043 14.3556 7.82884C14.0261 7.6044 13.6113 7.49219 13.1113 7.49219C12.7533 7.49219 12.4437 7.54901 12.1823 7.66264C11.9209 7.77344 11.7178 7.92685 11.5729 8.12287C11.4309 8.31605 11.3599 8.53622 11.3599 8.78338C11.3599 8.99077 11.4082 9.16974 11.5047 9.32031C11.6042 9.47088 11.7334 9.5973 11.8925 9.69957C12.0545 9.79901 12.2278 9.88281 12.4124 9.95099C12.5971 10.0163 12.7746 10.0703 12.9451 10.1129L13.7974 10.3345C14.0758 10.4027 14.3613 10.495 14.6539 10.6115C14.9465 10.728 15.2178 10.8814 15.4678 11.0717C15.7178 11.2621 15.9195 11.4979 16.0729 11.7791C16.2292 12.0604 16.3073 12.397 16.3073 12.7891C16.3073 13.2834 16.1795 13.7223 15.9238 14.1058C15.6709 14.4893 15.303 14.7919 14.8201 15.0135C14.34 15.2351 13.759 15.3459 13.0772 15.3459C12.4238 15.3459 11.8584 15.2422 11.3812 15.0348C10.9039 14.8274 10.5303 14.5334 10.2604 14.1527C9.99055 13.7692 9.8414 13.3146 9.81299 12.7891H11.134C11.1596 13.1044 11.2619 13.3672 11.4408 13.5774C11.6226 13.7848 11.8542 13.9396 12.1354 14.0419C12.4195 14.1413 12.7306 14.1911 13.0687 14.1911C13.4408 14.1911 13.7718 14.1328 14.0616 14.0163C14.3542 13.897 14.5843 13.7322 14.7519 13.522C14.9195 13.3089 15.0033 13.0604 15.0033 12.7763C15.0033 12.5178 14.9295 12.3061 14.7817 12.1413C14.6369 11.9766 14.4394 11.8402 14.1894 11.7322C13.9422 11.6243 13.6624 11.5291 13.3499 11.4467L12.3187 11.1655C11.6198 10.9751 11.0658 10.6953 10.6567 10.326C10.2505 9.95668 10.0474 9.46804 10.0474 8.86009C10.0474 8.35724 10.1837 7.91832 10.4565 7.54332C10.7292 7.16832 11.0985 6.87713 11.5644 6.66974C12.0303 6.45952 12.5559 6.3544 13.1411 6.3544C13.732 6.3544 14.2533 6.4581 14.705 6.66548C15.1596 6.87287 15.5175 7.15838 15.7789 7.52202C16.0403 7.88281 16.1766 8.29759 16.188 8.76634H14.9181Z"
+									fill="#232121"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M3.85199 5.3877C1.56339 7.2393 0.100098 10.0707 0.100098 13.2438C0.100098 18.8219 4.62202 23.3438 10.2001 23.3438C12.6327 23.3438 14.8645 22.4838 16.608 21.0512C15.7343 21.3415 14.8111 21.5232 13.8543 21.5804C12.7359 22.0713 11.4998 22.3438 10.2001 22.3438C5.17431 22.3438 1.1001 18.2696 1.1001 13.2438C1.1001 11.2866 1.718 9.47364 2.76938 7.98947C3.01714 7.06767 3.38383 6.19459 3.85199 5.3877Z"
+									fill="#08090B"
+								/>
 							</svg>
-							<div v-if="transaction.messageData" class="narration">
-								{{ transaction.messageData.creditsDeducted || 0 }} credits used for {{ transaction.messageData.service }}
+							<div
+								v-if="transaction.messageData"
+								class="narration"
+							>
+								{{
+									transaction.messageData.creditsDeducted || 0
+								}}
+								credits used for
+								{{ transaction.messageData.service }}
 							</div>
 							<div v-if="transaction.createdAt" class="a-go-info">
-								{{ getAgoInfoFromISODate( transaction.createdAt ) }}
+								{{
+									getAgoInfoFromISODate(transaction.createdAt)
+								}}
 							</div>
 						</div>
-						<div v-else :key="transaction._id + index" class="transaction">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-								<path d="M13.2001 20.4002C18.502 20.4002 22.8001 16.1021 22.8001 10.8002C22.8001 5.49826 18.502 1.2002 13.2001 1.2002C7.89817 1.2002 3.6001 5.49826 3.6001 10.8002C3.6001 16.1021 7.89817 20.4002 13.2001 20.4002Z" stroke="#08090B" stroke-miterlimit="10"/>
-								<path d="M12.732 16.2919V5.38281H13.4309V16.2919H12.732ZM14.9181 8.76634C14.8726 8.36293 14.6851 8.05043 14.3556 7.82884C14.0261 7.6044 13.6113 7.49219 13.1113 7.49219C12.7533 7.49219 12.4437 7.54901 12.1823 7.66264C11.9209 7.77344 11.7178 7.92685 11.5729 8.12287C11.4309 8.31605 11.3599 8.53622 11.3599 8.78338C11.3599 8.99077 11.4082 9.16974 11.5047 9.32031C11.6042 9.47088 11.7334 9.5973 11.8925 9.69957C12.0545 9.79901 12.2278 9.88281 12.4124 9.95099C12.5971 10.0163 12.7746 10.0703 12.9451 10.1129L13.7974 10.3345C14.0758 10.4027 14.3613 10.495 14.6539 10.6115C14.9465 10.728 15.2178 10.8814 15.4678 11.0717C15.7178 11.2621 15.9195 11.4979 16.0729 11.7791C16.2292 12.0604 16.3073 12.397 16.3073 12.7891C16.3073 13.2834 16.1795 13.7223 15.9238 14.1058C15.6709 14.4893 15.303 14.7919 14.8201 15.0135C14.34 15.2351 13.759 15.3459 13.0772 15.3459C12.4238 15.3459 11.8584 15.2422 11.3812 15.0348C10.9039 14.8274 10.5303 14.5334 10.2604 14.1527C9.99055 13.7692 9.8414 13.3146 9.81299 12.7891H11.134C11.1596 13.1044 11.2619 13.3672 11.4408 13.5774C11.6226 13.7848 11.8542 13.9396 12.1354 14.0419C12.4195 14.1413 12.7306 14.1911 13.0687 14.1911C13.4408 14.1911 13.7718 14.1328 14.0616 14.0163C14.3542 13.897 14.5843 13.7322 14.7519 13.522C14.9195 13.3089 15.0033 13.0604 15.0033 12.7763C15.0033 12.5178 14.9295 12.3061 14.7817 12.1413C14.6369 11.9766 14.4394 11.8402 14.1894 11.7322C13.9422 11.6243 13.6624 11.5291 13.3499 11.4467L12.3187 11.1655C11.6198 10.9751 11.0658 10.6953 10.6567 10.326C10.2505 9.95668 10.0474 9.46804 10.0474 8.86009C10.0474 8.35724 10.1837 7.91832 10.4565 7.54332C10.7292 7.16832 11.0985 6.87713 11.5644 6.66974C12.0303 6.45952 12.5559 6.3544 13.1411 6.3544C13.732 6.3544 14.2533 6.4581 14.705 6.66548C15.1596 6.87287 15.5175 7.15838 15.7789 7.52202C16.0403 7.88281 16.1766 8.29759 16.188 8.76634H14.9181Z" fill="#232121"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.85199 5.3877C1.56339 7.2393 0.100098 10.0707 0.100098 13.2438C0.100098 18.8219 4.62202 23.3438 10.2001 23.3438C12.6327 23.3438 14.8645 22.4838 16.608 21.0512C15.7343 21.3415 14.8111 21.5232 13.8543 21.5804C12.7359 22.0713 11.4998 22.3438 10.2001 22.3438C5.17431 22.3438 1.1001 18.2696 1.1001 13.2438C1.1001 11.2866 1.718 9.47364 2.76938 7.98947C3.01714 7.06767 3.38383 6.19459 3.85199 5.3877Z" fill="#08090B"/>
-								<circle cx="20" cy="5" r="4" fill="#26B679"/>
-								<path d="M22 3.66699L19.3333 6.33366L18 5.00033" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+						<div
+							v-else
+							:key="transaction._id + index"
+							class="transaction"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M13.2001 20.4002C18.502 20.4002 22.8001 16.1021 22.8001 10.8002C22.8001 5.49826 18.502 1.2002 13.2001 1.2002C7.89817 1.2002 3.6001 5.49826 3.6001 10.8002C3.6001 16.1021 7.89817 20.4002 13.2001 20.4002Z"
+									stroke="#08090B"
+									stroke-miterlimit="10"
+								/>
+								<path
+									d="M12.732 16.2919V5.38281H13.4309V16.2919H12.732ZM14.9181 8.76634C14.8726 8.36293 14.6851 8.05043 14.3556 7.82884C14.0261 7.6044 13.6113 7.49219 13.1113 7.49219C12.7533 7.49219 12.4437 7.54901 12.1823 7.66264C11.9209 7.77344 11.7178 7.92685 11.5729 8.12287C11.4309 8.31605 11.3599 8.53622 11.3599 8.78338C11.3599 8.99077 11.4082 9.16974 11.5047 9.32031C11.6042 9.47088 11.7334 9.5973 11.8925 9.69957C12.0545 9.79901 12.2278 9.88281 12.4124 9.95099C12.5971 10.0163 12.7746 10.0703 12.9451 10.1129L13.7974 10.3345C14.0758 10.4027 14.3613 10.495 14.6539 10.6115C14.9465 10.728 15.2178 10.8814 15.4678 11.0717C15.7178 11.2621 15.9195 11.4979 16.0729 11.7791C16.2292 12.0604 16.3073 12.397 16.3073 12.7891C16.3073 13.2834 16.1795 13.7223 15.9238 14.1058C15.6709 14.4893 15.303 14.7919 14.8201 15.0135C14.34 15.2351 13.759 15.3459 13.0772 15.3459C12.4238 15.3459 11.8584 15.2422 11.3812 15.0348C10.9039 14.8274 10.5303 14.5334 10.2604 14.1527C9.99055 13.7692 9.8414 13.3146 9.81299 12.7891H11.134C11.1596 13.1044 11.2619 13.3672 11.4408 13.5774C11.6226 13.7848 11.8542 13.9396 12.1354 14.0419C12.4195 14.1413 12.7306 14.1911 13.0687 14.1911C13.4408 14.1911 13.7718 14.1328 14.0616 14.0163C14.3542 13.897 14.5843 13.7322 14.7519 13.522C14.9195 13.3089 15.0033 13.0604 15.0033 12.7763C15.0033 12.5178 14.9295 12.3061 14.7817 12.1413C14.6369 11.9766 14.4394 11.8402 14.1894 11.7322C13.9422 11.6243 13.6624 11.5291 13.3499 11.4467L12.3187 11.1655C11.6198 10.9751 11.0658 10.6953 10.6567 10.326C10.2505 9.95668 10.0474 9.46804 10.0474 8.86009C10.0474 8.35724 10.1837 7.91832 10.4565 7.54332C10.7292 7.16832 11.0985 6.87713 11.5644 6.66974C12.0303 6.45952 12.5559 6.3544 13.1411 6.3544C13.732 6.3544 14.2533 6.4581 14.705 6.66548C15.1596 6.87287 15.5175 7.15838 15.7789 7.52202C16.0403 7.88281 16.1766 8.29759 16.188 8.76634H14.9181Z"
+									fill="#232121"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M3.85199 5.3877C1.56339 7.2393 0.100098 10.0707 0.100098 13.2438C0.100098 18.8219 4.62202 23.3438 10.2001 23.3438C12.6327 23.3438 14.8645 22.4838 16.608 21.0512C15.7343 21.3415 14.8111 21.5232 13.8543 21.5804C12.7359 22.0713 11.4998 22.3438 10.2001 22.3438C5.17431 22.3438 1.1001 18.2696 1.1001 13.2438C1.1001 11.2866 1.718 9.47364 2.76938 7.98947C3.01714 7.06767 3.38383 6.19459 3.85199 5.3877Z"
+									fill="#08090B"
+								/>
+								<circle cx="20" cy="5" r="4" fill="#26B679" />
+								<path
+									d="M22 3.66699L19.3333 6.33366L18 5.00033"
+									stroke="white"
+									stroke-width="0.8"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
 							</svg>
-							<div v-if="transaction.messageData" class="narration">
-								{{ transaction.messageData.creditsAdded || 0 }} credits added to your account
+							<div
+								v-if="transaction.messageData"
+								class="narration"
+							>
+								{{ transaction.messageData.creditsAdded || 0 }}
+								credits added to your account
 							</div>
 							<div v-if="transaction.createdAt" class="a-go-info">
-								{{ getAgoInfoFromISODate( transaction.createdAt ) }}
+								{{
+									getAgoInfoFromISODate(transaction.createdAt)
+								}}
 							</div>
 						</div>
 					</template>
 					<ScrollObserver
-						v-if="payAsYouGoTransactions && payAsYouGoTransactions.length >= 10" v-on:scrolledToEnd="loadMoreTransactions"
+						v-if="
+							payAsYouGoTransactions &&
+							payAsYouGoTransactions.length >= 10
+						"
+						v-on:scrolledToEnd="loadMoreTransactions"
 					/>
 				</div>
 			</div>
@@ -340,27 +467,43 @@
 								currentBilling.billing == 1
 									? $t("plansNew.monthly")
 									: currentBilling.billing == 2
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 3
 									? $t("plansNew.quarterly")
 									: currentBilling.billing == 4
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 5
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 6
 									? $t("plansNew.halfYearly")
 									: currentBilling.billing == 7
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 8
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 9
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 10
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 11
-									?$t("plansNew.xmonths",{num: currentBilling.billing})
+									? $t("plansNew.xmonths", {
+											num: currentBilling.billing,
+									  })
 									: currentBilling.billing == 12
-									?$t("plansNew.yearly")
+									? $t("plansNew.yearly")
 									: currentBilling.billing
 							}}
 						</p>
@@ -370,12 +513,16 @@
 						<p>
 							{{
 								currentBilling.subscriptionNextBillingAmount &&
-								currentBilling.subscriptionNextBillingAmount.amount_due &&
+								currentBilling.subscriptionNextBillingAmount
+									.amount_due &&
 								currentBilling.displayContext
 									? currentBilling.displayContext
 											.currency_symbol +
 									  " " +
-									  currentBilling.subscriptionNextBillingAmount.amount_due / 100
+									  currentBilling
+											.subscriptionNextBillingAmount
+											.amount_due /
+											100
 									: "NA"
 							}}
 						</p>
@@ -402,7 +549,9 @@
 				class="billing-info-container"
 			>
 				<div class="billing-info-head">
-					<p class="main-heading">{{ $t("plansNew.optionalAddOnsSubheading") }}</p>
+					<p class="main-heading">
+						{{ $t("plansNew.optionalAddOnsSubheading") }}
+					</p>
 				</div>
 				<div class="billing-details recommended-addons">
 					<div
@@ -532,11 +681,13 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 
-			<div class="usages-main-container" v-if="mainSub && !isUserOnPayAsYouGoPlan">
+			<div
+				class="usages-main-container"
+				v-if="mainSub && !isUserOnPayAsYouGoPlan"
+			>
 				<div class="usage-head">
 					<h2>{{ $t("plansNew.renderCreditsUsageHeading") }}</h2>
 					<div class="addon-buy">
@@ -555,13 +706,15 @@
 				</div>
 				<div class="service-usage-container">
 					<div class="service-usage">
-						<p class="sub-head">{{ $t("plansNew.renderCredits") }}</p>
+						<p class="sub-head">
+							{{ $t("plansNew.renderCredits") }}
+						</p>
 						<div class="credit-summary">
-							<p class="available">{{ $t("plansNew.available") }}</p>
+							<p class="available">
+								{{ $t("plansNew.available") }}
+							</p>
 							<p class="unit">
-								{{
-									getAvailableRendersText
-								}}
+								{{ getAvailableRendersText }}
 							</p>
 						</div>
 						<div v-if="false" class="plans-addons">
@@ -710,9 +863,13 @@
 						</div>
 					</div>
 					<div class="service-usage">
-						<p class="sub-head">{{ $t("plansNew.customModelsSubheading") }}</p>
+						<p class="sub-head">
+							{{ $t("plansNew.customModelsSubheading") }}
+						</p>
 						<div class="credit-summary">
-							<p class="available">{{ $t("plansNew.available") }}</p>
+							<p class="available">
+								{{ $t("plansNew.available") }}
+							</p>
 							<p class="unit">
 								{{
 									mainSub &&
@@ -1018,9 +1175,7 @@
 				<div v-else class="future-plan-taken">
 					<p>
 						{{ $t("plansNew.planAlreadyChangedText") }}
-						<a href="mailto:connect@foyr.com"
-							>connect@foyr.com</a
-						>
+						<a href="mailto:connect@foyr.com">connect@foyr.com</a>
 					</p>
 				</div>
 			</div>
@@ -1276,7 +1431,9 @@
 					</svg>
 				</div>
 				<div class="popup-head">
-					<h2 v-if="showBills">{{ $t("suggestionText.billingHistory") }}</h2>
+					<h2 v-if="showBills">
+						{{ $t("suggestionText.billingHistory") }}
+					</h2>
 					<p v-if="showBills">
 						{{ $t("suggestionText.billingHistorySubhead") }}
 					</p>
@@ -1355,7 +1512,9 @@
 						</tr>
 						<!-- <tr v-if="!allInvoice">{{ $t("infoText.loading") }}</tr> -->
 						<tr v-if="!invoiceLoading && allInvoice.length === 0">
-							{{ $t("plansNew.noBillingData") }}
+							{{
+								$t("plansNew.noBillingData")
+							}}
 						</tr>
 					</table>
 				</div>
@@ -1389,7 +1548,6 @@
 					<div class="cant-buy-alert">
 						<p>
 							{{ $t("plansNew.planAlreadyChangedText") }}
-
 
 							<a href="mailto:connect@foyr.com"
 								>connect@foyr.com</a
@@ -1438,7 +1596,9 @@
 				$route.query.flow === 'cancel-sub'
 			"
 		/>
-		<fullScreenSubScriptionUpdateLoader v-show="receivingAddonPaymentLoading" />
+		<fullScreenSubScriptionUpdateLoader
+			v-show="receivingAddonPaymentLoading"
+		/>
 		<MessageComponent :changeRight="message" />
 		<pauseConfirmPopupComponent
 			:openNewCancelFlow="openNewCancelFlow"
@@ -1463,12 +1623,14 @@
 			:currentSubscription="currentBilling"
 		/>
 		<nonEnCancleConfrimationPopup
-		 v-if="showNonEnCancelConfrimationPopup"
-		 :expiryDate="currentBilling && dateFormat(currentBilling.nextBilling)"
-		 @on-confrim="handleCancelSubscriptionClick"
-		 @close-popup="showNonEnCancelConfrimationPopup = false"
-		 class="popup-div"
-		 />
+			v-if="showNonEnCancelConfrimationPopup"
+			:expiryDate="
+				currentBilling && dateFormat(currentBilling.nextBilling)
+			"
+			@on-confrim="handleCancelSubscriptionClick"
+			@close-popup="showNonEnCancelConfrimationPopup = false"
+			class="popup-div"
+		/>
 		<buyYearPayMonExp
 			v-if="showbuyYearPayMonExp"
 			:typeformConfiguration="
@@ -1480,13 +1642,36 @@
 		/>
 
 		<payAsYouGoCancelSubscriptionPopup
-		 v-if="showPayAsYouGoCancelSubscriptionPopup"
-		 @on-ok="showPayAsYouGoCancelSubscriptionPopup = false"
-		 @on-cancel="handleCancelSubscriptionClick"
-		 @close-popup="showPayAsYouGoCancelSubscriptionPopup = false"
-		 class="popup-div"
-		 />
+			v-if="showPayAsYouGoCancelSubscriptionPopup"
+			@on-ok="showPayAsYouGoCancelSubscriptionPopup = false"
+			@on-cancel="handleCancelSubscriptionClick"
+			@close-popup="showPayAsYouGoCancelSubscriptionPopup = false"
+			class="popup-div"
+		/>
 
+		<div class="popup-div showPopUp">
+			<div
+				class="popup-container"
+				style="background-color: white"
+				@click.stop
+			>
+				<div class="close-popup" @click="closePopup">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 14 14"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0.427338 0.00488616C0.337296 0.0136492 0.251663 0.0480814 0.180617 0.10409C0.109572 0.160099 0.0561011 0.235329 0.0265615 0.320838C-0.0029781 0.406347 -0.00734486 0.49854 0.0139804 0.586459C0.0353056 0.674378 0.081426 0.754325 0.14686 0.816798L6.19191 6.86185L0.14686 12.8995C0.10134 12.9428 0.0649102 12.9947 0.0397031 13.0523C0.0144959 13.1098 0.00101707 13.1718 5.53686e-05 13.2346C-0.000906338 13.2974 0.0106687 13.3598 0.0341024 13.4181C0.0575362 13.4764 0.0923581 13.5294 0.136532 13.5741C0.180705 13.6187 0.233343 13.6541 0.291364 13.6782C0.349386 13.7023 0.411627 13.7145 0.474445 13.7143C0.537263 13.714 0.599397 13.7012 0.657211 13.6767C0.715026 13.6521 0.767359 13.6162 0.811151 13.5712L6.8562 7.52614L12.9012 13.5712C12.945 13.6162 12.9974 13.6521 13.0552 13.6767C13.113 13.7012 13.1751 13.714 13.238 13.7143C13.3008 13.7145 13.363 13.7023 13.421 13.6782C13.4791 13.6541 13.5317 13.6187 13.5759 13.5741C13.62 13.5294 13.6549 13.4764 13.6783 13.4181C13.7017 13.3598 13.7133 13.2974 13.7123 13.2346C13.7114 13.1718 13.6979 13.1098 13.6727 13.0523C13.6475 12.9947 13.6111 12.9428 13.5655 12.8995L7.52049 6.86185L13.5655 0.816798C13.6388 0.747994 13.6882 0.65762 13.7066 0.558811C13.725 0.460003 13.7113 0.357909 13.6677 0.267368C13.6241 0.176827 13.5527 0.102557 13.464 0.0553527C13.3753 0.00814841 13.2738 -0.00953024 13.1743 0.00488616C13.0702 0.0199265 12.9741 0.0692799 12.9012 0.145125L6.8562 6.19018L0.811151 0.145125C0.761752 0.0945115 0.70162 0.0556343 0.635191 0.0313621C0.568762 0.00708992 0.497731 -0.00195794 0.427338 0.00488616Z"
+							fill="white"
+						/>
+					</svg>
+				</div>
+				<manageSubscription></manageSubscription>
+			</div>
+		</div>
 
 		<!-- **********************Remove Addon confirmation popup****************** -->
 		<div
@@ -1535,9 +1720,22 @@
 									/>
 								</svg>
 								<p>
-									{{ $t("plansNew.onSubscriptionaddOnSuspendedText[0]") }}
-									<b>{{ selectedAddonToRemove && selectedAddonToRemove.name ? selectedAddonToRemove.name : '' }}</b>
-									{{ $t("plansNew.onSubscriptionaddOnSuspendedText[1]") }}
+									{{
+										$t(
+											"plansNew.onSubscriptionaddOnSuspendedText[0]"
+										)
+									}}
+									<b>{{
+										selectedAddonToRemove &&
+										selectedAddonToRemove.name
+											? selectedAddonToRemove.name
+											: ""
+									}}</b>
+									{{
+										$t(
+											"plansNew.onSubscriptionaddOnSuspendedText[1]"
+										)
+									}}
 								</p>
 							</span>
 							<span>
@@ -1558,11 +1756,21 @@
 									/>
 								</svg>
 								<p>
-									{{ $t("plansNew.cancellingMidwayBillingCycleText[0]") }}
-									<b
-										>{{ $t("plansNew.cancellingMidwayBillingCycleText[0]") }}</b
-									>
-									{{ $t("plansNew.cancellingMidwayBillingCycleText[0]") }}
+									{{
+										$t(
+											"plansNew.cancellingMidwayBillingCycleText[0]"
+										)
+									}}
+									<b>{{
+										$t(
+											"plansNew.cancellingMidwayBillingCycleText[0]"
+										)
+									}}</b>
+									{{
+										$t(
+											"plansNew.cancellingMidwayBillingCycleText[0]"
+										)
+									}}
 								</p>
 							</span>
 						</div>
@@ -1621,7 +1829,9 @@
 						</svg>
 					</div>
 					<div class="proceed-btn">
-						<button @click="removeAddon(selectedAddonToRemove)">{{ $t("buttonText.confirm") }}</button>
+						<button @click="removeAddon(selectedAddonToRemove)">
+							{{ $t("buttonText.confirm") }}
+						</button>
 					</div>
 				</div>
 			</div>
@@ -1637,825 +1847,888 @@
 	</div>
 </template>
 <script>
-	import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
-	import packageComponent from "@/components/packages";
-	import plansNewComponent from "@/components/shared/plans_new";
-	import addonComponent from "@/components/addon";
-	import cancelSubIndexComponent from "@/components/shared/cancellation/cancelSubIndex";
-	import pauseConfirmPopupComponent from "@/components/shared/popups/pauseConfirmPopup";
-	import blockingLoadingComponent from "@/components/shared/blockingLoading";
-	import billingPageTypeForm from "@/components/billingPageTypeForm";
-	import cancelPageTypeForm from "@/components/shared/cancellation/cancelPageTypeForm.vue";
-	import buyYearPayMonExp from "@/components/shared/cancellation/buyYearPayMonExp.vue";
-	import nonEnCancleConfrimationPopup from "@/components/shared/popups/nonEnCancelConfirmationPopup.vue";
-	import payAsYouGoCancelSubscriptionPopup from "@/components/shared/popups/payAsYouGoCancelSubscriptionPopup.vue";
-	import fullScreenSubScriptionUpdateLoader from "@/components/shared/popups/fullScreenSubScriptionUpdateLoader.vue";
-	import ScrollObserver from "@/components/shared/scrollObserver.vue";
-	import CommonUtilities from "../mixins/commonUtilitiesMixin";
+import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
+import packageComponent from "@/components/packages";
+import plansNewComponent from "@/components/shared/plans_new";
+import addonComponent from "@/components/addon";
+import cancelSubIndexComponent from "@/components/shared/cancellation/cancelSubIndex";
+import pauseConfirmPopupComponent from "@/components/shared/popups/pauseConfirmPopup";
+import blockingLoadingComponent from "@/components/shared/blockingLoading";
+import billingPageTypeForm from "@/components/billingPageTypeForm";
+import cancelPageTypeForm from "@/components/shared/cancellation/cancelPageTypeForm.vue";
+import buyYearPayMonExp from "@/components/shared/cancellation/buyYearPayMonExp.vue";
+import nonEnCancleConfrimationPopup from "@/components/shared/popups/nonEnCancelConfirmationPopup.vue";
+import payAsYouGoCancelSubscriptionPopup from "@/components/shared/popups/payAsYouGoCancelSubscriptionPopup.vue";
+import fullScreenSubScriptionUpdateLoader from "@/components/shared/popups/fullScreenSubScriptionUpdateLoader.vue";
+import ScrollObserver from "@/components/shared/scrollObserver.vue";
+import CommonUtilities from "../mixins/commonUtilitiesMixin";
+import manageSubscription from "@/components/shared/popups/manage-subscriptions/manageSubscription.vue";
 
-	export default {
-		name: "PlansV2",
-		props: {
-			packages: Object,
-			addon: Object,
-			// user:Object
-		},
-		mixins: [
-			CommonUtilities
-		],
-		data() {
-			return {
-				disablePointerEvents: false,
-				showFoyrCoinBadges: false,
-				showcancelPageTypeForm: false,
-				showbuyYearPayMonExp: false,
-				show: undefined,
-				credits: false,
-				cancelSub: false,
-				showBills: false,
-				hqRender: "foyr_service_2",
-				testRender: "foyr_service_3",
-				customDownload: "foyr_service_4",
-				message: {
-					value: "",
-					error: false,
-					global: false,
-				},
-				invoiceLoading: true,
-				allInvoice: {},
-				isRedirecting: false,
-				selectedCancelCategory: "covid19",
-				cancelOptionText: {
-					cost: this.$t("plansNew.cancelOptionText.cost"),
-					// {
-					// 	head: "Wait, we can help you with this one!",
-					// 	subText:
-					// 		"We understand managing costs can be a challenge. Our Chief Happiness Officer can  brew an exclusive offer to make this easier for you. They say he has a knack of making people happy :)",
-					// 	cta: "Yes, send me Happy offers",
-					// 	name: "TOO EXPENSIVE",
-					// },
-					difficulty: this.$t("plansNew.cancelOptionText.difficulty"),
-					// {
-					// 	head: "Oh Really? We can fix this together",
-					// 	subText:
-					// 		"Let our product experts help you understand Neo better! Post we speak, it will be easy breezy for you to use Neo - our promise! Schedule a time now using the link below!",
-					// 	cta: "Get a personalized session",
-					// 	name: "DIFFICULT TO USE",
-					// },
-					feature: this.$t("plansNew.cancelOptionText.feature"),
-					// {
-					// 	head: "Wait! There is a high chance we have that feature or its workaround.",
-					// 	subText:
-					// 		"Give us your feedback below and we will double check to see if we have the functionality you need.",
-					// 	input: " ",
-					// 	name: "MISSING FEATURE",
-					// },
-					other: this.$t("plansNew.cancelOptionText.other"),
-					// {
-					// 	head: `Ouch!`,
-					// 	subText:
-					// 		"Tell us which product won your heart over Neo, and we will drink to our loss tonight! :(",
-					// 	cta: "",
-					// 	input: "Enter your feedback here",
-					// 	name: "USING OTHER PRODUCT",
-					// },
-					dontUse: this.$t("plansNew.cancelOptionText.dontUse"),
-					// {
-					// 	head: `Would you like to consider a 2-month billing pause instead?`,
-					// 	subText:
-					// 		"If you pause your subscription, your current subscription period will get extended by two months for FREE. You will not be charged anything for this period but you can continue using Neo uninterruptedly. After the 2 month period, your regular billing will resume.",
-					// 	cta: "Pause Billing for 2 months",
-					// 	input: "",
-					// 	name: "I DONT' USE IT ENOUGH",
-					// },
-					covid19: this.$t("plansNew.cancelOptionText.covid19"),
-					// {
-					// 	head: `Your next 2 months are on us, Let’s brave this storm together`,
-					// 	subText:
-					// 		"If your business has been impacted by Covid-19, you can request a FREE 2 month billing pause. You will not be charged anything for this period but you can continue using Neo uninterruptedly. After the 2 month period, your regular billing will resume.",
-					// 	cta: "Pause Billing for 2 months",
-					// 	input: "",
-					// 	name: "COVID19",
-					// },
-					somethingElse: this.$t("plansNew.cancelOptionText.somethingElse"),
-					// {
-					// 	head: "Tell us more, please?",
-					// 	subText:
-					// 		"We are all ears and very eager to know what's your reason, do share it below!",
-					// 	cta: "",
-					// 	input: "Enter your feedback here",
-					// 	name: "SOMETHING ELSE",
-					// },
-				},
-				cancelfeedBack: "",
-				getFreeDemoShow_Desk: false,
-				freeDemoUrl_Desk: "https://calendly.com/foyr-neo-product-demo",
-				isCantBuy: false,
-				receivingAddonPaymentLoading: false,
-				isCancelSubUpdating: false,
-				openNewCancelFlow: false,
-				isContactPause: false,
-				recommendedAddonsDetails: [],
-				removeButtonLoaderMap: {},
-				isRemoveAddonConfirmationPopupVisible: false,
-        		selectedAddonToRemove: {},
-				cancelPageTypeFormData: {
-					showTypeform : true,
-					appearAfterMillSec : 1,
-					formId : ''
-				},
-				showNonEnCancelConfrimationPopup: false,
-				showPayAsYouGoCancelSubscriptionPopup: false,
-				payAsYouGoAddons: false
-			};
-		},
-		mounted() {
-			this.getCoinInfoAPI();
-			this.getCreditsInfoAPI();
-			this.getTheTourStatus();
-			this.getPublicConfiguration();
-			if (this.user && this.user.accountId) {
-				this.fetchMySubscriptions({ accountId: this.user.accountId });
-				this.fetchCurrentSubscription({ accountId: this.user.accountId });
-			}
-			this.$root.$on("refresh-billing-page", () => {
-				this.isCancelSubUpdating = true;
-				setTimeout(() => {
-					this.fetchPackages({ accountId: this.user.accountId });
-					this.fetchMySubscriptions({ accountId: this.user.accountId });
-					this.fetchCurrentSubscription({
-						accountId: this.user.accountId,
-					});
-					setTimeout(() => {
-						this.isCancelSubUpdating = false;
-					}, 1500);
-				}, 2000);
-			});
-			this.$root.$on("addon-payment-update", (_data) => {
-				// console.log('Event Called @Addon')
-				this.receivingAddonPaymentLoading = _data;
-			});
-			console.log("addons", this.addon);
-			// console.log("Current Billing at plans component", this.currentBilling);
-			if (this.$route.query && this.$route.query.hostedpage_id) {
-				chmln.show("5d5fcefad388c80ca1b75245");
-			}
-			this.hqRender =
-				window.location.host == "neo.foyr.com" ||
-				window.location.host == "neopreprod.foyr.com"
-					? "foyr_service_2"
-					: "foyr_service_30";
-			this.testRender =
-				window.location.host == "neo.foyr.com" ||
-				window.location.host == "neopreprod.foyr.com"
-					? "foyr_service_3"
-					: "foyr_service_32";
-			this.customDownload =
-				window.location.host == "neo.foyr.com" ||
-				window.location.host == "neopreprod.foyr.com"
-					? "foyr_service_4"
-					: "foyr_service_29";
-			if (this.$route.query.package && this.$route.query.package == "true")
-				this.show = true;
-			this.$nextTick(function () {
-				console.log("&&&&&&&&API is calling for tour status&&&&");
-				setTimeout(() => {
-					this.getTheTourStatus().then((response) => {
-						if (response && response.subscription_bought_successful) {
-							console.log("&&&&&&&&Chmln is calling&&&&");
-							//  window.chmln.show('602e790bd3df450013e0e13b')
-							//  this.updateTheTourStatus({subscription_bought_successful: false});
-						} else {
-							console.log("Flag is false");
-						}
-					});
-				}, 2500);
-			});
-		},
-		components: {
-			packageComponent,
-			addonComponent,
-			plansNewComponent,
-			cancelSubIndexComponent,
-			pauseConfirmPopupComponent,
-			blockingLoadingComponent,
-			billingPageTypeForm,
-			cancelPageTypeForm,
-			buyYearPayMonExp,
-			nonEnCancleConfrimationPopup,
-			payAsYouGoCancelSubscriptionPopup,
-			fullScreenSubScriptionUpdateLoader,
-			ScrollObserver,
-			foyrCoinBadges: () =>
-				import(
-					/* webpackChunkName: "foyr-coin-badges" */ "@/components/foyrCoinBadges.vue"
+export default {
+	name: "PlansV2",
+	props: {
+		packages: Object,
+		addon: Object,
+		// user:Object
+	},
+	mixins: [CommonUtilities],
+	data() {
+		return {
+			disablePointerEvents: false,
+			showFoyrCoinBadges: false,
+			showcancelPageTypeForm: false,
+			showbuyYearPayMonExp: false,
+			show: undefined,
+			credits: false,
+			cancelSub: false,
+			showBills: false,
+			hqRender: "foyr_service_2",
+			testRender: "foyr_service_3",
+			customDownload: "foyr_service_4",
+			message: {
+				value: "",
+				error: false,
+				global: false,
+			},
+			invoiceLoading: true,
+			allInvoice: {},
+			isRedirecting: false,
+			selectedCancelCategory: "covid19",
+			cancelOptionText: {
+				cost: this.$t("plansNew.cancelOptionText.cost"),
+				// {
+				// 	head: "Wait, we can help you with this one!",
+				// 	subText:
+				// 		"We understand managing costs can be a challenge. Our Chief Happiness Officer can  brew an exclusive offer to make this easier for you. They say he has a knack of making people happy :)",
+				// 	cta: "Yes, send me Happy offers",
+				// 	name: "TOO EXPENSIVE",
+				// },
+				difficulty: this.$t("plansNew.cancelOptionText.difficulty"),
+				// {
+				// 	head: "Oh Really? We can fix this together",
+				// 	subText:
+				// 		"Let our product experts help you understand Neo better! Post we speak, it will be easy breezy for you to use Neo - our promise! Schedule a time now using the link below!",
+				// 	cta: "Get a personalized session",
+				// 	name: "DIFFICULT TO USE",
+				// },
+				feature: this.$t("plansNew.cancelOptionText.feature"),
+				// {
+				// 	head: "Wait! There is a high chance we have that feature or its workaround.",
+				// 	subText:
+				// 		"Give us your feedback below and we will double check to see if we have the functionality you need.",
+				// 	input: " ",
+				// 	name: "MISSING FEATURE",
+				// },
+				other: this.$t("plansNew.cancelOptionText.other"),
+				// {
+				// 	head: `Ouch!`,
+				// 	subText:
+				// 		"Tell us which product won your heart over Neo, and we will drink to our loss tonight! :(",
+				// 	cta: "",
+				// 	input: "Enter your feedback here",
+				// 	name: "USING OTHER PRODUCT",
+				// },
+				dontUse: this.$t("plansNew.cancelOptionText.dontUse"),
+				// {
+				// 	head: `Would you like to consider a 2-month billing pause instead?`,
+				// 	subText:
+				// 		"If you pause your subscription, your current subscription period will get extended by two months for FREE. You will not be charged anything for this period but you can continue using Neo uninterruptedly. After the 2 month period, your regular billing will resume.",
+				// 	cta: "Pause Billing for 2 months",
+				// 	input: "",
+				// 	name: "I DONT' USE IT ENOUGH",
+				// },
+				covid19: this.$t("plansNew.cancelOptionText.covid19"),
+				// {
+				// 	head: `Your next 2 months are on us, Let’s brave this storm together`,
+				// 	subText:
+				// 		"If your business has been impacted by Covid-19, you can request a FREE 2 month billing pause. You will not be charged anything for this period but you can continue using Neo uninterruptedly. After the 2 month period, your regular billing will resume.",
+				// 	cta: "Pause Billing for 2 months",
+				// 	input: "",
+				// 	name: "COVID19",
+				// },
+				somethingElse: this.$t(
+					"plansNew.cancelOptionText.somethingElse"
 				),
-		},
-		computed: {
-			...mapGetters("Billing", ["isNeoPaidPlanCancelled", "isUserOnUnlimitedRendersPlan", "isUserOnPayAsYouGoPlan", "totalCreditsAvailable", "totalPayAsYouGoCreditsUsed"]),
-			...mapGetters("Subscriptions", ["doesUserHaveAnActiveFloorplanAndElevationReward", "payAsYouGoAddonPlan"]),
-			...mapGetters("User",["isUserJapanese","isUserSpanish","isUserUS"]),
-			...mapGetters("PayAsYouGo", [ "payAsYouGoTransactions", "payAsYouGoTransactionsPageTracker" ]),
+				// {
+				// 	head: "Tell us more, please?",
+				// 	subText:
+				// 		"We are all ears and very eager to know what's your reason, do share it below!",
+				// 	cta: "",
+				// 	input: "Enter your feedback here",
+				// 	name: "SOMETHING ELSE",
+				// },
+			},
+			cancelfeedBack: "",
+			getFreeDemoShow_Desk: false,
+			freeDemoUrl_Desk: "https://calendly.com/foyr-neo-product-demo",
+			isCantBuy: false,
+			receivingAddonPaymentLoading: false,
+			isCancelSubUpdating: false,
+			openNewCancelFlow: false,
+			isContactPause: false,
+			recommendedAddonsDetails: [],
+			removeButtonLoaderMap: {},
+			isRemoveAddonConfirmationPopupVisible: false,
+			selectedAddonToRemove: {},
+			cancelPageTypeFormData: {
+				showTypeform: true,
+				appearAfterMillSec: 1,
+				formId: "",
+			},
+			showNonEnCancelConfrimationPopup: false,
+			showPayAsYouGoCancelSubscriptionPopup: false,
+			payAsYouGoAddons: false,
+		};
+	},
+	mounted() {
+		this.getCoinInfoAPI();
+		this.getCreditsInfoAPI();
+		this.getTheTourStatus();
+		this.getPublicConfiguration();
+		if (this.user && this.user.accountId) {
+			this.fetchMySubscriptions({ accountId: this.user.accountId });
+			this.fetchCurrentSubscription({ accountId: this.user.accountId });
+		}
+		this.$root.$on("refresh-billing-page", () => {
+			this.isCancelSubUpdating = true;
+			setTimeout(() => {
+				this.fetchPackages({ accountId: this.user.accountId });
+				this.fetchMySubscriptions({ accountId: this.user.accountId });
+				this.fetchCurrentSubscription({
+					accountId: this.user.accountId,
+				});
+				setTimeout(() => {
+					this.isCancelSubUpdating = false;
+				}, 1500);
+			}, 2000);
+		});
+		this.$root.$on("addon-payment-update", (_data) => {
+			// console.log('Event Called @Addon')
+			this.receivingAddonPaymentLoading = _data;
+		});
+		console.log("addons", this.addon);
+		// console.log("Current Billing at plans component", this.currentBilling);
+		if (this.$route.query && this.$route.query.hostedpage_id) {
+			chmln.show("5d5fcefad388c80ca1b75245");
+		}
+		this.hqRender =
+			window.location.host == "neo.foyr.com" ||
+			window.location.host == "neopreprod.foyr.com"
+				? "foyr_service_2"
+				: "foyr_service_30";
+		this.testRender =
+			window.location.host == "neo.foyr.com" ||
+			window.location.host == "neopreprod.foyr.com"
+				? "foyr_service_3"
+				: "foyr_service_32";
+		this.customDownload =
+			window.location.host == "neo.foyr.com" ||
+			window.location.host == "neopreprod.foyr.com"
+				? "foyr_service_4"
+				: "foyr_service_29";
+		if (this.$route.query.package && this.$route.query.package == "true")
+			this.show = true;
+		this.$nextTick(function () {
+			console.log("&&&&&&&&API is calling for tour status&&&&");
+			setTimeout(() => {
+				this.getTheTourStatus().then((response) => {
+					if (response && response.subscription_bought_successful) {
+						console.log("&&&&&&&&Chmln is calling&&&&");
+						//  window.chmln.show('602e790bd3df450013e0e13b')
+						//  this.updateTheTourStatus({subscription_bought_successful: false});
+					} else {
+						console.log("Flag is false");
+					}
+				});
+			}, 2500);
+		});
+	},
+	components: {
+		packageComponent,
+		addonComponent,
+		plansNewComponent,
+		cancelSubIndexComponent,
+		pauseConfirmPopupComponent,
+		blockingLoadingComponent,
+		billingPageTypeForm,
+		cancelPageTypeForm,
+		buyYearPayMonExp,
+		nonEnCancleConfrimationPopup,
+		payAsYouGoCancelSubscriptionPopup,
+		fullScreenSubScriptionUpdateLoader,
+		ScrollObserver,
+		manageSubscription,
+		foyrCoinBadges: () =>
+			import(
+				/* webpackChunkName: "foyr-coin-badges" */ "@/components/foyrCoinBadges.vue"
+			),
+	},
+	computed: {
+		...mapGetters("Billing", [
+			"isNeoPaidPlanCancelled",
+			"isUserOnUnlimitedRendersPlan",
+			"isUserOnPayAsYouGoPlan",
+			"totalCreditsAvailable",
+			"totalPayAsYouGoCreditsUsed",
+		]),
+		...mapGetters("Subscriptions", [
+			"doesUserHaveAnActiveFloorplanAndElevationReward",
+			"payAsYouGoAddonPlan",
+		]),
+		...mapGetters("User", ["isUserJapanese", "isUserSpanish"]),
+		...mapGetters("PayAsYouGo", [
+			"payAsYouGoTransactions",
+			"payAsYouGoTransactionsPageTracker",
+		]),
 
-			...mapState({
-				foyrCoins: (state) =>
-					state.Subscriptions.foyrCoins || {
-						totalEarnedCoins: 0,
-						availableCoin: 0,
-						coinValue: 1,
-					},
-				mySubscription: (state) => state.Subscriptions.mySubscription,
-				currentBilling: (state) => state.Billing.currentSubscription,
-				// allInvoice: state => state.Billing.allInvoice,
-				mainSub: (state) => state.Billing.currentSub,
-				isTrial: (state) => state.Billing.isTrial,
-				isChargebee: (state) => state.Billing.isChargebee,
-				future: (state) =>
-					state.Subscriptions.mySubscription.filter((item) => {
-						return (
-							item.activeStatus == "future" && item.type == "package"
-						);
-					}),
-				pausedStatusObj: (state) =>
-					state.Subscriptions.mySubscription.filter((item) => {
-						return (
-							item.activeStatus == "current" &&
-							item.chargebee &&
-							item.chargebee.status &&
-							item.chargebee.status === "paused"
-						);
-					}),
-				neoLitePlanDetails: (state) =>
-					state.Subscriptions.mySubscription.filter((item) => {
-						return (
-							(item.activeStatus == "future" ||
-								item.activeStatus == "active") &&
-							item.type == "package" &&
-							(item.package.id === "neo-light-yearly" ||
-								item.package.id === "neo-light-monthly")
-						);
-					}),
-				user: (state) => state.User.user,
-				cancelSubState: (state) => state.Subscriptions.cancelSubState,
-				fetchAccountInfo: (state) => state.Subscriptions.fetchAccountInfo,
-				publicConfiguration: (state) =>
-					state.Subscriptions.publicConfiguration,
-				isLPU: (state) => state.User.isLPU,
-				isLPUPlan: (state) => state.Billing.isLPUPlan,
-			}),
-			isCancelFlowShow() {
+		...mapState({
+			foyrCoins: (state) =>
+				state.Subscriptions.foyrCoins || {
+					totalEarnedCoins: 0,
+					availableCoin: 0,
+					coinValue: 1,
+				},
+			mySubscription: (state) => state.Subscriptions.mySubscription,
+			currentBilling: (state) => state.Billing.currentSubscription,
+			// allInvoice: state => state.Billing.allInvoice,
+			mainSub: (state) => state.Billing.currentSub,
+			isTrial: (state) => state.Billing.isTrial,
+			isChargebee: (state) => state.Billing.isChargebee,
+			future: (state) =>
+				state.Subscriptions.mySubscription.filter((item) => {
+					return (
+						item.activeStatus == "future" && item.type == "package"
+					);
+				}),
+			pausedStatusObj: (state) =>
+				state.Subscriptions.mySubscription.filter((item) => {
+					return (
+						item.activeStatus == "current" &&
+						item.chargebee &&
+						item.chargebee.status &&
+						item.chargebee.status === "paused"
+					);
+				}),
+			neoLitePlanDetails: (state) =>
+				state.Subscriptions.mySubscription.filter((item) => {
+					return (
+						(item.activeStatus == "future" ||
+							item.activeStatus == "active") &&
+						item.type == "package" &&
+						(item.package.id === "neo-light-yearly" ||
+							item.package.id === "neo-light-monthly")
+					);
+				}),
+			user: (state) => state.User.user,
+			cancelSubState: (state) => state.Subscriptions.cancelSubState,
+			fetchAccountInfo: (state) => state.Subscriptions.fetchAccountInfo,
+			publicConfiguration: (state) =>
+				state.Subscriptions.publicConfiguration,
+			isLPU: (state) => state.User.isLPU,
+			isLPUPlan: (state) => state.Billing.isLPUPlan,
+		}),
+		isCancelFlowShow() {
+			if (
+				this.currentBilling &&
+				this.currentBilling.analyticsData &&
+				this.currentBilling.analyticsData.analyticsStatus
+			) {
 				if (
-					this.currentBilling &&
-					this.currentBilling.analyticsData &&
-					this.currentBilling.analyticsData.analyticsStatus
+					this.currentBilling.analyticsData.analyticsStatus ===
+						"free trial" ||
+					this.currentBilling.analyticsData.analyticsStatus ===
+						"Trial expired"
+				)
+					return false;
+				else if (
+					this.currentBilling.analyticsData.analyticsStatus ===
+						"Paid expired" ||
+					this.currentBilling.analyticsData.analyticsStatus ===
+						"Cancelled"
 				) {
 					if (
-						this.currentBilling.analyticsData.analyticsStatus ===
-							"free trial" ||
-						this.currentBilling.analyticsData.analyticsStatus ===
-							"Trial expired"
+						this.currentBilling.name &&
+						(this.currentBilling.name ===
+							"premium-feature-free-trial-1" ||
+							this.currentBilling.name ===
+								"premium feature free trial")
 					)
 						return false;
-					else if (
-						this.currentBilling.analyticsData.analyticsStatus ===
-							"Paid expired" ||
-						this.currentBilling.analyticsData.analyticsStatus ===
-							"Cancelled"
-					) {
-						if (
-							this.currentBilling.name &&
-							(this.currentBilling.name ===
-								"premium-feature-free-trial-1" ||
-								this.currentBilling.name ===
-									"premium feature free trial")
+					else return true;
+				} else return true;
+			} else return false;
+		},
+		filteredRecommendedAddonsDetails() {
+			if (
+				this.recommendedAddonsDetails &&
+				this.recommendedAddonsDetails.length > 0
+			) {
+				return this.recommendedAddonsDetails.filter(
+					(e) =>
+						!(
+							this
+								.doesUserHaveAnActiveFloorplanAndElevationReward &&
+							!this.isAddonPartOfPlan(e.addon)
 						)
-							return false;
-						else return true;
-					} else return true;
-				} else return false;
-			},
-			filteredRecommendedAddonsDetails() {
-				if(this.recommendedAddonsDetails &&
-					this.recommendedAddonsDetails.length > 0) {
-						return this.recommendedAddonsDetails.filter(e => !(this.doesUserHaveAnActiveFloorplanAndElevationReward && !this.isAddonPartOfPlan(e.addon)))
-					}
-				return []
-			},
-			getAvailableRendersText() {
-				if (this.isUserOnUnlimitedRendersPlan) {
-					return this.$t("plansNew.unlimited")
-				}
+				);
+			}
+			return [];
+		},
+		getAvailableRendersText() {
+			if (this.isUserOnUnlimitedRendersPlan) {
+				return this.$t("plansNew.unlimited");
+			}
 
-				return this.mainSub &&
-					this.mainSub.overall &&
-					this.mainSub.overall.renderCredits &&
-					this.mainSub.overall.renderCredits.total
-						? this.mainSub.overall.renderCredits.total
-						: 0
+			return this.mainSub &&
+				this.mainSub.overall &&
+				this.mainSub.overall.renderCredits &&
+				this.mainSub.overall.renderCredits.total
+				? this.mainSub.overall.renderCredits.total
+				: 0;
+		},
+	},
+	watch: {
+		async currentBilling(data) {
+			if (this.currentBilling && this.currentBilling.subscription) {
+				this.cancelSubPlanOffersAPI({
+					subId: this.currentBilling.subscription,
+				});
+			}
+
+			if (
+				this.currentBilling &&
+				this.currentBilling.chargebeeSubscriptionData &&
+				this.currentBilling.chargebeeSubscriptionData.plan_id
+			) {
+				const data = await this.fetchPlanDetailsWithAddons({
+					id: this.currentBilling.chargebeeSubscriptionData.plan_id,
+				});
+				if (
+					data &&
+					data.planDetail &&
+					data.planDetail.attached_addons &&
+					data.planDetail.attached_addons.length > 0
+				) {
+					const tempRecommendedAddons =
+						data.planDetail.attached_addons
+							.filter((e) => e.type == "recommended")
+							.map((e) => e.id);
+					this.recommendedAddonsDetails = data.addonDetails.filter(
+						(e) => tempRecommendedAddons.includes(e.addon.id)
+					);
+					//   this.removeButtonLoaderMap = this.recommendedAddonsDetails.reduce((acc, cv) => { acc[cv.addon.id] = false; return acc }, {})
+					for (const item of this.recommendedAddonsDetails) {
+						this.$set(
+							this.removeButtonLoaderMap,
+							item.addon.id,
+							false
+						);
+					}
+				}
 			}
 		},
-		watch: {
-			async currentBilling(data) {
-				if (this.currentBilling && this.currentBilling.subscription) {
-					this.cancelSubPlanOffersAPI({
-						subId: this.currentBilling.subscription,
-					});
-				}
+	},
+	methods: {
+		...mapActions({
+			cancelSubscription: "Subscriptions/cancel",
+			buy: "Subscriptions/buy",
+			registerUser: "User/registerUser",
+			downloadInvoice: "Billing/downloadInvoice",
+			totalInvoiceDetails: "Billing/allInvoices",
+			cancelFeedBackApi: "Subscriptions/cancelFeedBack",
+			changeBtnClicked: "User/changeBtnClicked",
+			fetchMySubscriptions: "Subscriptions/fetchMySubscriptions",
+			getCreditsInfoAPI: "Subscriptions/getCreditsInfoAPI",
+			cancelSubPlanOffersAPI: "Subscriptions/cancelSubPlanOffersAPI",
+			fetchCurrentSubscription: "Billing/fetchCurrentSub",
+			fetchPackages: "Subscriptions/fetchAll",
+			getTheTourStatus: "Subscriptions/getTheTourStatus",
+			updateTheTourStatus: "Subscriptions/updateTourStatus",
+			getCoinInfoAPI: "Subscriptions/getCoinInfoAPI",
+			getPublicConfiguration: "Subscriptions/getPublicConfiguration",
+			fetchAllRecommendedAddons:
+				"Subscriptions/fetchAllRecommendedAddons",
+			fetchPlanDetailsWithAddons:
+				"Subscriptions/fetchPlanDetailsWithAddons",
+			insertAddonInPlan: "Subscriptions/insertAddonInPlan",
+			removeAddonFromPlan: "Subscriptions/removeAddonFromPlan",
+			fetchCreditTransactions: "PayAsYouGo/fetchCreditTransactions",
+		}),
+		...mapMutations({
+			setPayAsYouGoTransactionsPageTracker:
+				"PayAsYouGo/setPayAsYouGoTransactionsPageTracker",
+		}),
+		openFoyrCoinBadges() {
+			const vm = this;
 
-				if (
-					this.currentBilling &&
-					this.currentBilling.chargebeeSubscriptionData &&
-					this.currentBilling.chargebeeSubscriptionData.plan_id
-				) {
-					const data = await this.fetchPlanDetailsWithAddons({
-						id: this.currentBilling.chargebeeSubscriptionData.plan_id,
-					});
-					if (
-						data &&
-						data.planDetail &&
-						data.planDetail.attached_addons &&
-						data.planDetail.attached_addons.length > 0
-					) {
-						const tempRecommendedAddons =
-							data.planDetail.attached_addons
-								.filter((e) => e.type == "recommended")
-								.map((e) => e.id);
-						this.recommendedAddonsDetails = data.addonDetails.filter(
-							(e) => tempRecommendedAddons.includes(e.addon.id)
-						);
-						//   this.removeButtonLoaderMap = this.recommendedAddonsDetails.reduce((acc, cv) => { acc[cv.addon.id] = false; return acc }, {})
-						for (const item of this.recommendedAddonsDetails) {
-							this.$set(
-								this.removeButtonLoaderMap,
-								item.addon.id,
-								false
-							);
-						}
-					}
-				}
-			},
+			vm.getTheTourStatus().then(() => {
+				this.showFoyrCoinBadges = true;
+			});
+
+			vm.getCoinInfoAPI();
 		},
-		methods: {
-			...mapActions({
-				cancelSubscription: "Subscriptions/cancel",
-				buy: "Subscriptions/buy",
-				registerUser: "User/registerUser",
-				downloadInvoice: "Billing/downloadInvoice",
-				totalInvoiceDetails: "Billing/allInvoices",
-				cancelFeedBackApi: "Subscriptions/cancelFeedBack",
-				changeBtnClicked: "User/changeBtnClicked",
-				fetchMySubscriptions: "Subscriptions/fetchMySubscriptions",
-				getCreditsInfoAPI: "Subscriptions/getCreditsInfoAPI",
-				cancelSubPlanOffersAPI: "Subscriptions/cancelSubPlanOffersAPI",
-				fetchCurrentSubscription: "Billing/fetchCurrentSub",
-				fetchPackages: "Subscriptions/fetchAll",
-				getTheTourStatus: "Subscriptions/getTheTourStatus",
-				updateTheTourStatus: "Subscriptions/updateTourStatus",
-				getCoinInfoAPI: "Subscriptions/getCoinInfoAPI",
-				getPublicConfiguration: "Subscriptions/getPublicConfiguration",
-				fetchAllRecommendedAddons:
-					"Subscriptions/fetchAllRecommendedAddons",
-				fetchPlanDetailsWithAddons:
-					"Subscriptions/fetchPlanDetailsWithAddons",
-				insertAddonInPlan: "Subscriptions/insertAddonInPlan",
-				removeAddonFromPlan: "Subscriptions/removeAddonFromPlan",
-				fetchCreditTransactions: "PayAsYouGo/fetchCreditTransactions",
-			}),
-			...mapMutations({
-				setPayAsYouGoTransactionsPageTracker: "PayAsYouGo/setPayAsYouGoTransactionsPageTracker",
-			}),
-			openFoyrCoinBadges() {
-				const vm = this;
-
-				vm.getTheTourStatus().then(() => {
-					this.showFoyrCoinBadges = true;
-				});
-
-				vm.getCoinInfoAPI();
-			},
-			closeFoyrCoinBadges() {
-				this.showFoyrCoinBadges = false;
-			},
-			total(service, type, field, field2) {
-				if (this.mainSub[type][service])
-					return this.mainSub[type][service].reduce((a, b) => {
-						if (field2) {
-							return a + b[field][field2];
-						} else {
-							return a + b[field];
-						}
-					}, 0);
-				else return 0;
-			},
-			outsideClick() {
-				if (this.getFreeDemoShow_Desk) this.getFreeDemoShow_Desk = false;
-			},
-			closePopup() {
-				this.show = false;
-				this.credits = false;
-				this.cancelSub = false;
-				this.showBills = false;
-				this.selectedCancelCategory = "";
-				this.getFreeDemoShow_Desk = false;
-				this.cancelfeedBack = "";
-				this.isCantBuy = false;
-				this.changeBtnClicked(false);
-			},
-			cancelContainer(container) {
-				if (container == "show") {
-					this.cancelSub = false;
-				}
-			},
-			cancelSubs: function () {
-				this.cancelSubscription({
-					id: this.currentBilling.subscription,
-					accountId: this.user.accountId,
-				}).then((res) => {
-					this.cancelCta(
-						this.cancelOptionText[this.selectedCancelCategory].name,
-						false
-					);
-					this.show = false;
-					this.message.error = false;
-					this.selectedCancelCategory = "";
-					this.message.value = this.$t("plansNew.subscriptionCancelledMessage") ;
-					this.message.global = true;
-					this.cancelSub = false;
-					setTimeout(() => {
-						this.message.global = false;
-						this.message.value = "";
-					}, 4000);
-				});
-			},
-			handleCancelSubscriptionClick() {
-				this.$root.$emit("show-blocking-loading", true);
-
-				this.cancelSubscription({
-					id: this.currentBilling.subscription,
-					accountId: this.user.accountId
-				}).then(res => {
-					setTimeout(async () => {
-						await this.fetchCurrentSubscription({
-							accountId: this.user.accountId
-						});
-						this.showNonEnCancelConfrimationPopup = false
-						this.$root.$emit("show-blocking-loading", false);
-						this.message.value = this.$t("messages.cancelSubscriptionConfrimText");
-						this.message.global = true;
-						setTimeout(() => {
-							this.message.global = false;
-							this.message.value = "";
-						}, 4000);
-					}, 11000);
-				});
-			},
-			invoiceDownload(accountId, invoiceId) {
-				this.downloadInvoice({ accountId, invoiceId });
-			},
-			dateFormat: function (date) {
-				let newDate = new Date(date);
-				let mlist = [
-					"January",
-					"February",
-					"March",
-					"April",
-					"May",
-					"June",
-					"July",
-					"August",
-					"September",
-					"October",
-					"November",
-					"December",
-				];
-				newDate =
-					mlist[newDate.getMonth()] +
-					" " +
-					newDate.getDate() +
-					", " +
-					newDate.getFullYear();
-				return newDate;
-			},
-			getAllInvoice: function () {
-				this.invoiceLoading = true;
-				this.showBills = true;
-				this.totalInvoiceDetails({ accountId: this.user.accountId })
-					.then((res) => {
-						if (res) {
-							this.allInvoice = res.data;
-							this.invoiceLoading = false;
-						}
-					})
-					.catch((err) => {
-						console.log("ERROR WHILE GETTING INVOICE DETAILS", err);
-					});
-			},
-			cancelCta(head, button) {
-				let eventTitle = "";
-				if (head == "DIFFICULT TO USE" && button) {
-					this.getFreeDemoShow_Desk = true;
-					// this.eventTitle = 'Notusingenough_pause_clicked'
-					this.message.value = this.$t("plansNew.personalizedSessionScheduledMessage");
-				}
-				if (
-					(head == "I DONT' USE IT ENOUGH" || head == "COVID19") &&
-					button
-				) {
-					if (head === "I DONT' USE IT ENOUGH")
-						eventTitle = "Notusingenough_pause_clicked";
-					else if (head == "COVID19") eventTitle = "Covid_pause_clicked";
-					else {
-					}
-					this.message.value = this.$t("plansNew.yourSubscriptionPausedshortlyMessage");
-				} else {
-					if (head === "TOO EXPENSIVE") {
-						eventTitle = "Expensive_offer_clicked";
+		closeFoyrCoinBadges() {
+			this.showFoyrCoinBadges = false;
+		},
+		total(service, type, field, field2) {
+			if (this.mainSub[type][service])
+				return this.mainSub[type][service].reduce((a, b) => {
+					if (field2) {
+						return a + b[field][field2];
 					} else {
-						eventTitle = "subscriptionCancelled";
+						return a + b[field];
 					}
-					this.message.value = this.$t("plansNew.teamGetInTouchMessage");
-				}
-				let payload = {
-					data: {
-						category: head,
-						feedback: this.cancelfeedBack,
-						button: button,
-					},
-					accountId: this.user.accountId,
-					subId: this.currentBilling.subscription,
-				};
-				if (window.analytics) {
-					analytics.track(
-						eventTitle,
-						{
-							author: this.user.email,
-							action: "clicked",
-							reason:
-								eventTitle === "subscriptionCancelled"
-									? this.cancelfeedBack
-									: head,
-						},
-						{
-							integrations: {
-								Amplitude: { session_id: new Date().getTime() },
-							},
-						},
-						{ timestamp: new Date().getTime() }
+				}, 0);
+			else return 0;
+		},
+		outsideClick() {
+			if (this.getFreeDemoShow_Desk) this.getFreeDemoShow_Desk = false;
+		},
+		closePopup() {
+			this.show = false;
+			this.credits = false;
+			this.cancelSub = false;
+			this.showBills = false;
+			this.selectedCancelCategory = "";
+			this.getFreeDemoShow_Desk = false;
+			this.cancelfeedBack = "";
+			this.isCantBuy = false;
+			this.changeBtnClicked(false);
+		},
+		cancelContainer(container) {
+			if (container == "show") {
+				this.cancelSub = false;
+			}
+		},
+		cancelSubs: function () {
+			this.cancelSubscription({
+				id: this.currentBilling.subscription,
+				accountId: this.user.accountId,
+			}).then((res) => {
+				this.cancelCta(
+					this.cancelOptionText[this.selectedCancelCategory].name,
+					false
+				);
+				this.show = false;
+				this.message.error = false;
+				this.selectedCancelCategory = "";
+				this.message.value = this.$t(
+					"plansNew.subscriptionCancelledMessage"
+				);
+				this.message.global = true;
+				this.cancelSub = false;
+				setTimeout(() => {
+					this.message.global = false;
+					this.message.value = "";
+				}, 4000);
+			});
+		},
+		handleCancelSubscriptionClick() {
+			this.$root.$emit("show-blocking-loading", true);
+
+			this.cancelSubscription({
+				id: this.currentBilling.subscription,
+				accountId: this.user.accountId,
+			}).then((res) => {
+				setTimeout(async () => {
+					await this.fetchCurrentSubscription({
+						accountId: this.user.accountId,
+					});
+					this.showNonEnCancelConfrimationPopup = false;
+					this.$root.$emit("show-blocking-loading", false);
+					this.message.value = this.$t(
+						"messages.cancelSubscriptionConfrimText"
 					);
-				}
-				this.cancelFeedBackApi(payload).then((res) => {
-					if (button && head != "DIFFICULT TO USE") {
-						this.message.error = false;
-						this.message.global = true;
-					}
-					this.cancelSub = false;
-					this.selectedCancelCategory = "";
+					this.message.global = true;
 					setTimeout(() => {
 						this.message.global = false;
 						this.message.value = "";
 					}, 4000);
+				}, 11000);
+			});
+		},
+		invoiceDownload(accountId, invoiceId) {
+			this.downloadInvoice({ accountId, invoiceId });
+		},
+		dateFormat: function (date) {
+			let newDate = new Date(date);
+			let mlist = [
+				"January",
+				"February",
+				"March",
+				"April",
+				"May",
+				"June",
+				"July",
+				"August",
+				"September",
+				"October",
+				"November",
+				"December",
+			];
+			newDate =
+				mlist[newDate.getMonth()] +
+				" " +
+				newDate.getDate() +
+				", " +
+				newDate.getFullYear();
+			return newDate;
+		},
+		getAllInvoice: function () {
+			this.invoiceLoading = true;
+			this.showBills = true;
+			this.totalInvoiceDetails({ accountId: this.user.accountId })
+				.then((res) => {
+					if (res) {
+						this.allInvoice = res.data;
+						this.invoiceLoading = false;
+					}
+				})
+				.catch((err) => {
+					console.log("ERROR WHILE GETTING INVOICE DETAILS", err);
 				});
-			},
-			upgradeClicked() {
-				this.show = true;
-				this.changeBtnClicked(true);
-			},
-			cancelSubClicked() {
-				if (
-					this.currentBilling &&
-					this.currentBilling.subscriptionStatus &&
-					this.currentBilling.subscriptionStatus === "cancled"
-				) {
-					this.isCantBuy = true;
-					return;
+		},
+		cancelCta(head, button) {
+			let eventTitle = "";
+			if (head == "DIFFICULT TO USE" && button) {
+				this.getFreeDemoShow_Desk = true;
+				// this.eventTitle = 'Notusingenough_pause_clicked'
+				this.message.value = this.$t(
+					"plansNew.personalizedSessionScheduledMessage"
+				);
+			}
+			if (
+				(head == "I DONT' USE IT ENOUGH" || head == "COVID19") &&
+				button
+			) {
+				if (head === "I DONT' USE IT ENOUGH")
+					eventTitle = "Notusingenough_pause_clicked";
+				else if (head == "COVID19") eventTitle = "Covid_pause_clicked";
+				else {
 				}
-				this.cancelSub = true;
-				this.selectedCancelCategory = "covid19";
-				if (window.analytics) {
-					analytics.track(
-						"Cancel_flow_opened",
-						{
-							author: this.user.email,
-							action: "open",
-						},
-						{
-							integrations: {
-								Amplitude: { session_id: new Date().getTime() },
-							},
-						},
-						{ timestamp: new Date().getTime() }
-					);
+				this.message.value = this.$t(
+					"plansNew.yourSubscriptionPausedshortlyMessage"
+				);
+			} else {
+				if (head === "TOO EXPENSIVE") {
+					eventTitle = "Expensive_offer_clicked";
+				} else {
+					eventTitle = "subscriptionCancelled";
 				}
-			},
-			onClickCancel() {
-				//  disable cancel button for 1second
-				this.disablePointerEvents = true;
-
+				this.message.value = this.$t("plansNew.teamGetInTouchMessage");
+			}
+			let payload = {
+				data: {
+					category: head,
+					feedback: this.cancelfeedBack,
+					button: button,
+				},
+				accountId: this.user.accountId,
+				subId: this.currentBilling.subscription,
+			};
+			if (window.analytics) {
+				analytics.track(
+					eventTitle,
+					{
+						author: this.user.email,
+						action: "clicked",
+						reason:
+							eventTitle === "subscriptionCancelled"
+								? this.cancelfeedBack
+								: head,
+					},
+					{
+						integrations: {
+							Amplitude: { session_id: new Date().getTime() },
+						},
+					},
+					{ timestamp: new Date().getTime() }
+				);
+			}
+			this.cancelFeedBackApi(payload).then((res) => {
+				if (button && head != "DIFFICULT TO USE") {
+					this.message.error = false;
+					this.message.global = true;
+				}
+				this.cancelSub = false;
+				this.selectedCancelCategory = "";
 				setTimeout(() => {
-					this.disablePointerEvents = false;
-				}, 1000);
+					this.message.global = false;
+					this.message.value = "";
+				}, 4000);
+			});
+		},
+		upgradeClicked() {
+			this.show = true;
+			this.changeBtnClicked(true);
+		},
+		cancelSubClicked() {
+			if (
+				this.currentBilling &&
+				this.currentBilling.subscriptionStatus &&
+				this.currentBilling.subscriptionStatus === "cancled"
+			) {
+				this.isCantBuy = true;
+				return;
+			}
+			this.cancelSub = true;
+			this.selectedCancelCategory = "covid19";
+			if (window.analytics) {
+				analytics.track(
+					"Cancel_flow_opened",
+					{
+						author: this.user.email,
+						action: "open",
+					},
+					{
+						integrations: {
+							Amplitude: { session_id: new Date().getTime() },
+						},
+					},
+					{ timestamp: new Date().getTime() }
+				);
+			}
+		},
+		onClickCancel() {
+			//  disable cancel button for 1second
+			this.disablePointerEvents = true;
 
-				if(this.isUserJapanese || this.isUserSpanish) {
-					this.showNonEnCancelConfrimationPopup= true
-					return;
-				}
-				if(this.isUserOnPayAsYouGoPlan ) {
-					this.showPayAsYouGoCancelSubscriptionPopup = true
-					return;
-				}
+			setTimeout(() => {
+				this.disablePointerEvents = false;
+			}, 1000);
 
-				// if (
-				// 	this.currentBilling &&
-				// 	this.currentBilling.subscriptionStatus &&
-				// 	this.currentBilling.subscriptionStatus === "cancled"
-				// ) {
-				// 	this.isCantBuy = true;
-				// 	return;
-				// }
+			if (this.isUserJapanese || this.isUserSpanish) {
+				this.showNonEnCancelConfrimationPopup = true;
+				return;
+			}
+			if (this.isUserOnPayAsYouGoPlan) {
+				this.showPayAsYouGoCancelSubscriptionPopup = true;
+				return;
+			}
 
+			// if (
+			// 	this.currentBilling &&
+			// 	this.currentBilling.subscriptionStatus &&
+			// 	this.currentBilling.subscriptionStatus === "cancled"
+			// ) {
+			// 	this.isCantBuy = true;
+			// 	return;
+			// }
 
-				// if (
-				// 	this.fetchAccountInfo &&
-				// 	this.fetchAccountInfo.typeform &&
-				// 	(
-				// 		( this.fetchAccountInfo.typeform.isExtendSubscription && this.fetchAccountInfo.typeform.isExtendSubscription.typeformShown)  ||
-				// 		( this.fetchAccountInfo.typeform.isCancelSubscription && this.fetchAccountInfo.typeform.isCancelSubscription.typeformShown)
-				// 	)
-				// ) {
-				// 	// console.log("asdasdasdasd2")
-				// 	this.isContactPause = true
-				// 	return;
-				// }
+			// if (
+			// 	this.fetchAccountInfo &&
+			// 	this.fetchAccountInfo.typeform &&
+			// 	(
+			// 		( this.fetchAccountInfo.typeform.isExtendSubscription && this.fetchAccountInfo.typeform.isExtendSubscription.typeformShown)  ||
+			// 		( this.fetchAccountInfo.typeform.isCancelSubscription && this.fetchAccountInfo.typeform.isCancelSubscription.typeformShown)
+			// 	)
+			// ) {
+			// 	// console.log("asdasdasdasd2")
+			// 	this.isContactPause = true
+			// 	return;
+			// }
 
+			let P1PlanList = [
+				"neo-basic-quarterly-inr",
+				"neo-standard-monthly-inr",
+				"neo-basic-monthly-inr",
+				"neo-pro-quarterly",
+				"neo-premium-quarterly",
+				"neo-premium-quarterly-cad",
+				"neo-pro-monthly",
+				"foyr-premium-quarterly-stg",
+				"neo-standard-quarterly",
+				"neo-standard-quarterly-cad",
+				"neo-premium-monthly",
+				"neo-premium-monthly-cad",
+				"neo-basic-quarterly",
+				"neo-basic-quarterly-cad",
+				"foyr-premium-monthly-stg",
+				"neo-standard-monthly",
+				"neo-standard-monthly-cad",
+				"foyr-basic-quarterly-stg",
+				"neo-basic-monthly",
+				"foyr-standard-monthly",
+				"neo-basic-monthly-cad",
+				"foyr-basic-monthly-stg",
+				"neo-premium-monthly-inr",
+				"neo-basic-monthly-inr-low",
+				"neo-standard-monthly-inr-low",
+				"neo-premium-monthly-inr-low",
+			];
+			let P2PlanList = [
+				"neo-premium-yearly-inr",
+				"neo-standard-yearly-inr",
+				"neo-basic-yearly-inr",
+				"neo-pro-yearly",
+				"neo-pro-half-yearly",
+				"neo-premium-yearly-cad---1",
+				"neo-premium-yearly",
+				"neo-premium-half-yearly",
+				"foyr-premium-yearly-stg",
+				"neo-standard-half-yearly",
+				"neo-standard-yearly",
+				"neo-standard-yearly-cad",
+				"neo-basic-yearly",
+				"neo-basic-yearly-cad",
+				"foyr-standard-yearly-stg",
+				"foyr-basic-yearly-stg",
+				"neo-basic-half-yearly",
+				"neo-basic-yearly-inr-low",
+				"neo-standard-yearly-inr-low",
+				"neo-premium-yearly-inr-low",
+			];
+			let P3PlanList = [
+				"neo-light-yearly-inr",
+				"neo-standard-lite-monthly-inr",
+				"neo-light-monthly-inr",
+				"foyr-neo-lite-monthly-INR",
+				"neo-standard-lite-yearly-stg",
+				"neo-standard-lite-yearly-cad",
+				"neo-light-yearly",
+				"neo-light-yearly-cad",
+				"neo-lite-yearly",
+				"neo-premium-basic-plan-staging",
+				"neo-retention-monthly-cad",
+				"neo-retention-monthly-stg",
+				"neo-standard-lite-monthly-cad",
+				"neo-standard-annual-plan",
+				"neo-light-monthly",
+				"neo-light-monthly-cad",
+				"neo-lite-monthly",
+				"neo-lite-monthly-cad",
+				"foyr-neo-lite-monthly",
+				"foyr-neo-lite-monthly-CAD",
+				"neo-ultra-lite-monthly",
+			];
 
-				let P1PlanList = ['neo-basic-quarterly-inr','neo-standard-monthly-inr','neo-basic-monthly-inr','neo-pro-quarterly','neo-premium-quarterly','neo-premium-quarterly-cad','neo-pro-monthly','foyr-premium-quarterly-stg','neo-standard-quarterly','neo-standard-quarterly-cad','neo-premium-monthly','neo-premium-monthly-cad','neo-basic-quarterly','neo-basic-quarterly-cad','foyr-premium-monthly-stg','neo-standard-monthly','neo-standard-monthly-cad','foyr-basic-quarterly-stg','neo-basic-monthly','foyr-standard-monthly','neo-basic-monthly-cad','foyr-basic-monthly-stg','neo-premium-monthly-inr', 'neo-basic-monthly-inr-low', 'neo-standard-monthly-inr-low', 'neo-premium-monthly-inr-low' ]
-      	let P2PlanList = ['neo-premium-yearly-inr','neo-standard-yearly-inr','neo-basic-yearly-inr','neo-pro-yearly','neo-pro-half-yearly','neo-premium-yearly-cad---1','neo-premium-yearly','neo-premium-half-yearly','foyr-premium-yearly-stg','neo-standard-half-yearly','neo-standard-yearly','neo-standard-yearly-cad','neo-basic-yearly','neo-basic-yearly-cad','foyr-standard-yearly-stg','foyr-basic-yearly-stg','neo-basic-half-yearly', 'neo-basic-yearly-inr-low', 'neo-standard-yearly-inr-low', 'neo-premium-yearly-inr-low']
-      	let P3PlanList = ['neo-light-yearly-inr','neo-standard-lite-monthly-inr','neo-light-monthly-inr','foyr-neo-lite-monthly-INR','neo-standard-lite-yearly-stg','neo-standard-lite-yearly-cad','neo-light-yearly','neo-light-yearly-cad','neo-lite-yearly','neo-premium-basic-plan-staging','neo-retention-monthly-cad','neo-retention-monthly-stg','neo-standard-lite-monthly-cad','neo-standard-annual-plan','neo-light-monthly','neo-light-monthly-cad','neo-lite-monthly','neo-lite-monthly-cad','foyr-neo-lite-monthly','foyr-neo-lite-monthly-CAD','neo-ultra-lite-monthly']
-
-				if(this.cancelSubState.discountOfferApi && this.cancelSubState.discountOfferApi.isPauseApplied) {
-
-					if(
+			if (
+				this.cancelSubState.discountOfferApi &&
+				this.cancelSubState.discountOfferApi.isPauseApplied
+			) {
+				if (
 					this.currentBilling &&
 					this.currentBilling.chargebeeSubscriptionData &&
 					this.currentBilling.chargebeeSubscriptionData.plan_id &&
-					P1PlanList.includes(this.currentBilling.chargebeeSubscriptionData.plan_id)
-					){
-
-						this.showcancelPageTypeForm = true;
-						this.cancelPageTypeFormData.formId = "DwA8YLbU"
-						setTimeout(()=>{this.showcancelPageTypeForm = false}, 2000)
-						return;
-
-					}
-					if(
-					this.currentBilling &&
-					this.currentBilling.chargebeeSubscriptionData &&
-					this.currentBilling.chargebeeSubscriptionData.plan_id &&
-					P2PlanList.includes(this.currentBilling.chargebeeSubscriptionData.plan_id)
-					){
-
-						this.showcancelPageTypeForm = true;
-						this.cancelPageTypeFormData.formId = "DJ6huWCi"
-						setTimeout(()=>{this.showcancelPageTypeForm = false}, 2000)
-						return;
-
-					}
-
+					P1PlanList.includes(
+						this.currentBilling.chargebeeSubscriptionData.plan_id
+					)
+				) {
 					this.showcancelPageTypeForm = true;
-					this.cancelPageTypeFormData.formId = "xPwBybxL"
-					setTimeout(()=>{this.showcancelPageTypeForm = false}, 2000)
+					this.cancelPageTypeFormData.formId = "DwA8YLbU";
+					setTimeout(() => {
+						this.showcancelPageTypeForm = false;
+					}, 2000);
 					return;
-
-
-				}else{
-					this.$router.push({path:'/settings/plans', query: {flow:'cancel-sub',type:'cs-home', page: 1}})
 				}
-
-
-
-
 				if (
-					this.publicConfiguration &&
-					this.publicConfiguration.typeform &&
-					this.publicConfiguration.typeform.buyYearPayMonExp &&
-					this.publicConfiguration.typeform.buyYearPayMonExp
-						.showTypeform &&
 					this.currentBilling &&
-					this.currentBilling.name === "neo standard annual plan"
+					this.currentBilling.chargebeeSubscriptionData &&
+					this.currentBilling.chargebeeSubscriptionData.plan_id &&
+					P2PlanList.includes(
+						this.currentBilling.chargebeeSubscriptionData.plan_id
+					)
 				) {
-					let isBuyYearPayMonExpTypeFormShown =
-						this.fetchAccountInfo &&
-						this.fetchAccountInfo.typeform &&
-						this.fetchAccountInfo.typeform.buyYearPayMonExp &&
-						this.fetchAccountInfo.typeform.buyYearPayMonExp
-							.typeformShown
-							? true
-							: false;
-
-					if (!isBuyYearPayMonExpTypeFormShown) {
-						this.showbuyYearPayMonExp = true;
-						setTimeout(() => {
-							this.showbuyYearPayMonExp = false;
-						}, 2000);
-						return;
-					}
+					this.showcancelPageTypeForm = true;
+					this.cancelPageTypeFormData.formId = "DJ6huWCi";
+					setTimeout(() => {
+						this.showcancelPageTypeForm = false;
+					}, 2000);
+					return;
 				}
 
-				if (
-					this.currentBilling &&
-					this.currentBilling.invoice.period == 1 &&
-					this.currentBilling.status != "in_trial" &&
-					this.user.accountExtraInfo &&
-					this.user.accountExtraInfo.userCategory ==
-						"Interior Designer" &&
-					this.user.ipInfo.country == "US" &&
-					this.cancelSubState.discountOfferApi &&
-					this.cancelSubState.discountOfferApi.isPauseApplied &&
-					this.publicConfiguration.typeform.cancelPage
-				) {
-					console.log("typeform");
-					let isCancelTypeformShown =
-						this.fetchAccountInfo &&
-						this.fetchAccountInfo.typeform &&
-						this.fetchAccountInfo.typeform.cancelPage &&
-						this.fetchAccountInfo.typeform.cancelPage.typeformShown
-							? true
-							: false;
-					// if cancellation typeform is already shown - don't show it again
-					if (!isCancelTypeformShown) {
-						this.showcancelPageTypeForm = true;
-						setTimeout(() => {
-							this.showcancelPageTypeForm = false;
-						}, 2000);
-						return;
-					}
+				this.showcancelPageTypeForm = true;
+				this.cancelPageTypeFormData.formId = "xPwBybxL";
+				setTimeout(() => {
+					this.showcancelPageTypeForm = false;
+				}, 2000);
+				return;
+			} else {
+				this.$router.push({
+					path: "/settings/plans",
+					query: { flow: "cancel-sub", type: "cs-home", page: 1 },
+				});
+			}
+
+			if (
+				this.publicConfiguration &&
+				this.publicConfiguration.typeform &&
+				this.publicConfiguration.typeform.buyYearPayMonExp &&
+				this.publicConfiguration.typeform.buyYearPayMonExp
+					.showTypeform &&
+				this.currentBilling &&
+				this.currentBilling.name === "neo standard annual plan"
+			) {
+				let isBuyYearPayMonExpTypeFormShown =
+					this.fetchAccountInfo &&
+					this.fetchAccountInfo.typeform &&
+					this.fetchAccountInfo.typeform.buyYearPayMonExp &&
+					this.fetchAccountInfo.typeform.buyYearPayMonExp
+						.typeformShown
+						? true
+						: false;
+
+				if (!isBuyYearPayMonExpTypeFormShown) {
+					this.showbuyYearPayMonExp = true;
+					setTimeout(() => {
+						this.showbuyYearPayMonExp = false;
+					}, 2000);
+					return;
 				}
-				// show pause subscription screen for lower plan users
-				// if (this.isLPUPlan) {
-				//   this.$router.push({path:'/settings/plans', query: {flow:'cancel-sub',type:'cs-cancel', page: 1}})
-				//   return;
-				// }
+			}
+
+			if (
+				this.currentBilling &&
+				this.currentBilling.invoice.period == 1 &&
+				this.currentBilling.status != "in_trial" &&
+				this.user.accountExtraInfo &&
+				this.user.accountExtraInfo.userCategory ==
+					"Interior Designer" &&
+				this.user.ipInfo.country == "US" &&
+				this.cancelSubState.discountOfferApi &&
+				this.cancelSubState.discountOfferApi.isPauseApplied &&
+				this.publicConfiguration.typeform.cancelPage
+			) {
+				console.log("typeform");
+				let isCancelTypeformShown =
+					this.fetchAccountInfo &&
+					this.fetchAccountInfo.typeform &&
+					this.fetchAccountInfo.typeform.cancelPage &&
+					this.fetchAccountInfo.typeform.cancelPage.typeformShown
+						? true
+						: false;
+				// if cancellation typeform is already shown - don't show it again
+				if (!isCancelTypeformShown) {
+					this.showcancelPageTypeForm = true;
+					setTimeout(() => {
+						this.showcancelPageTypeForm = false;
+					}, 2000);
+					return;
+				}
+			}
+			// show pause subscription screen for lower plan users
+			// if (this.isLPUPlan) {
+			//   this.$router.push({path:'/settings/plans', query: {flow:'cancel-sub',type:'cs-cancel', page: 1}})
+			//   return;
+			// }
+			if (
+				this.currentBilling &&
+				this.currentBilling.analyticsData &&
+				this.currentBilling.analyticsData.analyticsStatus
+			) {
 				if (
-					this.currentBilling &&
-					this.currentBilling.analyticsData &&
-					this.currentBilling.analyticsData.analyticsStatus
+					this.user &&
+					this.user.subInfo &&
+					this.user.subInfo.cancel_popup
 				) {
 					if (
-						this.user &&
-						this.user.subInfo &&
-						this.user.subInfo.cancel_popup
+						this.cancelSubState.discountOfferApi &&
+						this.cancelSubState.discountOfferApi.isPauseApplied
 					) {
 						if (
-							this.cancelSubState.discountOfferApi &&
-							this.cancelSubState.discountOfferApi.isPauseApplied
-						) {
-							if (
-								this.currentBilling.analyticsData
-									.analyticsStatus === "paid"
-							)
-								this.$router.push({
-									path: "/settings/plans",
-									query: {
-										flow: "cancel-sub",
-										type: "cs-cancel",
-										page: 1,
-									},
-								});
-							else this.isContactPause = true;
-						} else this.openNewCancelFlow = true;
-					} else {
-						if (window.analytics) {
-							window.analytics.track(
-								"Cancel_button",
-								{
-									name: "Cancel subscription",
-									flow: "Cancellation",
-								},
-								{
-									integrations: {
-										Amplitude: {
-											session_id: new Date().getTime(),
-										},
-									},
-								},
-								{ timestamp: new Date().getTime() }
-							);
-						}
-						if (
-							(this.cancelSubState.discountOfferApi &&
-								this.cancelSubState.discountOfferApi
-									.isPauseApplied) ||
-							(this.currentBilling &&
-								this.currentBilling.status &&
-								this.currentBilling.status === "in_trial") ||
-							this.currentBilling.analyticsData.analyticsStatus ===
-								"paywall_intrial" ||
-							(this.fetchAccountInfo &&
-								this.fetchAccountInfo.hasOwnProperty(
-									"disableCancellationFlow"
-								) &&
-								this.fetchAccountInfo.disableCancellationFlow)
-						) {
+							this.currentBilling.analyticsData
+								.analyticsStatus === "paid"
+						)
 							this.$router.push({
 								path: "/settings/plans",
 								query: {
@@ -2464,549 +2737,751 @@
 									page: 1,
 								},
 							});
-						} else
-							this.$router.push({
-								path: "/settings/plans",
-								query: {
-									flow: "cancel-sub",
-									type: "cs-home",
-									page: 1,
-								},
-							});
-					}
+						else this.isContactPause = true;
+					} else this.openNewCancelFlow = true;
 				} else {
-				}
-			},
-			handleAddAddonButtonClick(addon) {
-				this.isRedirecting = true;
-				this.credits = false;
-				this.insertAddonInPlan({
-					id: this.currentBilling.chargebeeSubscriptionData.id,
-					plan_id: this.currentBilling.chargebeeSubscriptionData.plan_id,
-					addons: [{ id: addon.id }],
-				}).then((res) => {
-					this.isRedirecting = false;
-					this.packageId = "";
-					let chargebeeInstance = Chargebee.getInstance();
-					if (this.isChargebee) {
-						chargebeeInstance.openCheckout({
-							hostedPage: function () {
-								return new Promise(function (resolve, reject) {
-									resolve(res.data.hosted_page);
-								});
-							},
-							success: function (hostedPageId) {
-								window.$nuxt.$emit("bill-update-request", {
-									payment: true,
-								});
-							},
-							error: function (err) {
-								console.log(err);
-							},
-							close: function () {
-								window.$nuxt.$emit("payment-popup-close", {
-									type: "addon",
-									waitingTime: 8000,
-								});
-								// Optional
-								// will be called when the user closes the checkout modal box
-							},
-						});
-					} else window.open(res.hostedPage.url);
-
 					if (window.analytics) {
 						window.analytics.track(
-							"Buy_export_FP",
+							"Cancel_button",
 							{
-								action: "click",
-								event_category: "Add On",
-								author: this.user.email,
+								name: "Cancel subscription",
+								flow: "Cancellation",
 							},
 							{
 								integrations: {
-									Amplitude: { session_id: new Date().getTime() },
+									Amplitude: {
+										session_id: new Date().getTime(),
+									},
 								},
 							},
 							{ timestamp: new Date().getTime() }
 						);
 					}
-				});
-			},
-			handleRemoveAddonButtonClick(addon) {
-				this.isRemoveAddonConfirmationPopupVisible = true;
-				this.selectedAddonToRemove = addon;
-			},
-			removeAddon(addon) {
-        this.isRemoveAddonConfirmationPopupVisible = false;
-				this.removeButtonLoaderMap[addon.id] = true;
-				this.removeAddonFromPlan({
-					id: this.currentBilling.chargebeeSubscriptionData.id,
-					plan_id: this.currentBilling.chargebeeSubscriptionData.plan_id,
-					addons: [addon.id],
-				}).then((res) => {
-					this.fetchCurrentSubscription({
-						accountId: this.user.accountId,
-					}).finally(() => {
-						this.removeButtonLoaderMap[addon.id] = false;
-					});
-				});
-			},
-			isPackageNeoStandard(_packageName) {
-				if (_packageName === "Neo Standard") return true;
-				return false;
-			},
-			isPackageNeoBasic(_packageName) {
-				if (_packageName === "Neo Basic") return true;
-				return false;
-			},
-			isPackageNeoPremium(_packageName) {
-				if (_packageName === "Neo Premium") return true;
-				return false;
-			},
-			isAddonPartOfPlan(addon) {
-				if (
-					this.currentBilling &&
-					this.currentBilling.chargebeeSubscriptionData &&
-					this.currentBilling.chargebeeSubscriptionData.addons
-				) {
-					// write logic to check if any of the recommended addons are a part of the charebee data addon
-					return this.currentBilling.chargebeeSubscriptionData.addons.find(
-						(e) => e.id == addon.id
-					);
+					if (
+						(this.cancelSubState.discountOfferApi &&
+							this.cancelSubState.discountOfferApi
+								.isPauseApplied) ||
+						(this.currentBilling &&
+							this.currentBilling.status &&
+							this.currentBilling.status === "in_trial") ||
+						this.currentBilling.analyticsData.analyticsStatus ===
+							"paywall_intrial" ||
+						(this.fetchAccountInfo &&
+							this.fetchAccountInfo.hasOwnProperty(
+								"disableCancellationFlow"
+							) &&
+							this.fetchAccountInfo.disableCancellationFlow)
+					) {
+						this.$router.push({
+							path: "/settings/plans",
+							query: {
+								flow: "cancel-sub",
+								type: "cs-cancel",
+								page: 1,
+							},
+						});
+					} else
+						this.$router.push({
+							path: "/settings/plans",
+							query: {
+								flow: "cancel-sub",
+								type: "cs-home",
+								page: 1,
+							},
+						});
 				}
-
-				return false;
-			},
-			loadMoreTransactions() {
-				this.setPayAsYouGoTransactionsPageTracker(this.payAsYouGoTransactionsPageTracker + 1);
-				this.fetchCreditTransactions({
-					page: this.payAsYouGoTransactionsPageTracker
-				})
-			},
-			handlePayAsYouGoAddonBuy() {
-				this.payAsYouGoAddons = true;
-				this.sendEventToSegment('Buy more credits clicked')
-			},
-			closePayAsYouGoAddonBuyPopup() {
-				this.payAsYouGoAddons = false;
-			},
-			sendEventToSegment(_eventName) {
-				if (window.analytics) {
-					window.analytics.track(_eventName, {
-						title: _eventName,
-					}, { 'integrations': { "Amplitude": { "session_id": new Date().getTime() } } }, { "timestamp": new Date().getTime() });
-				}
-			},
-			handlePayAsYouGoChangePlans() {
-				this.$router.push({path:this.localePath('/settings/plans_new')})
-			},
-			handleSeePlanDetails() {
-				window.open(window.location.origin + this.localePath('/pay-as-you-go'), "_blank")
+			} else {
 			}
 		},
-	};
+		handleAddAddonButtonClick(addon) {
+			this.isRedirecting = true;
+			this.credits = false;
+			this.insertAddonInPlan({
+				id: this.currentBilling.chargebeeSubscriptionData.id,
+				plan_id: this.currentBilling.chargebeeSubscriptionData.plan_id,
+				addons: [{ id: addon.id }],
+			}).then((res) => {
+				this.isRedirecting = false;
+				this.packageId = "";
+				let chargebeeInstance = Chargebee.getInstance();
+				if (this.isChargebee) {
+					chargebeeInstance.openCheckout({
+						hostedPage: function () {
+							return new Promise(function (resolve, reject) {
+								resolve(res.data.hosted_page);
+							});
+						},
+						success: function (hostedPageId) {
+							window.$nuxt.$emit("bill-update-request", {
+								payment: true,
+							});
+						},
+						error: function (err) {
+							console.log(err);
+						},
+						close: function () {
+							window.$nuxt.$emit("payment-popup-close", {
+								type: "addon",
+								waitingTime: 8000,
+							});
+							// Optional
+							// will be called when the user closes the checkout modal box
+						},
+					});
+				} else window.open(res.hostedPage.url);
+
+				if (window.analytics) {
+					window.analytics.track(
+						"Buy_export_FP",
+						{
+							action: "click",
+							event_category: "Add On",
+							author: this.user.email,
+						},
+						{
+							integrations: {
+								Amplitude: { session_id: new Date().getTime() },
+							},
+						},
+						{ timestamp: new Date().getTime() }
+					);
+				}
+			});
+		},
+		handleRemoveAddonButtonClick(addon) {
+			this.isRemoveAddonConfirmationPopupVisible = true;
+			this.selectedAddonToRemove = addon;
+		},
+		removeAddon(addon) {
+			this.isRemoveAddonConfirmationPopupVisible = false;
+			this.removeButtonLoaderMap[addon.id] = true;
+			this.removeAddonFromPlan({
+				id: this.currentBilling.chargebeeSubscriptionData.id,
+				plan_id: this.currentBilling.chargebeeSubscriptionData.plan_id,
+				addons: [addon.id],
+			}).then((res) => {
+				this.fetchCurrentSubscription({
+					accountId: this.user.accountId,
+				}).finally(() => {
+					this.removeButtonLoaderMap[addon.id] = false;
+				});
+			});
+		},
+		isPackageNeoStandard(_packageName) {
+			if (_packageName === "Neo Standard") return true;
+			return false;
+		},
+		isPackageNeoBasic(_packageName) {
+			if (_packageName === "Neo Basic") return true;
+			return false;
+		},
+		isPackageNeoPremium(_packageName) {
+			if (_packageName === "Neo Premium") return true;
+			return false;
+		},
+		isAddonPartOfPlan(addon) {
+			if (
+				this.currentBilling &&
+				this.currentBilling.chargebeeSubscriptionData &&
+				this.currentBilling.chargebeeSubscriptionData.addons
+			) {
+				// write logic to check if any of the recommended addons are a part of the charebee data addon
+				return this.currentBilling.chargebeeSubscriptionData.addons.find(
+					(e) => e.id == addon.id
+				);
+			}
+
+			return false;
+		},
+		loadMoreTransactions() {
+			this.setPayAsYouGoTransactionsPageTracker(
+				this.payAsYouGoTransactionsPageTracker + 1
+			);
+			this.fetchCreditTransactions({
+				page: this.payAsYouGoTransactionsPageTracker,
+			});
+		},
+		handlePayAsYouGoAddonBuy() {
+			this.payAsYouGoAddons = true;
+			this.sendEventToSegment("Buy more credits clicked");
+		},
+		closePayAsYouGoAddonBuyPopup() {
+			this.payAsYouGoAddons = false;
+		},
+		sendEventToSegment(_eventName) {
+			if (window.analytics) {
+				window.analytics.track(
+					_eventName,
+					{
+						title: _eventName,
+					},
+					{
+						integrations: {
+							Amplitude: { session_id: new Date().getTime() },
+						},
+					},
+					{ timestamp: new Date().getTime() }
+				);
+			}
+		},
+		handlePayAsYouGoChangePlans() {
+			this.$router.push({ path: this.localePath("/settings/plans_new") });
+		},
+		handleSeePlanDetails() {
+			window.open(
+				window.location.origin + this.localePath("/pay-as-you-go"),
+				"_blank"
+			);
+		},
+	},
+};
 </script>
 <style lang="scss" scoped>
-	@mixin button-black {
-		color: #e9beb3;
-		padding: 0.5rem 1rem;
-		cursor: pointer;
-		background: #222021;
+@mixin button-black {
+	color: #e9beb3;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	background: #222021;
+}
+@mixin head-main {
+	font-size: 1.5rem;
+	color: #000000;
+	font-weight: 400;
+}
+.cancel-sub-text {
+	padding: 2rem 0;
+	p {
+		font-size: 1rem;
+		// max-width: 70%;
+		text-align: center;
+		margin: auto;
+		color: white;
 	}
-	@mixin head-main {
-		font-size: 1.5rem;
-		color: #000000;
-		font-weight: 400;
+}
+section {
+	padding: 0;
+	width: calc(100% - 7.5rem);
+	margin: 0 auto;
+	margin-top: 4rem;
+	@include respond(phone) {
+		// width < 900px?
+		width: 100%;
 	}
-	.cancel-sub-text {
-		padding: 2rem 0;
-		p {
-			font-size: 1rem;
-			// max-width: 70%;
-			text-align: center;
-			margin: auto;
-			color: white;
+	.plans-bg-pattern {
+		position: absolute;
+		opacity: 0.08;
+		right: 0;
+		top: 1rem;
+		z-index: 0;
+		// height: 25rem;
+		// padding-left: 46rem;
+	}
+	.download-icon {
+		a {
+			cursor: pointer;
 		}
 	}
-	section {
-		padding: 0;
-		width: calc(100% - 7.5rem);
-		margin: 0 auto;
-		margin-top: 4rem;
-		@include respond(phone) {
-			// width < 900px?
-			width: 100%;
+	p {
+		color: #222021;
+		font-size: 1rem;
+		line-height: 1.125rem;
+		margin-bottom: 0.5rem;
+	}
+	span {
+		font-size: 0.8125rem;
+		line-height: 1rem;
+		color: #868686;
+	}
+	.plan-head-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $background-7;
+		padding: 2.125rem 2.5rem;
+		border: 1px solid $border-1;
+		border-radius: 2px;
+
+		h2 {
+			// @include head-main;
+			font-family: $main-font;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2.5rem;
+			line-height: 2.75rem;
+			color: $plan-title;
 		}
-		.plans-bg-pattern {
-			position: absolute;
-			opacity: 0.08;
-			right: 0;
-			top: 1rem;
-			z-index: 0;
-			// height: 25rem;
-			// padding-left: 46rem;
+
+		.plan-sub-title {
+			font-family: $main-font;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 1.125rem;
+			color: $plan-title;
+			margin-top: 0.5rem;
 		}
-		.download-icon {
-			a {
-				cursor: pointer;
+
+		div:last-child {
+			align-self: flex-end;
+		}
+
+		.pay-as-you-go-title {
+			color: $plan-title;
+
+			.label {
+				font-size: 0.75rem * 1.22;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				margin-bottom: 0.4375rem * 1.22;
+
+				@include custom-min(120em) {
+					font-size: 0.75rem;
+					margin-bottom: 0.4375rem;
+				}
+			}
+
+			.plan-name {
+				font-size: 1.625rem * 1.22;
+				font-weight: 600;
+				line-height: 146.338%;
+
+				@include custom-min(120em) {
+					font-size: 1.625rem;
+				}
 			}
 		}
-		p {
-			color: #222021;
+		.billing-history-button {
+			color: $color-dark-gray-3;
+			text-align: right;
 			font-size: 1rem;
-			line-height: 1.125rem;
-			margin-bottom: 0.5rem;
+			font-weight: 600;
+			line-height: normal;
+			text-decoration-line: underline;
+			cursor: pointer;
 		}
-		span {
-			font-size: 0.8125rem;
-			line-height: 1rem;
-			color: #868686;
-		}
-		.plan-head-container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background-color: $background-7;
-			padding: 2.125rem 2.5rem;
-			border: 1px solid $border-1;
-			border-radius: 2px;
+	}
+	.pay-as-you-go-wrapper {
+		margin-bottom: 0.5rem * 1.22;
+		padding: 1.25rem * 1.22;
 
-			h2 {
-				// @include head-main;
-				font-family: $main-font;
+		@include custom-min(120em) {
+			margin-bottom: 0.5rem;
+			padding: 1.25rem;
+		}
+
+		.plan-and-billing-details-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 0.25rem;
+			align-self: center !important;
+
+			.change-plan-button {
+				background: $background-10;
+				display: flex;
+				padding: 0.75rem * 1.22 1.25rem * 1.22;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				min-width: 9.375rem * 1.22;
+
+				color: $color-black-2;
+				font-size: 0.875rem * 1.22;
 				font-style: normal;
 				font-weight: 700;
-				font-size: 2.5rem;
-				line-height: 2.75rem;
-				color: $plan-title;
+				line-height: 128.023%;
+				align-self: center;
+
+				@include custom-min(120em) {
+					padding: 0.75rem 1.25rem;
+					min-width: 9.375rem;
+				}
 			}
 
-			.plan-sub-title {
-				font-family: $main-font;
+			.plan-expiry-details {
+				font-family: "Montserrat";
 				font-style: normal;
-				font-weight: 500;
-				font-size: 0.875rem;
-				line-height: 1.125rem;
-				color: $plan-title;
-				margin-top: 0.5rem;
+				font-weight: 600;
+				font-size: 0.75rem;
+				line-height: 0.9375rem;
+				color: rgba(98, 75, 75, 0.7);
+			}
+		}
+	}
+
+	.pay-as-you-go-used-credits-wrapper {
+		border-radius: 2px;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		background: rgba(232, 232, 232, 0.2);
+		margin-top: 1.25rem * 1.22;
+		padding: 1.25rem * 1.22 1.5rem * 1.22;
+
+		@include custom-min(120em) {
+			margin-top: 1.25rem;
+			padding: 1.25rem 1.5rem;
+		}
+
+		.credits-details-and-buy-more {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.header {
+				color: $color-dark-gray-2;
+				font-size: 1rem * 1.22;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				margin-bottom: 0.4375rem * 1.22;
+
+				@include custom-min(120em) {
+					font-size: 1rem;
+					margin-bottom: 0.4375rem;
+				}
 			}
 
-			div:last-child {
-				align-self: flex-end;
+			.available-credits {
+				color: $color-dark-gray;
+				font-size: 1.25rem * 1.22;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 128%;
+				margin-bottom: 0.4375rem * 1.22;
+				border-bottom: 1px solid $background-21;
+
+				@include custom-min(120em) {
+					font-size: 1.25rem;
+					margin-bottom: 0.4375rem;
+				}
 			}
+			.used-credits {
+				color: $color-light-gray-9;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 0.875rem * 1.22;
+				line-height: normal;
 
-			.pay-as-you-go-title {
-				color: $plan-title;
-
-				.label {
-					font-size: .75rem * 1.22;
-					font-style: normal;
-					font-weight: 600;
-					line-height: normal;
-					margin-bottom: .4375rem * 1.22;
-
-					@include custom-min(120em) {
-						font-size: .75rem;
-						margin-bottom: .4375rem;
-					}
+				@include custom-min(120em) {
+					font-size: 0.875rem;
 				}
 
-				.plan-name {
-					font-size: 1.625rem * 1.22;
-					font-weight: 600;
-					line-height: 146.338%;
-
-					@include custom-min(120em) {
-						font-size: 1.625rem;
-					}
+				b {
+					color: $color-dark-gray;
 				}
-
 			}
+
+			.buy-more-button {
+				color: $color-second;
+				font-size: 0.875rem * 1.22;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 128.023%;
+				text-transform: uppercase;
+				padding: 0.75rem * 1.22 1.25rem * 1.22;
+				background: $background-black-1;
+				cursor: pointer;
+				min-width: 8.6563rem * 1.22;
+
+				@include custom-min(120em) {
+					font-size: 0.875rem;
+					padding: 0.75rem 1.25rem;
+					min-width: 8.6563rem;
+				}
+			}
+		}
+	}
+
+	.plan-details-link {
+		cursor: pointer;
+		color: $color-light-gray-2;
+		font-size: 0.875rem * 1.22;
+		font-style: italic;
+		font-weight: 500;
+		line-height: 142.857%;
+		text-decoration-line: underline;
+		margin-top: 0.5rem * 1.22;
+		width: 100%;
+		text-align: right;
+
+		@include custom-min(120em) {
+			font-size: 0.875rem;
+			margin-top: 0.5rem;
+		}
+	}
+
+	.pay-as-you-go-credit-transactions-wrapper {
+		border-radius: 2px;
+		margin-top: 1.5rem * 1.22;
+		margin-bottom: 1.25rem * 1.22;
+		border-radius: 2px;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		overflow: hidden;
+
+		@include custom-min(120em) {
+			margin-top: 1.5rem;
+		}
+
+		.section-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1.25rem * 1.22 2rem * 1.22;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+			background: $background-22;
+
+			@include custom-min(120em) {
+				padding: 1.25rem 2rem;
+			}
+
+			.text {
+				color: $color-light-gray-2;
+				font-size: 1rem * 1.22;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 150%;
+
+				@include custom-min(120em) {
+					font-size: 1rem;
+				}
+			}
+
 			.billing-history-button {
 				color: $color-dark-gray-3;
 				text-align: right;
-				font-size: 1rem;
+				font-size: 0.875rem * 1.22;
 				font-weight: 600;
 				line-height: normal;
 				text-decoration-line: underline;
 				cursor: pointer;
+
+				@include custom-min(120em) {
+					font-size: 0.875rem;
+				}
 			}
 		}
-		.pay-as-you-go-wrapper {
-			margin-bottom: 0.5rem * 1.22;
-			padding: 1.25rem * 1.22;
+
+		.transactions-wrapper {
+			padding: 0 2rem * 1.22 1rem * 1.22;
+			max-height: 19.125rem * 1.22;
+			overflow: auto;
+			display: flex;
+			flex-direction: column;
 
 			@include custom-min(120em) {
-				margin-bottom: 0.5rem;
-				padding: 1.25rem;
-            }
+				padding: 0 2rem 1rem;
+			}
 
+			.transaction {
+				display: grid;
+				grid-template-columns: max-content 1fr max-content;
+				gap: 0 1.3125rem * 1.22;
+				padding: 1.4375rem * 1.22 0;
 
-			.plan-and-billing-details-wrapper {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				gap: .25rem;
-				align-self: center !important;
+				@include custom-min(120em) {
+					gap: 0 1.3125rem;
+					padding: 1.4375rem 0;
+				}
 
-				.change-plan-button {
-					background: $background-10;
-					display: flex;
-					padding: .75rem * 1.22 1.25rem * 1.22;
-					justify-content: center;
-					align-items: center;
-					cursor: pointer;
-					min-width: 9.375rem * 1.22;
+				&:not(:last-child) {
+					border-bottom: 1px solid $border-19;
+				}
 
-					color: $color-black-2;
-					font-size: .875rem * 1.22;
-					font-style: normal;
-					font-weight: 700;
-					line-height: 128.023%;
-					align-self: center;
+				svg {
+					width: 1.5rem * 1.22;
+					height: 1.5rem * 1.22;
 
 					@include custom-min(120em) {
-						padding: .75rem 1.25rem;
-						min-width: 9.375rem;
+						width: 1.5rem;
+						height: 1.5rem;
 					}
-
 				}
 
-				.plan-expiry-details {
-					font-family: "Montserrat";
-					font-style: normal;
-					font-weight: 600;
-					font-size: 0.75rem;
-					line-height: 0.9375rem;
-					color: rgba(98, 75, 75, 0.7);
-				}
-			}
-		}
-
-		.pay-as-you-go-used-credits-wrapper {
-			border-radius: 2px;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-			background: rgba(232, 232, 232, 0.20);
-			margin-top: 1.25rem * 1.22;
-			padding: 1.25rem * 1.22 1.5rem * 1.22;
-
-			@include custom-min(120em) {
-				margin-top: 1.25rem;
-				padding: 1.25rem 1.5rem;
-            }
-
-
-			.credits-details-and-buy-more {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-
-				.header {
+				.narration {
 					color: $color-dark-gray-2;
 					font-size: 1rem * 1.22;
 					font-style: normal;
-					font-weight: 600;
+					font-weight: 500;
 					line-height: normal;
-					margin-bottom: .4375rem * 1.22;
 
 					@include custom-min(120em) {
 						font-size: 1rem;
-						margin-bottom: .4375rem;
-
 					}
 				}
 
-				.available-credits {
-					color: $color-dark-gray;
-					font-size: 1.25rem * 1.22;
-					font-style: normal;
-					font-weight: 700;
-					line-height: 128%;
-					margin-bottom: .4375rem * 1.22;
-					border-bottom: 1px solid $background-21;
-
-					@include custom-min(120em) {
-						font-size: 1.25rem;
-						margin-bottom: .4375rem;
-					}
-				}
-				.used-credits {
+				.a-go-info {
 					color: $color-light-gray-9;
-					font-style: normal;
-					font-weight: 600;
-					font-size: .875rem * 1.22;
-					line-height: normal;
-
-					@include custom-min(120em) {
-						font-size: .875rem;
-					}
-
-					b {
-						color: $color-dark-gray;
-					}
-				}
-
-				.buy-more-button {
-					color: $color-second;
-					font-size: .875rem * 1.22;
+					font-size: 0.75rem * 1.22;
 					font-style: normal;
 					font-weight: 700;
-					line-height: 128.023%;
-					text-transform: uppercase;
-					padding: .75rem * 1.22 1.25rem * 1.22;
-					background: $background-black-1;
-					cursor: pointer;
-					min-width: 8.6563rem * 1.22;
+					line-height: 166.667%;
 
 					@include custom-min(120em) {
-						font-size: .875rem;
-						padding: .75rem 1.25rem;
-						min-width: 8.6563rem;
+						font-size: 0.75rem;
 					}
 				}
 			}
+		}
+	}
 
+	.section-cta-and-plan-expiry-info {
+		text-align: right;
+		.change-plan {
+			position: relative;
 		}
 
-		.plan-details-link {
-			cursor: pointer;
-			color: $color-light-gray-2;
-			font-size: .875rem * 1.22;
-			font-style: italic;
-			font-weight: 500;
-			line-height: 142.857%;
-			text-decoration-line: underline;
-			margin-top: .5rem * 1.22;
-			width: 100%;
-			text-align: right;
-
-			@include custom-min(120em) {
-				font-size: .875rem;
-				margin-top: .5rem;
-
-			}
+		button {
+			@include button-black;
+			padding: 0.875rem 2.5rem;
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.25rem;
+			text-transform: uppercase;
 		}
 
-		.pay-as-you-go-credit-transactions-wrapper {
-			border-radius: 2px;
-			margin-top: 1.5rem * 1.22;
-			margin-bottom: 1.25rem * 1.22;
-			border-radius: 2px;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-			overflow: hidden;
+		.button:disabled {
+			cursor: no-drop;
+		}
 
-			@include custom-min(120em) {
-				margin-top: 1.5rem;
+		.future-plan {
+			margin-top: 1rem;
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 0.75rem;
+			line-height: 0.9375rem;
+			color: rgba(98, 75, 75, 0.7);
+			span {
+				color: #222021;
 			}
+		}
+	}
 
-			.section-header {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				padding: 1.25rem * 1.22 2rem * 1.22;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-				background: $background-22;
+	.cancel-sub-container {
+		margin-top: 1rem;
+		text-align: right;
+		position: relative;
+		margin-left: auto;
+		cursor: pointer;
 
-				@include custom-min(120em) {
-					padding: 1.25rem 2rem;
+		font-family: $main-font;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.9375rem;
+		line-height: 1.125rem;
+		color: $plan-subtitle;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.billing-info-container {
+		margin-top: 2.125rem;
+		padding-bottom: 1.125rem;
+		margin-bottom: 2.1875rem;
+		padding: 2.125rem 2.5rem;
+		background: $color-white;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		box-sizing: border-box;
+		border-radius: 2px;
+
+		.billing-info-head {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.375rem;
+			padding-bottom: 1.5rem;
+			border-bottom: 1px dashed rgba(41, 41, 41, 0.5);
+
+			p {
+				margin: 0;
+				padding: 0;
+				font-family: $main-font;
+				font-style: normal;
+				&:last-child {
+					cursor: pointer;
 				}
+			}
 
-				.text {
-					color: $color-light-gray-2;
-					font-size: 1rem * 1.22;
+			.main-heading {
+				font-weight: 600;
+				font-size: 1.5rem;
+				line-height: 2rem;
+				color: $plan-title;
+			}
+
+			.billing-history-button {
+				font-weight: 500;
+				font-size: 0.875rem;
+				line-height: 1.125rem;
+				color: #d19b8c;
+			}
+		}
+
+		.billing-details {
+			display: flex;
+			margin-top: 1.5rem;
+			justify-content: space-between;
+			div {
+				flex-direction: column;
+				align-items: flex-start;
+				// flex-basis: 25%;
+				flex-shrink: 0;
+
+				span {
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 0.875rem;
+					line-height: 1.5rem;
+					color: $plan-subtitle;
+				}
+				p {
+					margin-top: 0.25rem;
+					font-family: "Montserrat";
 					font-style: normal;
 					font-weight: 600;
-					line-height: 150%;
-
-					@include custom-min(120em) {
-						font-size: 1rem;
-					}
-				}
-
-				.billing-history-button {
-					color: $color-dark-gray-3;
-					text-align: right;
-					font-size: .875rem * 1.22;
-					font-weight: 600;
-					line-height: normal;
-					text-decoration-line: underline;
-					cursor: pointer;
-
-					@include custom-min(120em) {
-						font-size: .875rem;
-					}
-				}
-			}
-
-			.transactions-wrapper {
-				padding: 0 2rem * 1.22 1rem * 1.22;
-				max-height: 19.125rem * 1.22;
-				overflow: auto;
-				display: flex;
-				flex-direction: column;
-
-				@include custom-min(120em) {
-					padding: 0 2rem 1rem;
-				}
-
-				.transaction {
-					display: grid;
-					grid-template-columns: max-content 1fr max-content;
-					gap: 0 1.3125rem * 1.22;
-					padding: 1.4375rem * 1.22 0;
-
-					@include custom-min(120em) {
-						gap: 0 1.3125rem;
-						padding: 1.4375rem 0;
-					}
-
-					&:not(:last-child) {
-						border-bottom: 1px solid $border-19;
-					}
-
-					svg {
-						width: 1.5rem * 1.22;
-						height: 1.5rem * 1.22;
-
-						@include custom-min(120em) {
-							width: 1.5rem;
-							height: 1.5rem;
-						}
-					}
-
-					.narration {
-						color: $color-dark-gray-2;
-						font-size: 1rem * 1.22;
-						font-style: normal;
-						font-weight: 500;
-						line-height: normal;
-
-						@include custom-min(120em) {
-							font-size: 1rem;
-						}
-					}
-
-					.a-go-info {
-						color: $color-light-gray-9;
-						font-size: .75rem * 1.22;
-						font-style: normal;
-						font-weight: 700;
-						line-height: 166.667%;
-
-						@include custom-min(120em) {
-							font-size: .75rem;
-						}
-					}
+					font-size: 1rem;
+					line-height: 1.5rem;
+					letter-spacing: -0.02em;
+					color: $plan-title;
 				}
 			}
 		}
+	}
 
-		.section-cta-and-plan-expiry-info {
-			text-align: right;
-			.change-plan {
-				position: relative;
+	.recommended-addons {
+		flex-direction: column;
+		// this is to manage the billing-details style that is messing with all the divs in this section
+		div {
+			flex-direction: row !important;
+		}
+	}
+
+	.usages-main-container {
+		margin-bottom: 2.1875rem;
+		padding: 2.75rem 2.5rem;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		box-sizing: border-box;
+		border-radius: 2px;
+
+		.usage-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 1.5rem;
+			border-bottom: 1px dashed rgba(41, 41, 41, 0.5);
+			margin-bottom: 1.5rem;
+
+			h2 {
+				@include head-main;
+				font-family: $main-font;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.25rem;
+				line-height: 2rem;
+				color: $plan-title;
 			}
-
 			button {
 				@include button-black;
 				padding: 0.875rem 2.5rem;
@@ -3016,595 +3491,330 @@
 				text-transform: uppercase;
 			}
 
-			.button:disabled {
-				cursor: no-drop;
-			}
-
-			.future-plan {
-				margin-top: 1rem;
-				font-family: "Montserrat";
-				font-style: normal;
-				font-weight: 600;
-				font-size: 0.75rem;
-				line-height: 0.9375rem;
-				color: rgba(98, 75, 75, 0.7);
-				span {
-					color: #222021;
-				}
+			.addon-buy {
+				position: relative;
+				// &:hover{
+				//   .hover-disable-text{
+				//     display: block;
+				//   }
+				// }
 			}
 		}
 
-		.cancel-sub-container {
-			margin-top: 1rem;
-			text-align: right;
-			position: relative;
-			margin-left: auto;
-			cursor: pointer;
-
-			font-family: $main-font;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 0.9375rem;
-			line-height: 1.125rem;
-			color: $plan-subtitle;
-
-			a {
-				text-decoration: none;
-			}
-		}
-
-		.billing-info-container {
-			margin-top: 2.125rem;
-			padding-bottom: 1.125rem;
-			margin-bottom: 2.1875rem;
-			padding: 2.125rem 2.5rem;
-			background: $color-white;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-			box-sizing: border-box;
-			border-radius: 2px;
-
-			.billing-info-head {
-				display: flex;
-				justify-content: space-between;
-				margin-bottom: 0.375rem;
-				padding-bottom: 1.5rem;
-				border-bottom: 1px dashed rgba(41, 41, 41, 0.5);
-
-				p {
-					margin: 0;
-					padding: 0;
-					font-family: $main-font;
-					font-style: normal;
-					&:last-child {
-						cursor: pointer;
-					}
-				}
-
-				.main-heading {
-					font-weight: 600;
-					font-size: 1.5rem;
-					line-height: 2rem;
-					color: $plan-title;
-				}
-
-				.billing-history-button {
-					font-weight: 500;
-					font-size: 0.875rem;
-					line-height: 1.125rem;
-					color: #d19b8c;
-				}
-			}
-
-			.billing-details {
-				display: flex;
-				margin-top: 1.5rem;
-				justify-content: space-between;
-				div {
-					flex-direction: column;
-					align-items: flex-start;
-					// flex-basis: 25%;
-					flex-shrink: 0;
-
-					span {
-						font-family: "Montserrat";
-						font-style: normal;
-						font-weight: 400;
-						font-size: 0.875rem;
-						line-height: 1.5rem;
-						color: $plan-subtitle;
-					}
-					p {
-						margin-top: 0.25rem;
-						font-family: "Montserrat";
-						font-style: normal;
-						font-weight: 600;
-						font-size: 1rem;
-						line-height: 1.5rem;
-						letter-spacing: -0.02em;
-						color: $plan-title;
-					}
-				}
-			}
-		}
-
-		.recommended-addons {
+		.service-usage-container {
+			display: flex;
 			flex-direction: column;
-			// this is to manage the billing-details style that is messing with all the divs in this section
-			div {
-				flex-direction: row !important;
-			}
-		}
 
-		.usages-main-container {
-			margin-bottom: 2.1875rem;
-			padding: 2.75rem 2.5rem;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-			box-sizing: border-box;
-			border-radius: 2px;
-
-			.usage-head {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding-bottom: 1.5rem;
-				border-bottom: 1px dashed rgba(41, 41, 41, 0.5);
-				margin-bottom: 1.5rem;
-
-				h2 {
-					@include head-main;
-					font-family: $main-font;
+			.service-usage {
+				// div {
+				//   display: grid;
+				//   grid-template-columns: 50% 50%;
+				// }
+				.sub-head {
+					font-family: "Montserrat";
 					font-style: normal;
 					font-weight: 600;
-					font-size: 1.25rem;
-					line-height: 2rem;
-					color: $plan-title;
-				}
-				button {
-					@include button-black;
-					padding: 0.875rem 2.5rem;
-					font-weight: 700;
 					font-size: 1rem;
 					line-height: 1.25rem;
-					text-transform: uppercase;
+					color: #2d2d2d;
 				}
+				.sub-head-color {
+					p {
+						color: #d48e8e;
+						margin-bottom: 0.25rem;
+					}
+					border-bottom: 1px solid #e8e8e8;
+					margin-bottom: 0.75rem;
 
-				.addon-buy {
-					position: relative;
-					// &:hover{
-					//   .hover-disable-text{
-					//     display: block;
-					//   }
-					// }
+					&.coins {
+						border: none;
+					}
 				}
-			}
-
-			.service-usage-container {
-				display: flex;
-				flex-direction: column;
-
-				.service-usage {
-					// div {
-					//   display: grid;
-					//   grid-template-columns: 50% 50%;
-					// }
-					.sub-head {
-						font-family: "Montserrat";
+				.sub-2-head-color {
+					background: rgba(244, 242, 241, 0.6);
+					padding: 0.5rem 0.875rem 0 0.875rem;
+					flex-basis: 33%;
+					p {
+						font-family: $main-font;
 						font-style: normal;
+						font-weight: 700;
+						font-size: 0.6875rem;
+						line-height: 1rem;
+						text-transform: uppercase;
+						color: $plan-subtitle;
+					}
+					p:not(:first-child) {
+						text-align: center;
+					}
+				}
+
+				.credit-summary {
+					font-family: $main-font;
+					font-style: normal;
+					font-size: 0.875rem;
+					line-height: 1.0625rem;
+					display: flex;
+					justify-content: space-between;
+
+					.available {
+						font-weight: 600;
+						color: $plan-subtitle;
+					}
+
+					.used {
+						position: relative;
+						font-weight: 600;
+						color: #d46161;
+						cursor: pointer;
+
+						&.muted {
+							cursor: default;
+							color: #d19b8c;
+						}
+
+						&:hover {
+							.useage-split {
+								display: block;
+							}
+						}
+					}
+
+					.unit {
 						font-weight: 600;
 						font-size: 1rem;
 						line-height: 1.25rem;
-						color: #2d2d2d;
-					}
-					.sub-head-color {
-						p {
-							color: #d48e8e;
-							margin-bottom: 0.25rem;
-						}
-						border-bottom: 1px solid #e8e8e8;
-						margin-bottom: 0.75rem;
-
-						&.coins {
-							border: none;
-						}
-					}
-					.sub-2-head-color {
-						background: rgba(244, 242, 241, 0.6);
-						padding: 0.5rem 0.875rem 0 0.875rem;
-						flex-basis: 33%;
-						p {
-							font-family: $main-font;
-							font-style: normal;
-							font-weight: 700;
-							font-size: 0.6875rem;
-							line-height: 1rem;
-							text-transform: uppercase;
-							color: $plan-subtitle;
-						}
-						p:not(:first-child) {
-							text-align: center;
-						}
+						color: $plan-subtitle;
 					}
 
-					.credit-summary {
-						font-family: $main-font;
-						font-style: normal;
-						font-size: 0.875rem;
-						line-height: 1.0625rem;
-						display: flex;
-						justify-content: space-between;
-
-						.available {
-							font-weight: 600;
-							color: $plan-subtitle;
-						}
-
-						.used {
-							position: relative;
-							font-weight: 600;
-							color: #d46161;
-							cursor: pointer;
-
-							&.muted {
-								cursor: default;
-								color: #d19b8c;
-							}
-
-							&:hover {
-								.useage-split {
-									display: block;
-								}
-							}
-						}
-
-						.unit {
-							font-weight: 600;
-							font-size: 1rem;
-							line-height: 1.25rem;
-							color: $plan-subtitle;
-						}
-
-						.useage-split {
-							display: none;
-							position: absolute;
-							left: 75%;
-							top: 0;
-							min-width: 300px;
-							background: #ffffff;
-							box-shadow: 0px 1px 2px rgba(20, 24, 47, 0.12),
-								0px 2px 4px rgba(20, 24, 47, 0.1),
-								0px 4px 8px rgba(20, 24, 47, 0.1),
-								0px 12px 16px rgba(20, 24, 47, 0.12),
-								0px 16px 32px rgba(20, 24, 47, 0.24);
-							border-radius: 4px;
-							z-index: 1;
-						}
-					}
-					.three-colum {
-						display: flex;
-						justify-content: space-between;
-					}
-					.per-service-data {
-						text-align: center;
-						flex-basis: 33%;
-						flex-shrink: 0;
-						padding: 0 0.875rem 0.5rem 0.875rem;
-
-						p {
-							width: 100%;
-						}
-					}
-				}
-			}
-		}
-
-		.change-plan-alert-popup {
-			// background: red;
-			.popup-container {
-				// height: 60vh;
-				max-width: 60vw;
-				padding: 0 !important;
-				background: #ffab40 !important;
-				.close-popup {
-					right: -2.5rem;
-					svg {
-						border-radius: 50%;
-						path {
-							fill: white;
-						}
-					}
-				}
-				.cpa-container {
-					color: #807f7f;
-					display: grid;
-					grid-template-rows: 1fr max-content;
-					background: #fbf3f1;
-					margin-top: 0.3rem;
-					.content {
-						width: 100%;
-						position: relative;
-						padding: 3rem 7rem 10rem 7rem;
-						.text-bg,
-						.bg-pattern {
-							position: absolute;
-						}
-						.text-bg {
-							margin-top: 3rem;
-							bottom: -1rem;
-							left: 0;
-							width: 19rem;
-						}
-						.bg-pattern {
-							right: 0;
-							bottom: -8rem;
-						}
-						.heading-1 {
-							font-family: Montserrat;
-							font-weight: bold;
-							font-size: 1.68rem;
-							line-height: 1.82rem;
-							color: #292929;
-							text-align: center;
-						}
-						.list {
-							display: grid;
-							row-gap: 1.5rem;
-							padding: 2rem;
-							background: #fbf3f1;
-							box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-							span {
-								display: grid;
-								grid-template-columns: max-content 1fr;
-								column-gap: 1rem;
-								align-items: center;
-								p {
-									margin: 0;
-									font-family: Montserrat;
-									font-weight: 500;
-									font-size: 1rem;
-									line-height: 1.5rem;
-									color: #222021;
-									b {
-										text-transform: capitalize;
-										b {
-											text-transform: lowercase;
-										}
-										// &:nth-child(2) {
-										//   font-weight: normal;
-										// }
-									}
-								}
-							}
-						}
-					}
-					.proceed-btn {
-						padding: 4rem;
+					.useage-split {
+						display: none;
+						position: absolute;
+						left: 75%;
+						top: 0;
+						min-width: 300px;
 						background: #ffffff;
-						// box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-						display: grid;
-						justify-content: center;
-						button {
-							background: #292929;
-							padding: 0.8rem 6rem;
-							font-family: Montserrat;
-							font-weight: bold;
-							font-size: 1.1rem;
-							line-height: 1.3rem;
-							color: #fbf3f1;
-							cursor: pointer;
-							position: relative;
-							z-index: 0;
-							@include background-animate(#faf0ec, black);
-						}
+						box-shadow: 0px 1px 2px rgba(20, 24, 47, 0.12),
+							0px 2px 4px rgba(20, 24, 47, 0.1),
+							0px 4px 8px rgba(20, 24, 47, 0.1),
+							0px 12px 16px rgba(20, 24, 47, 0.12),
+							0px 16px 32px rgba(20, 24, 47, 0.24);
+						border-radius: 4px;
+						z-index: 1;
+					}
+				}
+				.three-colum {
+					display: flex;
+					justify-content: space-between;
+				}
+				.per-service-data {
+					text-align: center;
+					flex-basis: 33%;
+					flex-shrink: 0;
+					padding: 0 0.875rem 0.5rem 0.875rem;
+
+					p {
+						width: 100%;
 					}
 				}
 			}
 		}
 	}
-	.hover-disable-text {
-		position: absolute;
-		display: none;
-		text-align: center;
-		padding: 0.3125rem;
-		margin-top: 0.625rem;
-		background: black;
-		width: 100%;
-		&::before {
-			content: "";
-			width: 0;
-			position: absolute;
-			top: -5px;
-			left: 50%;
-			height: 0;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			border-bottom: 5px solid black;
-		}
-		p {
-			color: white;
-			margin: 0rem;
-		}
-	}
-	.no-packages {
-		width: 100%;
-		// background: #222021;
-		padding: 1rem 6rem;
-		.no-package {
-			background: white;
-			div:last-child {
-				padding: 1rem 3.5rem;
-				display: flex;
-				svg {
-					margin-right: 2rem;
-				}
-				div {
-					display: block;
-					p:first-child {
-						font-size: 1.5rem;
-						color: #d48e8e;
-						margin-bottom: 1rem;
-					}
-					p:last-child {
-						font-size: 1rem;
-						color: #8a8a8a;
-					}
-				}
-			}
-		}
-	}
-	.loading-main {
-		width: 100%;
-	}
-	.package-popup,
-	.showPopUp {
+
+	.change-plan-alert-popup {
+		// background: red;
 		.popup-container {
-			padding: 3.75rem 9.0625rem;
-			background: #222021;
-			@include respond(phone) {
-				// width < 900px?
-				padding: 2rem 2rem;
-			}
-			@include respond(s-phone) {
-				// width < 900px?
-				padding: 2rem;
-			}
-		}
-		.getDemoContainer {
-			padding: 0px;
-			background: #fbfcfd;
-			.free-demo-iframe {
-				height: 75vh;
-				width: 70vw;
-			}
+			// height: 60vh;
+			max-width: 60vw;
+			padding: 0 !important;
+			background: #ffab40 !important;
 			.close-popup {
-				position: static;
-				text-align: right;
+				right: -2.5rem;
 				svg {
-					background: none;
+					border-radius: 50%;
 					path {
-						fill: black;
+						fill: white;
 					}
 				}
 			}
-		}
-		.future-plan-container {
-			padding: 3.125rem 3.125rem;
-			.future-plan-taken {
-				p {
-					width: 30vw;
-					color: #222021;
-					text-align: justify;
-					font-size: 1rem;
-					font-weight: 300;
-					line-height: 1.375rem;
-				}
-				a {
-					color: #d48e8e;
-					text-decoration: none;
-				}
-			}
-		}
-	}
-	.titleCase {
-		text-transform: capitalize;
-	}
-	.cancel-option-container {
-		max-width: calc(54rem + 50px);
-		.cancel-option-icons-container {
-			display: grid;
-			// grid-template-columns: repeat(6 , 9rem);
-			grid-template-columns: repeat(4, 13.2rem);
-			align-items: center;
-			justify-items: center;
-			// justify-content: center;
-			text-align: center;
-			grid-gap: 10px;
-			.cancel-optin-icons {
-				height: 100%;
-				width: 100%;
+			.cpa-container {
+				color: #807f7f;
 				display: grid;
-				align-items: center;
-				justify-items: center;
-				padding: 12px 0px;
-				grid-row-gap: 10px;
-				cursor: pointer;
+				grid-template-rows: 1fr max-content;
 				background: #fbf3f1;
-				p {
-					color: #000000;
+				margin-top: 0.3rem;
+				.content {
 					width: 100%;
-				}
-				svg {
-					path {
-						stroke: #d48e8e;
+					position: relative;
+					padding: 3rem 7rem 10rem 7rem;
+					.text-bg,
+					.bg-pattern {
+						position: absolute;
 					}
-				}
-				&:hover {
-					background: #d48e8e;
-					p {
-						color: #e8e8e8;
+					.text-bg {
+						margin-top: 3rem;
+						bottom: -1rem;
+						left: 0;
+						width: 19rem;
 					}
-					svg {
-						path {
-							stroke: #e8e8e8;
+					.bg-pattern {
+						right: 0;
+						bottom: -8rem;
+					}
+					.heading-1 {
+						font-family: Montserrat;
+						font-weight: bold;
+						font-size: 1.68rem;
+						line-height: 1.82rem;
+						color: #292929;
+						text-align: center;
+					}
+					.list {
+						display: grid;
+						row-gap: 1.5rem;
+						padding: 2rem;
+						background: #fbf3f1;
+						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+						span {
+							display: grid;
+							grid-template-columns: max-content 1fr;
+							column-gap: 1rem;
+							align-items: center;
+							p {
+								margin: 0;
+								font-family: Montserrat;
+								font-weight: 500;
+								font-size: 1rem;
+								line-height: 1.5rem;
+								color: #222021;
+								b {
+									text-transform: capitalize;
+									b {
+										text-transform: lowercase;
+									}
+									// &:nth-child(2) {
+									//   font-weight: normal;
+									// }
+								}
+							}
 						}
 					}
 				}
-				&.activeCat {
-					background: #d48e8e;
-					p {
-						color: #e8e8e8;
-					}
-					svg {
-						path {
-							stroke: #e8e8e8;
-						}
+				.proceed-btn {
+					padding: 4rem;
+					background: #ffffff;
+					// box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+					display: grid;
+					justify-content: center;
+					button {
+						background: #292929;
+						padding: 0.8rem 6rem;
+						font-family: Montserrat;
+						font-weight: bold;
+						font-size: 1.1rem;
+						line-height: 1.3rem;
+						color: #fbf3f1;
+						cursor: pointer;
+						position: relative;
+						z-index: 0;
+						@include background-animate(#faf0ec, black);
 					}
 				}
-			}
-		}
-		.cancel-option-text-container {
-			background: #fbf3f1;
-			padding: 1.5rem;
-			margin: 1rem 0px;
-			// max-width: fit-content;
-			display: grid;
-			grid-row-gap: 1rem;
-			width: 55rem;
-			height: 12rem;
-			p {
-				text-align: left;
-				margin: 0px;
-				width: auto;
-				max-width: fit-content;
-				color: #292929;
-				line-height: 1.4;
-			}
-			.cancel-option-head-tag {
-				font-weight: 600;
-				font-size: 1.1rem;
-				// margin-bottom: 1rem;
-			}
-			.cancel-option-sub-text {
-			}
-			.cancel-option-cta {
-				height: max-content;
-				width: max-content;
-				padding: 0.5rem 1rem;
-				color: white;
-				background: #d48e8e;
-				cursor: pointer;
-			}
-			input {
-				border: 1px solid #e9beb3;
-				background: #ffffff;
 			}
 		}
 	}
-	.cant-buy {
-		padding: 3.125rem 3.125rem !important;
-		.cant-buy-alert {
+}
+.hover-disable-text {
+	position: absolute;
+	display: none;
+	text-align: center;
+	padding: 0.3125rem;
+	margin-top: 0.625rem;
+	background: black;
+	width: 100%;
+	&::before {
+		content: "";
+		width: 0;
+		position: absolute;
+		top: -5px;
+		left: 50%;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid black;
+	}
+	p {
+		color: white;
+		margin: 0rem;
+	}
+}
+.no-packages {
+	width: 100%;
+	// background: #222021;
+	padding: 1rem 6rem;
+	.no-package {
+		background: white;
+		div:last-child {
+			padding: 1rem 3.5rem;
+			display: flex;
+			svg {
+				margin-right: 2rem;
+			}
+			div {
+				display: block;
+				p:first-child {
+					font-size: 1.5rem;
+					color: #d48e8e;
+					margin-bottom: 1rem;
+				}
+				p:last-child {
+					font-size: 1rem;
+					color: #8a8a8a;
+				}
+			}
+		}
+	}
+}
+.loading-main {
+	width: 100%;
+}
+.package-popup,
+.showPopUp {
+	.popup-container {
+		padding: 3.75rem 9.0625rem;
+		background: #222021;
+		@include respond(phone) {
+			// width < 900px?
+			padding: 2rem 2rem;
+		}
+		@include respond(s-phone) {
+			// width < 900px?
+			padding: 2rem;
+		}
+	}
+	.getDemoContainer {
+		padding: 0px;
+		background: #fbfcfd;
+		.free-demo-iframe {
+			height: 75vh;
+			width: 70vw;
+		}
+		.close-popup {
+			position: static;
+			text-align: right;
+			svg {
+				background: none;
+				path {
+					fill: black;
+				}
+			}
+		}
+	}
+	.future-plan-container {
+		padding: 3.125rem 3.125rem;
+		.future-plan-taken {
 			p {
-				width: 36vw;
-				color: white;
+				width: 30vw;
+				color: #222021;
 				text-align: justify;
 				font-size: 1rem;
 				font-weight: 300;
@@ -3616,96 +3826,209 @@
 			}
 		}
 	}
-	.no-package {
+}
+.titleCase {
+	text-transform: capitalize;
+}
+.cancel-option-container {
+	max-width: calc(54rem + 50px);
+	.cancel-option-icons-container {
 		display: grid;
-		grid-template-columns: max-content 1fr;
+		// grid-template-columns: repeat(6 , 9rem);
+		grid-template-columns: repeat(4, 13.2rem);
 		align-items: center;
-		column-gap: 6rem;
-		svg {
-			width: 3rem;
-		}
-	}
-	.payment-updating-popup {
-		opacity: 1;
-		.popup-container {
-			background: transparent;
-			.payment-wait-container {
-				display: grid;
-				place-items: center;
-				row-gap: 1rem;
-				img {
-					width: 5rem;
+		justify-items: center;
+		// justify-content: center;
+		text-align: center;
+		grid-gap: 10px;
+		.cancel-optin-icons {
+			height: 100%;
+			width: 100%;
+			display: grid;
+			align-items: center;
+			justify-items: center;
+			padding: 12px 0px;
+			grid-row-gap: 10px;
+			cursor: pointer;
+			background: #fbf3f1;
+			p {
+				color: #000000;
+				width: 100%;
+			}
+			svg {
+				path {
+					stroke: #d48e8e;
 				}
+			}
+			&:hover {
+				background: #d48e8e;
 				p {
-					color: white;
+					color: #e8e8e8;
+				}
+				svg {
+					path {
+						stroke: #e8e8e8;
+					}
+				}
+			}
+			&.activeCat {
+				background: #d48e8e;
+				p {
+					color: #e8e8e8;
+				}
+				svg {
+					path {
+						stroke: #e8e8e8;
+					}
 				}
 			}
 		}
 	}
-
-	.disbale-pointer-events {
-		pointer-events: none;
+	.cancel-option-text-container {
+		background: #fbf3f1;
+		padding: 1.5rem;
+		margin: 1rem 0px;
+		// max-width: fit-content;
+		display: grid;
+		grid-row-gap: 1rem;
+		width: 55rem;
+		height: 12rem;
+		p {
+			text-align: left;
+			margin: 0px;
+			width: auto;
+			max-width: fit-content;
+			color: #292929;
+			line-height: 1.4;
+		}
+		.cancel-option-head-tag {
+			font-weight: 600;
+			font-size: 1.1rem;
+			// margin-bottom: 1rem;
+		}
+		.cancel-option-sub-text {
+		}
+		.cancel-option-cta {
+			height: max-content;
+			width: max-content;
+			padding: 0.5rem 1rem;
+			color: white;
+			background: #d48e8e;
+			cursor: pointer;
+		}
+		input {
+			border: 1px solid #e9beb3;
+			background: #ffffff;
+		}
 	}
-
-	.highlight-red {
-		color: #cc4040 !important;
+}
+.cant-buy {
+	padding: 3.125rem 3.125rem !important;
+	.cant-buy-alert {
+		p {
+			width: 36vw;
+			color: white;
+			text-align: justify;
+			font-size: 1rem;
+			font-weight: 300;
+			line-height: 1.375rem;
+		}
+		a {
+			color: #d48e8e;
+			text-decoration: none;
+		}
 	}
+}
+.no-package {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+	column-gap: 6rem;
+	svg {
+		width: 3rem;
+	}
+}
+.payment-updating-popup {
+	opacity: 1;
+	.popup-container {
+		background: transparent;
+		.payment-wait-container {
+			display: grid;
+			place-items: center;
+			row-gap: 1rem;
+			img {
+				width: 5rem;
+			}
+			p {
+				color: white;
+			}
+		}
+	}
+}
 
-	/**
+.disbale-pointer-events {
+	pointer-events: none;
+}
+
+.highlight-red {
+	color: #cc4040 !important;
+}
+
+/**
 			 * ==============================================
 			 * Dot Flashing
 			 * ==============================================
 			 */
-	.dot-flashing {
-		position: relative;
-		width: 7px;
-		height: 7px;
-		border-radius: 5px;
+.dot-flashing {
+	position: relative;
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+	background-color: #c4c4c4;
+	color: #c4c4c4;
+	animation: dotFlashing 1s infinite linear alternate;
+	animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+}
+
+.dot-flashing::before {
+	left: -10px;
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+	background-color: #c4c4c4;
+	color: #c4c4c4;
+	animation: dotFlashing 1s infinite alternate;
+	animation-delay: 0s;
+}
+
+.dot-flashing::after {
+	left: 10px;
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+	background-color: #c4c4c4;
+	color: #c4c4c4;
+	animation: dotFlashing 1s infinite alternate;
+	animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+	0% {
 		background-color: #c4c4c4;
-		color: #c4c4c4;
-		animation: dotFlashing 1s infinite linear alternate;
-		animation-delay: 0.5s;
 	}
-
-	.dot-flashing::before,
-	.dot-flashing::after {
-		content: "";
-		display: inline-block;
-		position: absolute;
-		top: 0;
+	50%,
+	100% {
+		background-color: #ebe6ff;
 	}
-
-	.dot-flashing::before {
-		left: -10px;
-		width: 7px;
-		height: 7px;
-		border-radius: 5px;
-		background-color: #c4c4c4;
-		color: #c4c4c4;
-		animation: dotFlashing 1s infinite alternate;
-		animation-delay: 0s;
-	}
-
-	.dot-flashing::after {
-		left: 10px;
-		width: 7px;
-		height: 7px;
-		border-radius: 5px;
-		background-color: #c4c4c4;
-		color: #c4c4c4;
-		animation: dotFlashing 1s infinite alternate;
-		animation-delay: 1s;
-	}
-
-	@keyframes dotFlashing {
-		0% {
-			background-color: #c4c4c4;
-		}
-		50%,
-		100% {
-			background-color: #ebe6ff;
-		}
-	}
+}
 </style>
 
 <style lang="scss">
