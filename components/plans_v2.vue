@@ -124,8 +124,8 @@
 						</span>
 						<span v-else>
 							<nuxt-link :to="localePath('/settings/plans_new')">
-								<button v-if="!isTrial">{{ $t("buttonText.changePlan") }}</button>
-								<button v-else>{{ $t("buttonText.upgradePlan") }}</button>
+                                <button v-if="!isTrial">{{ $t("buttonText.changePlan") }}</button>
+                                <button v-else>{{ $t("buttonText.upgradePlan") }}</button>
 							</nuxt-link>
 						</span>
 					</div>
@@ -1854,7 +1854,7 @@
 		computed: {
 			...mapGetters("Billing", ["isNeoPaidPlanCancelled", "isUserOnUnlimitedRendersPlan", "isUserOnPayAsYouGoPlan", "totalCreditsAvailable", "totalPayAsYouGoCreditsUsed"]),
 			...mapGetters("Subscriptions", ["doesUserHaveAnActiveFloorplanAndElevationReward", "payAsYouGoAddonPlan"]),
-			...mapGetters("User",["isUserJapanese","isUserSpanish"]),
+			...mapGetters("User",["isUserJapanese","isUserSpanish","isUserUS"]),
 			...mapGetters("PayAsYouGo", [ "payAsYouGoTransactions", "payAsYouGoTransactionsPageTracker" ]),
 
 			...mapState({

@@ -88,6 +88,7 @@ export default {
     cancelSubscription: "Cancel Subscription",
     changePlan: "Change Plan",
     upgradePlan: "Upgrade Plan",
+    manageSubscription:"Manage Subscription",
     viewBillingHistory: "View Billing History",
     buyNow: "Buy Now",
     iWantToCancelAnyway: "I want to cancel anyway",

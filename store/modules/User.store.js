@@ -106,6 +106,12 @@ const getters = {
         state.user.ipInfo.country === "CO" ||
         state.user.ipInfo.country === "MX" )
     },
+    isUserUS: state => {
+        return state.user &&
+            state.user.ipInfo &&
+            state.user.ipInfo.country &&
+            state.user.ipInfo.country === "US";
+    },
     isUserCategoryHomeOwner: state => {
 
         const data = state.user;
